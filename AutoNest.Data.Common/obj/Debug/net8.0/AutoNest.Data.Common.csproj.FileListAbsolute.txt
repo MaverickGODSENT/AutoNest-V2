@@ -1,0 +1,15 @@
+D:\repos\AutoNest\AutoNest.Data.Common\bin\Debug\net8.0\AutoNest.Data.Common.deps.json
+D:\repos\AutoNest\AutoNest.Data.Common\bin\Debug\net8.0\AutoNest.Data.Common.runtimeconfig.json
+D:\repos\AutoNest\AutoNest.Data.Common\bin\Debug\net8.0\AutoNest.Data.Common.dll
+D:\repos\AutoNest\AutoNest.Data.Common\bin\Debug\net8.0\AutoNest.Data.Common.pdb
+D:\repos\AutoNest\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.csproj.AssemblyReference.cache
+D:\repos\AutoNest\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\AutoNest\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.AssemblyInfoInputs.cache
+D:\repos\AutoNest\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.AssemblyInfo.cs
+D:\repos\AutoNest\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.csproj.CoreCompileInputs.cache
+D:\repos\AutoNest\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.sourcelink.json
+D:\repos\AutoNest\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.dll
+D:\repos\AutoNest\AutoNest.Data.Common\obj\Debug\net8.0\refint\AutoNest.Data.Common.dll
+D:\repos\AutoNest\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.pdb
+D:\repos\AutoNest\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.genruntimeconfig.cache
+D:\repos\AutoNest\AutoNest.Data.Common\obj\Debug\net8.0\ref\AutoNest.Data.Common.dll

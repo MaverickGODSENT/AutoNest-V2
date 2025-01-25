@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoNest.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba537484a9372e567987ebd8748171e35e68f4bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee7edd7ef67d779104affa60f89d972dbc98a901")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoNest.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoNest.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
