@@ -54,7 +54,7 @@ namespace AutoNest.Services.Categories
 
         public IEnumerable<CategoryViewModel> GetAll()
         {
-            return _categoryRepository.All().Select(c => new CategoryViewModel
+            return _categoryRepository.AllAsNoTracking().Select(c => new CategoryViewModel
             {
                 Id = c.Id,
                 Name = c.Name,

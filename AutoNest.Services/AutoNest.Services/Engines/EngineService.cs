@@ -1,0 +1,85 @@
+﻿using AutoNest.Data.Common.Repositories;
+using AutoNest.Data.Entities;
+using AutoNest.Models.Engines;
+
+namespace AutoNest.Services.Engines
+{
+    public class EngineService : IEngineService
+    {
+
+        private readonly IRepository<Engine> _engineRepository;
+
+        public EngineService(IRepository<Engine> engineRepository)
+        {
+            _engineRepository = engineRepository;
+        }
+
+        public async void Add(EngineAddViewModel engine)
+        {
+            Engine engine1 = new Engine
+            {
+                EngineCode = engine.EngineCode,
+                EngineDisplacement = engine.EngineDisplacement,
+                EngineHorsePower = engine.EngineHorsePower,
+                Transmission = engine.Transmission,
+                Drivetrain = engine.Drivetrain
+            };
+
+            try
+            {
+                await _engineRepository.AddAsync(engine1);
+                var result = await _engineRepository.SaveChangesAsync() > 0;
+                if (!result)
+                {
+                    throw new ArgumentException();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException(ex.Message);
+            }
+        }
+
+        public bool Delete(string id)
+        {
+            var list = _engineRepository.All().ToList();
+            foreach (var engine in list)
+            {
+                if (engine.Id == id)
+                {
+                    _engineRepository.Delete(engine);
+                    _engineRepository.SaveChangesAsync();
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public IEnumerable<EngineViewModel> GetAll()
+        {
+            return _engineRepository.AllAsNoTracking().Select(e => new EngineViewModel
+            {
+                Id = e.Id,
+                EngineCode = e.EngineCode,
+                EngineDisplacement = e.EngineDisplacement,
+                EngineHorsePower = e.EngineHorsePower,
+                Transmission = e.Transmission,
+                Drivetrain = e.Drivetrain,
+            });
+        }
+
+        public void Update(EngineViewModel engine)
+        {
+            _engineRepository.Update(new Engine
+            {
+                Id = engine.Id,
+                EngineCode = engine.EngineCode,
+                EngineDisplacement = engine.EngineDisplacement,
+                EngineHorsePower = engine.EngineHorsePower,
+                Transmission = engine.Transmission,
+                Drivetrain = engine.Drivetrain
+            });
+            _engineRepository.SaveChangesAsync();
+        }
+    }
+}

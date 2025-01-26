@@ -1,0 +1,41 @@
+﻿@using AutoNest.Models.Engines
+@model EngineViewModel
+
+@{
+    ViewData["Title"] = "Edit Engine";
+}
+
+<h1>Edit Engine</h1>
+
+<form asp-action="EditEngine" method="post">
+    <div class="form-group">
+        <label asp-for="EngineCode" class="control-label"></label>
+        <input asp-for="EngineCode" class="form-control" />
+        <span asp-validation-for="EngineCode" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EngineDisplacement" class="control-label"></label>
+        <input asp-for="EngineDisplacement" class="form-control" />
+        <span asp-validation-for="EngineDisplacement" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EngineHorsePower" class="control-label"></label>
+        <input asp-for="EngineHorsePower" class="form-control" />
+        <span asp-validation-for="EngineHorsePower" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Transmission" class="control-label"></label>
+        <input asp-for="Transmission" class="form-control" />
+        <span asp-validation-for="Transmission" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Drivetrain" class="control-label"></label>
+        <input asp-for="Drivetrain" class="form-control" />
+        <span asp-validation-for="Drivetrain" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

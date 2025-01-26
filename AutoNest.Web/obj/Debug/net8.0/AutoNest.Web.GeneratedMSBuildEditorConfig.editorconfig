@@ -36,6 +36,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/repos/AutoNest/AutoNest.Web/Views/Engine/CreateEngine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5naW5lXENyZWF0ZUVuZ2luZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/repos/AutoNest/AutoNest.Web/Views/Engine/EditEngine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5naW5lXEVkaXRFbmdpbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/repos/AutoNest/AutoNest.Web/Views/Engine/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5naW5lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
