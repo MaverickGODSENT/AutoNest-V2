@@ -37,13 +37,13 @@ namespace AutoNest.Web.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult DeleteCategory(string id)
+        public IActionResult DeleteEngine(string id)
         {
             _engineService.Delete(id);
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public IActionResult EditCategory(string id)
+        public IActionResult EditEngine(string id)
         {
             var engine = _engineService.GetAll().Where(e => e.Id == id).FirstOrDefault();
             new EngineViewModel
@@ -58,7 +58,7 @@ namespace AutoNest.Web.Controllers
             return View(engine);
         }
         [HttpPost]
-        public IActionResult EditCategory(EngineViewModel engineModel)
+        public IActionResult EditEngine(EngineViewModel engineModel)
         {
             if (!ModelState.IsValid)
             {

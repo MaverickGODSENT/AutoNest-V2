@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoNest.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8f423032b6d07a582e8e00fdc1b969d9fc1d1ff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f271d6da2924474c280ffe01b618bf93710b4ed6")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoNest.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoNest.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
