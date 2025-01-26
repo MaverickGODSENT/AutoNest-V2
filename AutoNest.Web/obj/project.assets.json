@@ -1696,6 +1696,35 @@
         "runtime": {
           "bin/placeholder/AutoNest.Data.Common.dll": {}
         }
+      },
+      "AutoNest.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AutoNest.Data": "1.0.0",
+          "AutoNest.Data.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AutoNest.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AutoNest.Models.dll": {}
+        }
+      },
+      "AutoNest.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AutoNest.Data": "1.0.0",
+          "AutoNest.Data.Common": "1.0.0",
+          "AutoNest.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AutoNest.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AutoNest.Services.dll": {}
+        }
       }
     }
   },
@@ -4483,12 +4512,23 @@
       "type": "project",
       "path": "../AutoNest.Data.Common/AutoNest.Data.Common.csproj",
       "msbuildProject": "../AutoNest.Data.Common/AutoNest.Data.Common.csproj"
+    },
+    "AutoNest.Models/1.0.0": {
+      "type": "project",
+      "path": "../AutoNest.Models/AutoNest.Models/AutoNest.Models.csproj",
+      "msbuildProject": "../AutoNest.Models/AutoNest.Models/AutoNest.Models.csproj"
+    },
+    "AutoNest.Services/1.0.0": {
+      "type": "project",
+      "path": "../AutoNest.Services/AutoNest.Services/AutoNest.Services.csproj",
+      "msbuildProject": "../AutoNest.Services/AutoNest.Services/AutoNest.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoNest.Data >= 1.0.0",
       "AutoNest.Data.Common >= 1.0.0",
+      "AutoNest.Services >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 8.0.12",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.12",
       "Microsoft.AspNetCore.Identity.UI >= 8.0.12",
@@ -4533,6 +4573,9 @@
             },
             "D:\\repos\\AutoNest\\AutoNest.Data\\AutoNest.Data.csproj": {
               "projectPath": "D:\\repos\\AutoNest\\AutoNest.Data\\AutoNest.Data.csproj"
+            },
+            "D:\\repos\\AutoNest\\AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj": {
+              "projectPath": "D:\\repos\\AutoNest\\AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj"
             }
           }
         }

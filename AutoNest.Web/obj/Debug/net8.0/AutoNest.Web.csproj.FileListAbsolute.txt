@@ -159,3 +159,7 @@ D:\repos\AutoNest\AutoNest.Web\obj\Debug\net8.0\refint\AutoNest.Web.dll
 D:\repos\AutoNest\AutoNest.Web\obj\Debug\net8.0\AutoNest.Web.pdb
 D:\repos\AutoNest\AutoNest.Web\obj\Debug\net8.0\AutoNest.Web.genruntimeconfig.cache
 D:\repos\AutoNest\AutoNest.Web\obj\Debug\net8.0\ref\AutoNest.Web.dll
+D:\repos\AutoNest\AutoNest.Web\bin\Debug\net8.0\AutoNest.Models.dll
+D:\repos\AutoNest\AutoNest.Web\bin\Debug\net8.0\AutoNest.Services.dll
+D:\repos\AutoNest\AutoNest.Web\bin\Debug\net8.0\AutoNest.Services.pdb
+D:\repos\AutoNest\AutoNest.Web\bin\Debug\net8.0\AutoNest.Models.pdb

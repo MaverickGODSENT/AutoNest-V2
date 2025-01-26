@@ -10,6 +10,7 @@
         "dependencies": {
           "AutoNest.Data": "1.0.0",
           "AutoNest.Data.Common": "1.0.0",
+          "AutoNest.Services": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "8.0.12",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.12",
           "Microsoft.AspNetCore.Identity.UI": "8.0.12",
@@ -1026,6 +1027,31 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "AutoNest.Models/1.0.0": {
+        "dependencies": {
+          "AutoNest.Data": "1.0.0",
+          "AutoNest.Data.Common": "1.0.0"
+        },
+        "runtime": {
+          "AutoNest.Models.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AutoNest.Services/1.0.0": {
+        "dependencies": {
+          "AutoNest.Data": "1.0.0",
+          "AutoNest.Data.Common": "1.0.0",
+          "AutoNest.Models": "1.0.0"
+        },
+        "runtime": {
+          "AutoNest.Services.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1636,6 +1662,16 @@
       "sha512": ""
     },
     "AutoNest.Data.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AutoNest.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AutoNest.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AutoNest.Data.Common\AutoNest.Data.Common.csproj" />
     <ProjectReference Include="..\AutoNest.Data\AutoNest.Data.csproj" />
+    <ProjectReference Include="..\AutoNest.Services\AutoNest.Services\AutoNest.Services.csproj" />
   </ItemGroup>
 
 </Project>

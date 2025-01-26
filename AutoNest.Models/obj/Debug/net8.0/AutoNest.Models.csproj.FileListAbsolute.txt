@@ -1,0 +1,12 @@
+D:\repos\AutoNest\AutoNest.Models\bin\Debug\net8.0\AutoNest.Models.deps.json
+D:\repos\AutoNest\AutoNest.Models\bin\Debug\net8.0\AutoNest.Models.dll
+D:\repos\AutoNest\AutoNest.Models\bin\Debug\net8.0\AutoNest.Models.pdb
+D:\repos\AutoNest\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\AutoNest\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.AssemblyInfoInputs.cache
+D:\repos\AutoNest\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.AssemblyInfo.cs
+D:\repos\AutoNest\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.csproj.CoreCompileInputs.cache
+D:\repos\AutoNest\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.sourcelink.json
+D:\repos\AutoNest\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.dll
+D:\repos\AutoNest\AutoNest.Models\obj\Debug\net8.0\refint\AutoNest.Models.dll
+D:\repos\AutoNest\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.pdb
+D:\repos\AutoNest\AutoNest.Models\obj\Debug\net8.0\ref\AutoNest.Models.dll
