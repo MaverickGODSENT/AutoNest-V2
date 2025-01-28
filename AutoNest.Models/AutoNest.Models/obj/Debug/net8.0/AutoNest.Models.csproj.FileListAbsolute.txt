@@ -18,3 +18,23 @@ D:\repos\AutoNest\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\AutoNest.Mode
 D:\repos\AutoNest\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\refint\AutoNest.Models.dll
 D:\repos\AutoNest\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.pdb
 D:\repos\AutoNest\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\ref\AutoNest.Models.dll
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\bin\Debug\net8.0\appsettings.json
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\bin\Debug\net8.0\AutoNest.Models.deps.json
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\bin\Debug\net8.0\AutoNest.Models.dll
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\bin\Debug\net8.0\AutoNest.Models.pdb
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\bin\Debug\net8.0\AutoNest.Data.Common.dll
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\bin\Debug\net8.0\AutoNest.Data.dll
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\bin\Debug\net8.0\AutoNest.Data.Common.pdb
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\bin\Debug\net8.0\AutoNest.Data.pdb
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.csproj.AssemblyReference.cache
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.AssemblyInfoInputs.cache
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.AssemblyInfo.cs
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.csproj.CoreCompileInputs.cache
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.sourcelink.json
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\AutoNest.D7DC6E99.Up2Date
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.dll
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\refint\AutoNest.Models.dll
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\AutoNest.Models.pdb
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Models\AutoNest.Models\obj\Debug\net8.0\ref\AutoNest.Models.dll

@@ -18,3 +18,23 @@ D:\repos\AutoNest\AutoNest.Data\obj\Debug\net8.0\ref\AutoNest.Data.dll
 D:\repos\AutoNest\AutoNest.Data\bin\Debug\net8.0\AutoNest.Data.Common.dll
 D:\repos\AutoNest\AutoNest.Data\bin\Debug\net8.0\AutoNest.Data.Common.pdb
 D:\repos\AutoNest\AutoNest.Data\obj\Debug\net8.0\AutoNest.3DA833C9.Up2Date
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\bin\Debug\net8.0\appsettings.json
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\bin\Debug\net8.0\AutoNest.Data.deps.json
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\bin\Debug\net8.0\AutoNest.Data.runtimeconfig.json
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\bin\Debug\net8.0\AutoNest.Data.dll
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\bin\Debug\net8.0\AutoNest.Data.pdb
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\bin\Debug\net8.0\AutoNest.Data.Common.dll
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\bin\Debug\net8.0\AutoNest.Data.Common.pdb
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\obj\Debug\net8.0\AutoNest.Data.csproj.AssemblyReference.cache
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\obj\Debug\net8.0\AutoNest.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\obj\Debug\net8.0\AutoNest.Data.AssemblyInfoInputs.cache
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\obj\Debug\net8.0\AutoNest.Data.AssemblyInfo.cs
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\obj\Debug\net8.0\AutoNest.Data.csproj.CoreCompileInputs.cache
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\obj\Debug\net8.0\AutoNest.Data.sourcelink.json
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\obj\Debug\net8.0\AutoNest.3DA833C9.Up2Date
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\obj\Debug\net8.0\AutoNest.Data.dll
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\obj\Debug\net8.0\refint\AutoNest.Data.dll
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\obj\Debug\net8.0\AutoNest.Data.pdb
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\obj\Debug\net8.0\AutoNest.Data.genruntimeconfig.cache
+C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data\obj\Debug\net8.0\ref\AutoNest.Data.dll

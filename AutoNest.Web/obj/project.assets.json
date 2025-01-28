@@ -4537,23 +4537,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\galin\\.nuget\\packages\\": {},
+    "C:\\Users\\Angel Spasov\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\repos\\AutoNest\\AutoNest.Web\\AutoNest.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Angel Spasov\\Desktop\\AutoNest-V2\\AutoNest.Web\\AutoNest.Web.csproj",
       "projectName": "AutoNest.Web",
-      "projectPath": "D:\\repos\\AutoNest\\AutoNest.Web\\AutoNest.Web.csproj",
-      "packagesPath": "C:\\Users\\galin\\.nuget\\packages\\",
-      "outputPath": "D:\\repos\\AutoNest\\AutoNest.Web\\obj\\",
+      "projectPath": "C:\\Users\\Angel Spasov\\Desktop\\AutoNest-V2\\AutoNest.Web\\AutoNest.Web.csproj",
+      "packagesPath": "C:\\Users\\Angel Spasov\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Angel Spasov\\Desktop\\AutoNest-V2\\AutoNest.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\galin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Angel Spasov\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4568,14 +4568,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\repos\\AutoNest\\AutoNest.Data.Common\\AutoNest.Data.Common.csproj": {
-              "projectPath": "D:\\repos\\AutoNest\\AutoNest.Data.Common\\AutoNest.Data.Common.csproj"
+            "C:\\Users\\Angel Spasov\\Desktop\\AutoNest-V2\\AutoNest.Data.Common\\AutoNest.Data.Common.csproj": {
+              "projectPath": "C:\\Users\\Angel Spasov\\Desktop\\AutoNest-V2\\AutoNest.Data.Common\\AutoNest.Data.Common.csproj"
             },
-            "D:\\repos\\AutoNest\\AutoNest.Data\\AutoNest.Data.csproj": {
-              "projectPath": "D:\\repos\\AutoNest\\AutoNest.Data\\AutoNest.Data.csproj"
+            "C:\\Users\\Angel Spasov\\Desktop\\AutoNest-V2\\AutoNest.Data\\AutoNest.Data.csproj": {
+              "projectPath": "C:\\Users\\Angel Spasov\\Desktop\\AutoNest-V2\\AutoNest.Data\\AutoNest.Data.csproj"
             },
-            "D:\\repos\\AutoNest\\AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj": {
-              "projectPath": "D:\\repos\\AutoNest\\AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj"
+            "C:\\Users\\Angel Spasov\\Desktop\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj": {
+              "projectPath": "C:\\Users\\Angel Spasov\\Desktop\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj"
             }
           }
         }
