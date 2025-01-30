@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using AutoNest.Services.Categories;
 using AutoNest.Services.Engines;
 using AutoNest.Data.Entities;
+using AutoNest.Services.Parts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,8 +16,11 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+//Repositories
 builder.Services.AddScoped<IRepository<Category>, Repository<Category>>();
 builder.Services.AddScoped<IRepository<Engine>, Repository<Engine>>();
+builder.Services.AddScoped<IRepository<Part>,Repository<Part>>();
 
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
@@ -28,6 +32,7 @@ builder.Services.AddControllersWithViews();
 //Services
 builder.Services.AddTransient<ICategoryService, CategoryService>();
 builder.Services.AddTransient<IEngineService, EngineService>();
+builder.Services.AddTransient<IPartService, PartService>();
 
 var app = builder.Build();
 

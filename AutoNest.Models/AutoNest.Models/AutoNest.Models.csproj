@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Stripe.net" Version="47.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\AutoNest.Data.Common\AutoNest.Data.Common.csproj" />
     <ProjectReference Include="..\..\AutoNest.Data\AutoNest.Data.csproj" />
   </ItemGroup>

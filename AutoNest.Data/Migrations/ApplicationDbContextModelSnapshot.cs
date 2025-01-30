@@ -127,6 +127,35 @@ namespace AutoNest.Web.Data.Migrations
                     b.ToTable("Engines");
                 });
 
+            modelBuilder.Entity("AutoNest.Data.Entities.Image", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Extension")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ModifiedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("PartId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RemoteImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PartId");
+
+                    b.ToTable("Image");
+                });
+
             modelBuilder.Entity("AutoNest.Data.Entities.Part", b =>
                 {
                     b.Property<string>("Id")
@@ -410,6 +439,15 @@ namespace AutoNest.Web.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("AutoNest.Data.Entities.Image", b =>
+                {
+                    b.HasOne("AutoNest.Data.Entities.Part", "Part")
+                        .WithMany("Images")
+                        .HasForeignKey("PartId");
+
+                    b.Navigation("Part");
+                });
+
             modelBuilder.Entity("AutoNest.Data.Entities.Part", b =>
                 {
                     b.HasOne("AutoNest.Data.Entities.Category", "Category")
@@ -503,6 +541,11 @@ namespace AutoNest.Web.Data.Migrations
             modelBuilder.Entity("AutoNest.Data.Entities.Category", b =>
                 {
                     b.Navigation("Parts");
+                });
+
+            modelBuilder.Entity("AutoNest.Data.Entities.Part", b =>
+                {
+                    b.Navigation("Images");
                 });
 #pragma warning restore 612, 618
         }

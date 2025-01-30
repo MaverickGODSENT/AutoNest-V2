@@ -46,7 +46,7 @@ namespace AutoNest.Web.Controllers
         public IActionResult EditEngine(string id)
         {
             var engine = _engineService.GetAll().Where(e => e.Id == id).FirstOrDefault();
-            new EngineViewModel
+            var newEngine = new EngineViewModel
             {
                 Id = engine.Id,
                 EngineCode = engine.EngineCode,
