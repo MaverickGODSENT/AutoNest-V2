@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AutoNest.Data.Entities
 {
-    public class Cart : BaseDeletableModel<int>
+    public class Cart : BaseDeletableModel<string>
     {
         public Cart()
         {

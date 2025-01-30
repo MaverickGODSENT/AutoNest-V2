@@ -1,20 +1,17 @@
 ﻿using AutoNest.Data.Common.Repositories;
 using AutoNest.Data.Entities;
 using AutoNest.Models.Parts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AutoNest.Services.Parts
 {
     public class PartService : IPartService
     {
-        private readonly IRepository<Part> _partRepository;
-        public PartService(IRepository<Part> partRepository)
+        private readonly IDeletableEntityRepository<Part> _partRepository;
+        private readonly IDeletableEntityRepository<Category> _categoryRepository;
+        public PartService(IDeletableEntityRepository<Part> partRepository, IDeletableEntityRepository<Category> categoryRepository)
         {
             _partRepository = partRepository;
+            _categoryRepository = categoryRepository;
         }
 
 
@@ -35,21 +32,11 @@ namespace AutoNest.Services.Parts
 
             var allowedExtensions = new[] { "jpg", "jpeg", "png", "gif" };
 
-            
 
-            try
-            {
-                await _partRepository.AddAsync(part);
-                var result = await _partRepository.SaveChangesAsync() > 0;
-                if(!result)
-                {
-                    throw new ArgumentException();
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new ArgumentException(ex.Message);
-            }
+
+
+            await _partRepository.AddAsync(part);
+            await _partRepository.SaveChangesAsync();
         }
         public bool Delete(string id)
         {
@@ -68,6 +55,10 @@ namespace AutoNest.Services.Parts
 
         public IEnumerable<PartViewModel> GetAll()
         {
+            var categories = _categoryRepository.AllAsNoTracking();
+
+
+
             return _partRepository.AllAsNoTracking().Select(p => new PartViewModel
             {
                 Id = p.Id,
@@ -76,6 +67,7 @@ namespace AutoNest.Services.Parts
                 Description = p.Description,
                 Quantity = p.Quantity,
                 Price = p.Price,
+                CategoryName = categories.Where(c => c.Id == p.CategoryId).FirstOrDefault().Name,
             });
         }
 

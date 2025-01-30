@@ -42,3 +42,25 @@ C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Services\AutoNest.Services\ob
 C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Services\AutoNest.Services\obj\Debug\net8.0\refint\AutoNest.Services.dll
 C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Services\AutoNest.Services\obj\Debug\net8.0\AutoNest.Services.pdb
 C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Services\AutoNest.Services\obj\Debug\net8.0\ref\AutoNest.Services.dll
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\bin\Debug\net8.0\appsettings.Development.json
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\bin\Debug\net8.0\appsettings.json
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\bin\Debug\net8.0\AutoNest.Services.deps.json
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\bin\Debug\net8.0\AutoNest.Services.dll
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\bin\Debug\net8.0\AutoNest.Services.pdb
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\bin\Debug\net8.0\AutoNest.Data.Common.dll
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\bin\Debug\net8.0\AutoNest.Data.dll
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\bin\Debug\net8.0\AutoNest.Models.dll
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\bin\Debug\net8.0\AutoNest.Data.Common.pdb
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\bin\Debug\net8.0\AutoNest.Data.pdb
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\bin\Debug\net8.0\AutoNest.Models.pdb
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\obj\Debug\net8.0\AutoNest.Services.csproj.AssemblyReference.cache
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\obj\Debug\net8.0\AutoNest.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\obj\Debug\net8.0\AutoNest.Services.AssemblyInfoInputs.cache
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\obj\Debug\net8.0\AutoNest.Services.AssemblyInfo.cs
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\obj\Debug\net8.0\AutoNest.Services.csproj.CoreCompileInputs.cache
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\obj\Debug\net8.0\AutoNest.Services.sourcelink.json
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\obj\Debug\net8.0\AutoNest.1606B5A8.Up2Date
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\obj\Debug\net8.0\AutoNest.Services.dll
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\obj\Debug\net8.0\refint\AutoNest.Services.dll
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\obj\Debug\net8.0\AutoNest.Services.pdb
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Services\AutoNest.Services\obj\Debug\net8.0\ref\AutoNest.Services.dll

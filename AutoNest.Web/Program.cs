@@ -8,6 +8,7 @@ using AutoNest.Services.Categories;
 using AutoNest.Services.Engines;
 using AutoNest.Data.Entities;
 using AutoNest.Services.Parts;
+using AutoNest.Services.Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,9 +19,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 //Repositories
-builder.Services.AddScoped<IRepository<Category>, Repository<Category>>();
-builder.Services.AddScoped<IRepository<Engine>, Repository<Engine>>();
-builder.Services.AddScoped<IRepository<Part>,Repository<Part>>();
+builder.Services.AddScoped<IDeletableEntityRepository<Category>, DeletableEntityRepository<Category>>();
+builder.Services.AddScoped<IDeletableEntityRepository<Engine>, DeletableEntityRepository<Engine>>();
+builder.Services.AddScoped<IDeletableEntityRepository<Part>, DeletableEntityRepository<Part>>();
+builder.Services.AddScoped<IDeletableEntityRepository<Payment>, DeletableEntityRepository<Payment>>();
 
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
@@ -33,6 +35,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<ICategoryService, CategoryService>();
 builder.Services.AddTransient<IEngineService, EngineService>();
 builder.Services.AddTransient<IPartService, PartService>();
+// builder.Services.AddTransient<IStripeService, StripeService>(); TO DO
 
 var app = builder.Build();
 

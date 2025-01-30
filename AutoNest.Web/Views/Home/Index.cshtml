@@ -1,8 +1,91 @@
-﻿@{
+﻿@using AutoNest.Models.Parts
+@model List<PartViewModel>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <h1 class="my-4">Parts List</h1>
+
+    <!-- Filtering and Search -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="input-group">
+                <input type="text" id="searchString" class="form-control" placeholder="Search by brand, model, or description" />
+                <div class="input-group-append">
+                    <button id="searchButton" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <select id="categoryFilter" class="form-control">
+                <option value="">All Categories</option>
+                @foreach (var category in Model.Select(p => p.CategoryName).Distinct())
+                {
+                    <option value="@category">@category</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <!-- Sorting -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <button id="sortPrice" class="btn btn-outline-secondary">Sort by Price</button>
+            <button id="sortSales" class="btn btn-outline-secondary">Sort by Sales</button>
+        </div>
+    </div>
+
+    <!-- Parts List -->
+    <div id="partsListContainer">
+        <!-- The partial view will be loaded here dynamically -->
+        @await Html.PartialAsync("_PartsListPartial", Model)
+    </div>
 </div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Function to load filtered parts
+            function loadFilteredParts() {
+                const searchString = $("#searchString").val();
+                const categoryFilter = $("#categoryFilter").val();
+                const sortOrder = $(".sort-active").data("sort-order") || "";
+
+                $.ajax({
+                    url: "@Url.Action("GetFilteredParts", "Home")",
+                    type: "GET",
+                    data: {
+                        searchString: searchString,
+                        categoryFilter: categoryFilter,
+                        sortOrder: sortOrder
+                    },
+                    success: function (data) {
+                        $("#partsListContainer").html(data);
+                    },
+                    error: function () {
+                        alert("An error occurred while filtering parts.");
+                    }
+                });
+            }
+
+            // Event listeners
+            $("#searchButton").click(loadFilteredParts);
+            $("#categoryFilter").change(loadFilteredParts);
+
+            // Sorting buttons
+            $("#sortPrice").click(function () {
+                $(this).toggleClass("sort-active");
+                $(this).data("sort-order", $(this).hasClass("sort-active") ? "price_asc" : "price_desc");
+                loadFilteredParts();
+            });
+
+            $("#sortSales").click(function () {
+                $(this).toggleClass("sort-active");
+                $(this).data("sort-order", $(this).hasClass("sort-active") ? "sales_asc" : "sales_desc");
+                loadFilteredParts();
+            });
+        });
+    </script>
+}

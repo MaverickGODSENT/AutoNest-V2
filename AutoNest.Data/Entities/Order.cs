@@ -10,10 +10,11 @@ using System.Threading.Tasks;
 
 namespace AutoNest.Data.Entities
 {
-    public class Order : BaseDeletableModel<int>
+    public class Order : BaseDeletableModel<string>
     {
         public Order()
         {
+            this.Id = Guid.NewGuid().ToString();
             this.OrderItems = new HashSet<Cart>();
             CreatedAt = DateTime.UtcNow;
             OrderStatus = OrderStatus.Pending;

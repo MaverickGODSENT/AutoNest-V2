@@ -16,7 +16,7 @@ namespace AutoNest.Data.Entities
         public virtual Cart Cart { get; set; } 
 
         [ForeignKey(nameof(Part))]
-        public int ProductId { get; set; } 
+        public string PartId { get; set; } 
 
         [Required]
         public virtual Part Part { get; set; } 

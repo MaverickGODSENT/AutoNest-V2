@@ -1,0 +1,22 @@
+﻿@using AutoNest.Models.Parts
+@model List<PartViewModel>
+
+<div class="row">
+    @foreach (var part in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">@part.Brand @part.Model</h5>
+                    <p class="card-text">@part.Description</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Price:</strong> @part.Price.ToString("C")</li>
+                        <li class="list-group-item"><strong>Sales Count:</strong> @part.SalesCount</li>
+                        <li class="list-group-item"><strong>Quantity:</strong> @part.Quantity</li>
+                        <li class="list-group-item"><strong>Category:</strong> @part.CategoryName</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+</div>

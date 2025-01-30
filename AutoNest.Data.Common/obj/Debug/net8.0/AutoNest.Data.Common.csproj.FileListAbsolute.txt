@@ -28,3 +28,18 @@ C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\
 C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.pdb
 C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.genruntimeconfig.cache
 C:\Users\Angel Spasov\Desktop\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\ref\AutoNest.Data.Common.dll
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\bin\Debug\net8.0\AutoNest.Data.Common.deps.json
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\bin\Debug\net8.0\AutoNest.Data.Common.runtimeconfig.json
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\bin\Debug\net8.0\AutoNest.Data.Common.dll
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\bin\Debug\net8.0\AutoNest.Data.Common.pdb
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.csproj.AssemblyReference.cache
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.AssemblyInfoInputs.cache
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.AssemblyInfo.cs
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.csproj.CoreCompileInputs.cache
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.sourcelink.json
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.dll
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\refint\AutoNest.Data.Common.dll
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.pdb
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\AutoNest.Data.Common.genruntimeconfig.cache
+D:\ProgrammingStuff\AutoNest-V2\AutoNest.Data.Common\obj\Debug\net8.0\ref\AutoNest.Data.Common.dll

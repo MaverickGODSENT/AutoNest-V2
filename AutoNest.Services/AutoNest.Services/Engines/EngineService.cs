@@ -7,9 +7,9 @@ namespace AutoNest.Services.Engines
     public class EngineService : IEngineService
     {
 
-        private readonly IRepository<Engine> _engineRepository;
+        private readonly IDeletableEntityRepository<Engine> _engineRepository;
 
-        public EngineService(IRepository<Engine> engineRepository)
+        public EngineService(IDeletableEntityRepository<Engine> engineRepository)
         {
             _engineRepository = engineRepository;
         }
@@ -25,19 +25,12 @@ namespace AutoNest.Services.Engines
                 Drivetrain = engine.Drivetrain
             };
 
-            try
-            {
-                await _engineRepository.AddAsync(engine1);
-                var result = await _engineRepository.SaveChangesAsync() > 0;
-                if (!result)
-                {
-                    throw new ArgumentException();
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new ArgumentException(ex.Message);
-            }
+
+            await _engineRepository.AddAsync(engine1);
+            await _engineRepository.SaveChangesAsync();
+
+
+
         }
 
         public bool Delete(string id)
