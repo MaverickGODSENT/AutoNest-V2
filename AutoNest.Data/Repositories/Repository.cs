@@ -65,5 +65,10 @@ namespace AutoNest.Data.Repositories
                 _context?.Dispose();
             }
         }
+
+        public TEntity GetById(string id)
+        {
+            return _dbSet.Find(id);
+        }
     }
 }

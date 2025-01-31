@@ -9,6 +9,7 @@ using AutoNest.Services.Engines;
 using AutoNest.Data.Entities;
 using AutoNest.Services.Parts;
 using AutoNest.Services.Stripe;
+using AutoNest.Services.Carts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,8 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddScoped<IDeletableEntityRepository<Category>, DeletableEntityRepository<Category>>();
 builder.Services.AddScoped<IDeletableEntityRepository<Engine>, DeletableEntityRepository<Engine>>();
 builder.Services.AddScoped<IDeletableEntityRepository<Part>, DeletableEntityRepository<Part>>();
+builder.Services.AddScoped<IDeletableEntityRepository<Cart>, DeletableEntityRepository<Cart>>();
+builder.Services.AddScoped<IDeletableEntityRepository<CartItem>, DeletableEntityRepository<CartItem>>();
 builder.Services.AddScoped<IDeletableEntityRepository<Payment>, DeletableEntityRepository<Payment>>();
 
 
@@ -35,7 +38,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<ICategoryService, CategoryService>();
 builder.Services.AddTransient<IEngineService, EngineService>();
 builder.Services.AddTransient<IPartService, PartService>();
+builder.Services.AddTransient<ICartService, CartService>();
 // builder.Services.AddTransient<IStripeService, StripeService>(); TO DO
+
 
 var app = builder.Build();
 

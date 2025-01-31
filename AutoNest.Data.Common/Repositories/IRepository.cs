@@ -4,7 +4,7 @@
         where TEntity : class
     {
         IQueryable<TEntity> All();
-
+        TEntity GetById(string id);
         IQueryable<TEntity> AllAsNoTracking();
 
         Task AddAsync(TEntity entity);

@@ -98,6 +98,9 @@ namespace AutoNest.Web.Data.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("Brand")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("CartId")
                         .HasColumnType("nvarchar(450)");
 
@@ -110,11 +113,13 @@ namespace AutoNest.Web.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Model")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("ModifiedOn")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("PartId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<decimal>("Price")
@@ -657,9 +662,7 @@ namespace AutoNest.Web.Data.Migrations
 
                     b.HasOne("AutoNest.Data.Entities.Part", "Part")
                         .WithMany()
-                        .HasForeignKey("PartId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("PartId");
 
                     b.Navigation("Cart");
 

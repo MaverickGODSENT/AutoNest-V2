@@ -18,15 +18,10 @@ namespace AutoNest.Web.Controllers
         public IActionResult Index()
         {
             List<PartViewModel> parts = _partService.GetAll().ToList();
-
-
-
-
-
             return View(parts);
         }
 
-        public async Task<IActionResult> GetFilteredParts(string searchString, string categoryFilter, string sortOrder)
+        public IActionResult GetFilteredParts(string searchString, string categoryFilter, string sortOrder)
         {
             var parts = _partService.GetAll();
 

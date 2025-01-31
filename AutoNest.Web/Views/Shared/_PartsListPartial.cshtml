@@ -14,6 +14,7 @@
                         <li class="list-group-item"><strong>Sales Count:</strong> @part.SalesCount</li>
                         <li class="list-group-item"><strong>Quantity:</strong> @part.Quantity</li>
                         <li class="list-group-item"><strong>Category:</strong> @part.CategoryName</li>
+                        <a asp-action="AddToCart" asp-controller="Cart" asp-route-partId="@part.Id" asp-route-quantity="@part.Quantity">Add to Cart</a>
                     </ul>
                 </div>
             </div>
