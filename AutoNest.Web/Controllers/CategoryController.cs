@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AutoNest.Web.Controllers
 {
-    public class CategoryController:Controller
+    public class CategoryController : Controller
     {
         private readonly ICategoryService _categoryService;
 
@@ -25,14 +25,14 @@ namespace AutoNest.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateCategory(CategoryAddViewModel categoryModel)
+        public async Task<IActionResult> CreateCategory(CategoryAddViewModel categoryModel)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 RedirectToAction("Index");
             }
 
-            _categoryService.Add(categoryModel);
+            await _categoryService.Add(categoryModel);
             return RedirectToAction("Index");
         }
 
@@ -44,7 +44,7 @@ namespace AutoNest.Web.Controllers
         [HttpGet]
         public IActionResult EditCategory(string id)
         {
-            var category = _categoryService.GetAll().Where(c=>c.Id==id).FirstOrDefault();
+            var category = _categoryService.GetAll().Where(c => c.Id == id).FirstOrDefault();
             CategoryViewModel categoryViewModel = new CategoryViewModel
             {
                 Id = category.Id,

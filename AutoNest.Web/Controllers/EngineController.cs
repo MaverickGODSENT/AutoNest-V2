@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AutoNest.Web.Controllers
 {
-    public class EngineController:Controller
+    public class EngineController : Controller
     {
         private readonly IEngineService _engineService;
         public EngineController(IEngineService engineService)
@@ -26,14 +26,14 @@ namespace AutoNest.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateEngine(EngineAddViewModel engineModel)
+        public async Task<IActionResult> CreateEngine(EngineAddViewModel engineModel)
         {
             if (!ModelState.IsValid)
             {
                 RedirectToAction("Index");
             }
 
-            _engineService.Add(engineModel);
+            await _engineService.Add(engineModel);
             return RedirectToAction("Index");
         }
 

@@ -16,7 +16,7 @@ namespace AutoNest.Services.Parts
 
 
 
-        public async void Add(PartAddViewModel partAddViewModel, string imageParth)
+        public async Task Add(PartAddViewModel partAddViewModel, string imageParth)
         {
             Part part = new Part
             {
@@ -28,9 +28,9 @@ namespace AutoNest.Services.Parts
                 Price = partAddViewModel.Price,
             };
 
-            Directory.CreateDirectory($"{imageParth}/parts/");
+            //Directory.CreateDirectory($"{imageParth}/parts/");
 
-            var allowedExtensions = new[] { "jpg", "jpeg", "png", "gif" };
+            //var allowedExtensions = new[] { "jpg", "jpeg", "png", "gif" };
 
 
 

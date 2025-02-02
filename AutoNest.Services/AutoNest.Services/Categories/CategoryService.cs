@@ -14,7 +14,7 @@ namespace AutoNest.Services.Categories
         }
 
 
-        public async void Add(CategoryAddViewModel category)
+        public async Task Add(CategoryAddViewModel category)
         {
             Category category1 = new Category
             {

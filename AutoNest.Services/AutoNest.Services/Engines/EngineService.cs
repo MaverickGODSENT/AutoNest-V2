@@ -14,7 +14,7 @@ namespace AutoNest.Services.Engines
             _engineRepository = engineRepository;
         }
 
-        public async void Add(EngineAddViewModel engine)
+        public async Task Add(EngineAddViewModel engine)
         {
             Engine engine1 = new Engine
             {

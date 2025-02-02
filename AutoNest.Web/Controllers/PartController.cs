@@ -38,13 +38,13 @@ namespace AutoNest.Web.Controllers
             return View(partAddView);
         }
         [HttpPost]
-        public IActionResult CreatePart(PartAddViewModel partAddViewModel)
+        public async Task<IActionResult> CreatePart(PartAddViewModel partAddViewModel)
         {
             if (!ModelState.IsValid)
             {
                 RedirectToAction("Index");
             }
-            _partService.Add(partAddViewModel, $"{_environment.WebRootPath}/images");
+            await _partService.Add(partAddViewModel, $"{_environment.WebRootPath}/images");
             return RedirectToAction("Index");
         }
         [HttpGet]
