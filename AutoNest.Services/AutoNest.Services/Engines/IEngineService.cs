@@ -6,7 +6,7 @@ namespace AutoNest.Services.Engines
     {
         IEnumerable<EngineViewModel> GetAll();
         Task Add(EngineAddViewModel category);
-        void Update(EngineViewModel category);
-        bool Delete(string id);
+        Task Update(EngineViewModel category);
+        Task<bool> Delete(string id);
     }
 }

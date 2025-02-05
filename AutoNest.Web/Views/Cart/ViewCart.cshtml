@@ -27,7 +27,7 @@
                     </td>
                     <td>@((item.Price * item.Quantity).ToString("C"))</td>
                     <td>
-                        <a asp-controller="Cart" asp-action="RemoveFromCart" asp-route-partId="@item.PartId"
+                        <a asp-controller="Cart" asp-action="RemoveFromCart" asp-route-Id="@item.PartId"
                            class="btn btn-danger">Remove</a>
                     </td>
                 </tr>
@@ -41,11 +41,11 @@ else
     <p>Your cart is empty.</p>
 }
 <script>
-        document.addEventListener("DOMContentLoaded", function () {
+            document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll(".quantity-input").forEach(input => {
             input.addEventListener("change", function () {
                 let row = this.closest("tr");
-                let partId = row.getAttribute("data-part-id");
+                let partId = row.querySelector("a").getAttribute("data-part-id"); // Ensure this is correct
                 let quantity = this.value;
                 let price = parseFloat(row.querySelector(".price").innerText.replace(/[^0-9.]/g, ""));
 
@@ -54,7 +54,7 @@ else
                     quantity = 1;
                 }
 
-                fetch("/Cart/UpdateQuantity", {
+                fetch("/Cart/UpdateCart", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -62,7 +62,12 @@ else
                     },
                     body: JSON.stringify({ partId, quantity })
                 })
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
                 .then(data => {
                     row.querySelector(".total").innerText = data.itemTotal;
                     document.getElementById("cart-total").innerText = data.cartTotal;

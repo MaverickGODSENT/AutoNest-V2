@@ -1,6 +1,5 @@
 ﻿@using AutoNest.Models.Parts
 @model List<PartViewModel>
-
 <div class="row parts-list">
     @foreach (var part in Model)
     {
@@ -30,3 +29,28 @@
         </div>
     }
 </div>
+
+<script>
+    function applyFilters() {
+        const filters = {
+            brand: document.getElementById('brandFilter').value,
+            model: document.getElementById('modelFilter').value,
+            minPrice: document.getElementById('minPriceFilter').value,
+            maxPrice: document.getElementById('maxPriceFilter').value
+        };
+
+        fetch('/Home/GetFilteredParts', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+            body: JSON.stringify(filters)
+        })
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector('.parts-list').innerHTML = html;
+        })
+        .catch(error => console.error('Error:', error));
+    }
+</script>

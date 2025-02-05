@@ -25,7 +25,7 @@ namespace AutoNest.Services.Categories
                 await _categoryRepository.SaveChangesAsync();
         }
 
-        public bool Delete(string id)
+        public async Task<bool> Delete(string id)
         {
             var list = _categoryRepository.All().ToList();
             foreach(var category in list)
@@ -33,7 +33,7 @@ namespace AutoNest.Services.Categories
                 if (category.Id == id)
                 {
                     _categoryRepository.Delete(category);
-                    _categoryRepository.SaveChangesAsync();
+                    await _categoryRepository.SaveChangesAsync();
                     return true;
                 }
             }
@@ -51,7 +51,7 @@ namespace AutoNest.Services.Categories
             });
         }
 
-        public void Update(CategoryViewModel category)
+        public async Task Update(CategoryViewModel category)
         {
             _categoryRepository.Update(new Category
             {
@@ -59,7 +59,7 @@ namespace AutoNest.Services.Categories
                 Name = category.Name,
                 Description = category.Description
             });
-            _categoryRepository.SaveChangesAsync();
+            await _categoryRepository.SaveChangesAsync();
         }
     }
 }

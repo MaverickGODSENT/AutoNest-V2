@@ -38,7 +38,7 @@ namespace AutoNest.Services.Parts
             await _partRepository.AddAsync(part);
             await _partRepository.SaveChangesAsync();
         }
-        public bool Delete(string id)
+        public async Task<bool> Delete(string id)
         {
             var list = _partRepository.All().ToList();
             foreach (var part in list)
@@ -46,7 +46,7 @@ namespace AutoNest.Services.Parts
                 if (part.Id == id)
                 {
                     _partRepository.Delete(part);
-                    _partRepository.SaveChangesAsync();
+                    await _partRepository.SaveChangesAsync();
                     return true;
                 }
             }
@@ -55,7 +55,7 @@ namespace AutoNest.Services.Parts
 
         public IEnumerable<PartViewModel> GetAll()
         {
-            var categories = _categoryRepository.AllAsNoTracking();
+            var categories = _categoryRepository.All();
 
 
 
@@ -71,7 +71,7 @@ namespace AutoNest.Services.Parts
             });
         }
 
-        public void Update(PartViewModel partViewModel)
+        public async Task Update(PartViewModel partViewModel)
         {
             _partRepository.Update(new Part
             {
@@ -82,7 +82,7 @@ namespace AutoNest.Services.Parts
                 Quantity = partViewModel.Quantity,
                 Price = partViewModel.Price,
             });
-            _partRepository.SaveChangesAsync();
+            await _partRepository.SaveChangesAsync();
         }
     }
 }

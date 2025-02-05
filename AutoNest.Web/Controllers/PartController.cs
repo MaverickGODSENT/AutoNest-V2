@@ -1,6 +1,7 @@
 ﻿using AutoNest.Models.Parts;
 using AutoNest.Services.Categories;
 using AutoNest.Services.Parts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AutoNest.Web.Controllers
@@ -23,6 +24,8 @@ namespace AutoNest.Web.Controllers
             var parts = _partService.GetAll();
             return View(parts);
         }
+
+        [Authorize]
         [HttpGet]
         public IActionResult CreatePart()
         {
@@ -37,6 +40,8 @@ namespace AutoNest.Web.Controllers
             partAddView.Categories = result;
             return View(partAddView);
         }
+
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> CreatePart(PartAddViewModel partAddViewModel)
         {
@@ -47,6 +52,8 @@ namespace AutoNest.Web.Controllers
             await _partService.Add(partAddViewModel, $"{_environment.WebRootPath}/images");
             return RedirectToAction("Index");
         }
+
+        [Authorize]
         [HttpGet]
         public IActionResult EditPart(string id)
         {
@@ -54,21 +61,32 @@ namespace AutoNest.Web.Controllers
 
             return View(part);
         }
+
+        [Authorize]
         [HttpPost]
-        public IActionResult EditPart(PartViewModel partViewModel)
+        public async Task<IActionResult> EditPart(PartViewModel partViewModel)
         {
             if (!ModelState.IsValid)
             {
                 RedirectToAction("Index");
             }
-            _partService.Update(partViewModel);
+            await _partService.Update(partViewModel);
             return RedirectToAction("Index");
         }
+
+        [Authorize]
         [HttpPost]
-        public IActionResult DeletePart(string id)
+        public async Task<IActionResult> DeletePart(string id)
         {
-            _partService.Delete(id);
+            await _partService.Delete(id);
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public IActionResult Details(string id)
+        {
+            var part = _partService.GetAll().Where(p => p.Id == id).FirstOrDefault();
+            return View(part);
+        }
+
     }
 }

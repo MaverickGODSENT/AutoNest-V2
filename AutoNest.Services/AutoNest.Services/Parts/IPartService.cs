@@ -6,7 +6,7 @@ namespace AutoNest.Services.Parts
     {
         IEnumerable<PartViewModel> GetAll();
         Task Add(PartAddViewModel partAddViewModel,string imagePath);
-        void Update(PartViewModel partViewModel);
-        bool Delete(string id);
+        Task Update(PartViewModel partViewModel);
+        Task<bool> Delete(string id);
     }
 }

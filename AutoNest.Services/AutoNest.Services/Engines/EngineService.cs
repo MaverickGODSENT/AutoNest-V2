@@ -33,7 +33,7 @@ namespace AutoNest.Services.Engines
 
         }
 
-        public bool Delete(string id)
+        public async Task<bool> Delete(string id)
         {
             var list = _engineRepository.All().ToList();
             foreach (var engine in list)
@@ -41,7 +41,7 @@ namespace AutoNest.Services.Engines
                 if (engine.Id == id)
                 {
                     _engineRepository.Delete(engine);
-                    _engineRepository.SaveChangesAsync();
+                    await _engineRepository.SaveChangesAsync();
                     return true;
                 }
             }
@@ -61,7 +61,7 @@ namespace AutoNest.Services.Engines
             });
         }
 
-        public void Update(EngineViewModel engine)
+        public async Task Update(EngineViewModel engine)
         {
             _engineRepository.Update(new Engine
             {
@@ -72,7 +72,7 @@ namespace AutoNest.Services.Engines
                 Transmission = engine.Transmission,
                 Drivetrain = engine.Drivetrain
             });
-            _engineRepository.SaveChangesAsync();
+            await _engineRepository.SaveChangesAsync();
         }
     }
 }

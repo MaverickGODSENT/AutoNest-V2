@@ -1,6 +1,7 @@
 ﻿using AutoNest.Models.Categories;
 using AutoNest.Models.Engines;
 using AutoNest.Services.Engines;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AutoNest.Web.Controllers
@@ -19,12 +20,15 @@ namespace AutoNest.Web.Controllers
 
             return View(engines);
         }
+
+        [Authorize]
         [HttpGet]
         public IActionResult CreateEngine()
         {
             return View();
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> CreateEngine(EngineAddViewModel engineModel)
         {
@@ -37,11 +41,14 @@ namespace AutoNest.Web.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult DeleteEngine(string id)
+        [Authorize]
+        public async Task<IActionResult> DeleteEngine(string id)
         {
-            _engineService.Delete(id);
+            await _engineService.Delete(id);
             return RedirectToAction("Index");
         }
+
+        [Authorize]
         [HttpGet]
         public IActionResult EditEngine(string id)
         {
@@ -57,14 +64,16 @@ namespace AutoNest.Web.Controllers
             };
             return View(engine);
         }
+
+        [Authorize]
         [HttpPost]
-        public IActionResult EditEngine(EngineViewModel engineModel)
+        public async Task<IActionResult> EditEngine(EngineViewModel engineModel)
         {
             if (!ModelState.IsValid)
             {
                 return RedirectToAction("Index");
             }
-            _engineService.Update(engineModel);
+            await _engineService.Update(engineModel);
             return RedirectToAction("Index");
         }
     }

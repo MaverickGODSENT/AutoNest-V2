@@ -33,44 +33,66 @@ namespace AutoNest.Web.Controllers
             {
                 Items = cart.Parts.Select(x => new CartItemModel
                 {
+                    PartId = x.PartId,
                     Brand = x.Brand,
                     Model = x.Model,
                     Price = x.Price,
                     Quantity = x.Quantity
                 }).ToList(),
-                TotalPrice = cart.TotalCost
+                TotalPrice = cart.Parts.Sum(x => x.Price * x.Quantity)
             };
             return View(cartModel);
         }
         [Authorize]
-        public IActionResult RemoveFromCart(string partId)
+        public async Task<IActionResult> RemoveFromCart(string Id)
         {
             var userId = _userManager.GetUserId(User);
-            _cartService.RemoveFromCart(userId, partId);
+            await _cartService.RemoveFromCart(userId, Id);
             return RedirectToAction("ViewCart");
         }
         [Authorize]
         [HttpPost]
-        public IActionResult UpdateCart([FromBody] UpdateQuantityRequest request)
+        public async Task<IActionResult> UpdateCart([FromBody] UpdateQuantityRequest request)
         {
-            var userId = _userManager.GetUserId(User);
-            var cart = _cartService.GetCartForUser(userId).Result;
-            var updatedItem = cart.Parts.FirstOrDefault(x => x.PartId == request.PartId);
-            if (updatedItem == null)
+            if (request == null || string.IsNullOrEmpty(request.PartId) || request.Quantity < 1)
             {
-                return BadRequest(new { message = "Item not found in cart." });
+                return BadRequest(new { message = "Invalid request data." });
             }
-            updatedItem.Quantity = request.Quantity;
 
-            _cartService.UpdateCart(cart);
-
-
-
-            return Json(new
+            var userId = _userManager.GetUserId(User);
+            if (string.IsNullOrEmpty(userId))
             {
-                itemTotal = (updatedItem.Price * updatedItem.Quantity),
-                cartTotal = cart.TotalCost.ToString("C")
-            });
+                return Unauthorized(new { message = "User not authenticated." });
+            }
+
+            try
+            {
+                var cart = _cartService.GetCartForUser(userId).Result;
+                if (cart == null || cart.Parts == null)
+                {
+                    return NotFound(new { message = "Cart not found." });
+                }
+
+                var updatedItem = cart.Parts.FirstOrDefault(x => x.PartId == request.PartId);
+                if (updatedItem == null)
+                {
+                    return NotFound(new { message = "Item not found in cart." });
+                }
+
+                updatedItem.Quantity = request.Quantity;
+                await _cartService.UpdateCart(cart);
+
+                return Json(new
+                {
+                    itemTotal = (updatedItem.Price * updatedItem.Quantity).ToString("C"),
+                    cartTotal = cart.TotalCost.ToString("C")
+                });
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (ex) here
+                return StatusCode(500, new { message = "An error occurred while updating the cart." });
+            }
         }
         public class UpdateQuantityRequest
         {

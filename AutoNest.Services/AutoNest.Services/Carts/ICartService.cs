@@ -6,7 +6,7 @@ namespace AutoNest.Services.Carts
     {
         Task<Cart> GetCartForUser(string userId);
         Task AddToCart(string userId, string partId, int quantity);
-        void RemoveFromCart(string userId, string partId);
-        void UpdateCart(Cart cart);
+        Task RemoveFromCart(string userId, string partId);
+        Task UpdateCart(Cart cart);
     }
 }

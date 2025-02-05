@@ -8,10 +8,14 @@ namespace AutoNest.Services.Carts
     {
         private readonly IDeletableEntityRepository<Cart> _cartRepository;
         private readonly IDeletableEntityRepository<Part> _partRepository;
-        public CartService(IDeletableEntityRepository<Cart> cartRepository, IDeletableEntityRepository<Part> partRepository)
+        private readonly IDeletableEntityRepository<CartItem> _cartItemRepository;
+        public CartService(IDeletableEntityRepository<Cart> cartRepository,
+            IDeletableEntityRepository<Part> partRepository, 
+            IDeletableEntityRepository<CartItem> cartItemRepository)
         {
             _cartRepository = cartRepository;
             _partRepository = partRepository;
+            _cartItemRepository = cartItemRepository;
         }
 
 
@@ -72,24 +76,31 @@ namespace AutoNest.Services.Carts
                 await _cartRepository.AddAsync(cart);
                 await _cartRepository.SaveChangesAsync();
             }
+
+            cart.Parts = _cartItemRepository.All().Where(x => x.CartId == cart.Id).ToList();
+
+
+
             return cart;
         }
 
-        public void RemoveFromCart(string userId, string partId)
+        public async Task RemoveFromCart(string userId, string partId)
         {
             var cart = _cartRepository.All().FirstOrDefault(x => x.UserId == userId);
-            var cartItem = cart.Parts.FirstOrDefault(x => x.PartId == partId);
-            if(cartItem != null)
+            var parts = _cartItemRepository.All().Where(x => x.CartId==cart.Id).ToList();
+
+            var cartItem = parts.FirstOrDefault(p=>p.PartId == partId);
+            if (cartItem != null)
             {
-                cart.Parts.Remove(cartItem);
-                _cartRepository.SaveChangesAsync();
+                _cartItemRepository.Delete(cartItem);
+                await _cartItemRepository.SaveChangesAsync();
             }
         }
 
-        public void UpdateCart(Cart cart)
+        public async Task UpdateCart(Cart cart)
         {
             _cartRepository.Update(cart);
-            _cartRepository.SaveChangesAsync();
+            await _cartRepository.SaveChangesAsync();
         }
     }
 }

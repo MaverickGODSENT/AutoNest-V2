@@ -1,0 +1,26 @@
+﻿@using AutoNest.Models.Parts
+@model PartViewModel
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title">@Model.Brand @Model.Model</h2>
+            <p class="card-text">@Model.Description</p>
+
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Price:</strong> @Model.Price.ToString("C")</li>
+                <li class="list-group-item"><strong>Quantity Available:</strong> @Model.Quantity</li>
+                <li class="list-group-item"><strong>Category:</strong> @Model.CategoryName</li>
+            </ul>
+
+            <div class="mt-3">
+                <form asp-controller="Cart" asp-action="AddToCart" method="post" class="d-inline">
+                    <input type="hidden" name="partId" value="@Model.Id" />
+                    <input type="number" name="quantity" value="1" min="1" class="form-control d-inline-block" style="width: 80px;">
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+                <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>

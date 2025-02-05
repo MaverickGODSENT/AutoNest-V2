@@ -57,8 +57,6 @@ namespace AutoNest.Web.Controllers
             return PartialView("_PartsPartial", parts.ToList());
         }
 
-
-
         public IActionResult Privacy()
         {
             return View();

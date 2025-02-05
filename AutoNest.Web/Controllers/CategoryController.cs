@@ -1,5 +1,6 @@
 ﻿using AutoNest.Models.Categories;
 using AutoNest.Services.Categories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AutoNest.Web.Controllers
@@ -18,12 +19,15 @@ namespace AutoNest.Web.Controllers
             var categories = _categoryService.GetAll();
             return View(categories);
         }
+
+        [Authorize]
         [HttpGet]
         public IActionResult CreateCategory()
         {
             return View();
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> CreateCategory(CategoryAddViewModel categoryModel)
         {
@@ -36,11 +40,14 @@ namespace AutoNest.Web.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult DeleteCategory(string id)
+        [Authorize]
+        public async Task<IActionResult> DeleteCategory(string id)
         {
-            _categoryService.Delete(id);
+            await _categoryService.Delete(id);
             return RedirectToAction("Index");
         }
+
+        [Authorize]
         [HttpGet]
         public IActionResult EditCategory(string id)
         {
@@ -53,14 +60,16 @@ namespace AutoNest.Web.Controllers
             };
             return View(category);
         }
+
+        [Authorize]
         [HttpPost]
-        public IActionResult EditCategory(CategoryViewModel categoryModel)
+        public async Task<IActionResult> EditCategory(CategoryViewModel categoryModel)
         {
             if (!ModelState.IsValid)
             {
                 return RedirectToAction("Index");
             }
-            _categoryService.Update(categoryModel);
+            await _categoryService.Update(categoryModel);
             return RedirectToAction("Index");
         }
     }
