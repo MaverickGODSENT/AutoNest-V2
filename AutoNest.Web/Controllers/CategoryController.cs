@@ -36,14 +36,14 @@ namespace AutoNest.Web.Controllers
                 RedirectToAction("Index");
             }
 
-            await _categoryService.Add(categoryModel);
+            await _categoryService.AddCategoryAsync(categoryModel);
             return RedirectToAction("Index");
         }
 
         [Authorize]
         public async Task<IActionResult> DeleteCategory(string id)
         {
-            await _categoryService.Delete(id);
+            await _categoryService.DeleteCategoryAsync(id);
             return RedirectToAction("Index");
         }
 
@@ -69,7 +69,7 @@ namespace AutoNest.Web.Controllers
             {
                 return RedirectToAction("Index");
             }
-            await _categoryService.Update(categoryModel);
+            await _categoryService.UpdateCategoryAsync(categoryModel);
             return RedirectToAction("Index");
         }
     }

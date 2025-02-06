@@ -1,0 +1,31 @@
+﻿<div class="container mt-4">
+    <h2>Payment</h2>
+    <p>Total Amount: <strong>@Model.TotalPrice.ToString("C")</strong></p>
+
+    <form asp-controller="Payment" asp-action="ProcessPayment" method="post">
+        <div class="mb-3">
+            <label for="cardName" class="form-label">Cardholder Name</label>
+            <input type="text" class="form-control" id="cardName" name="CardName" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="cardNumber" class="form-label">Card Number</label>
+            <input type="text" class="form-control" id="cardNumber" name="CardNumber" required maxlength="16" pattern="\d{16}">
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="expiryDate" class="form-label">Expiry Date</label>
+                <input type="text" class="form-control" id="expiryDate" name="ExpiryDate" placeholder="MM/YY" required pattern="\d{2}/\d{2}">
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label for="cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cvv" name="CVV" required maxlength="3" pattern="\d{3}">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-success">Pay Now</button>
+        <a asp-controller="Cart" asp-action="Index" class="btn btn-secondary">Back to Cart</a>
+    </form>
+</div>

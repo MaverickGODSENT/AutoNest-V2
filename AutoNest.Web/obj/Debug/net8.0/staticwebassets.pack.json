@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\Cart\\cartIcon.png",
-      "PackagePath": "staticwebassets\\images\\Cart\\cartIcon.png"
-    },
-    {
       "Id": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

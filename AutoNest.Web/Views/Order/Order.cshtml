@@ -1,0 +1,97 @@
+﻿@using AutoNest.Models.Orders
+@model OrderInputModel
+
+<div class="container mt-4">
+    <h2>Place Your Order</h2>
+
+
+    <button class="btn btn-outline-primary mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartPreview">
+        <i class="fas fa-shopping-cart"></i> View Cart Items
+    </button>
+
+    <form asp-controller="Order" asp-action="SubmitOrder" method="post">
+        <div class="mb-3">
+            <label class="form-label">Shipping Address</label>
+            <input type="text" class="form-control" asp-for="ShippingAddress" required>
+            <span class="text-danger" asp-validation-for="ShippingAddress"></span>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">City</label>
+                <input type="text" class="form-control" asp-for="ShippingCity" required>
+                <span class="text-danger" asp-validation-for="ShippingCity"></span>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label class="form-label">State</label>
+                <input type="text" class="form-control" asp-for="ShippingState" required>
+                <span class="text-danger" asp-validation-for="ShippingState"></span>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label class="form-label">ZIP Code</label>
+                <input type="text" class="form-control" asp-for="ShippingZipCode" required>
+                <span class="text-danger" asp-validation-for="ShippingZipCode"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label class="form-label">Subtotal</label>
+                <input type="text" class="form-control" asp-for="SubTotal" readonly>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label class="form-label">Shipping Cost</label>
+                <input type="text" class="form-control" asp-for="ShippingCost" readonly>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label class="form-label">Total Amount</label>
+                <input type="text" class="form-control" asp-for="TotalAmount" readonly>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Payment Method</label>
+            <select class="form-select" asp-for="PaymentMethod" asp-items="Html.GetEnumSelectList<PaymentMethod>()" required></select>
+            <span class="text-danger" asp-validation-for="PaymentMethod"></span>
+        </div>
+
+        <button type="submit" class="btn btn-success">Place Order</button>
+        <a asp-controller="Cart" asp-action="Index" class="btn btn-secondary">Back to Cart</a>
+    </form>
+</div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartPreview">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        @if (Model.CartItems != null && Model.CartItems.Any())
+        {
+            <ul class="list-group">
+                @foreach (var item in Model.CartItems)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>@item.Brand @item.Model</strong>
+                            <p class="mb-0 text-muted">Qty: @item.Quantity | Price: @item.Price.ToString("C")</p>
+                        </div>
+                        <span class="badge bg-primary">@((item.Price * item.Quantity).ToString("C"))</span>
+                    </li>
+                }
+            </ul>
+            <div class="mt-3">
+                <h5>Total: @ViewBag.CartTotal.ToString("C")</h5>
+                <a asp-controller="Cart" asp-action="ViewCart" class="btn btn-outline-dark w-100">Go to Cart</a>
+            </div>
+        }
+        else
+        {
+            <p>Your cart is empty.</p>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

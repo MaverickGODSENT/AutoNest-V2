@@ -8,7 +8,6 @@
 <div class="container">
     <h1 class="my-4">Parts List</h1>
 
-    <!-- Filtering and Search -->
     <div class="row mb-4">
         <div class="col-md-6">
             <div class="input-group">
@@ -29,7 +28,6 @@
         </div>
     </div>
 
-    <!-- Sorting -->
     <div class="row mb-4">
         <div class="col-md-12">
             <button id="sortPrice" class="btn btn-outline-secondary">Sort by Price</button>
@@ -37,9 +35,7 @@
         </div>
     </div>
 
-    <!-- Parts List -->
     <div id="partsListContainer">
-        <!-- The partial view will be loaded here dynamically -->
         @await Html.PartialAsync("_PartsListPartial", Model)
     </div>
 </div>
@@ -47,7 +43,6 @@
 @section Scripts {
     <script>
         $(document).ready(function () {
-            // Function to load filtered parts
             function loadFilteredParts() {
                 const searchString = $("#searchString").val();
                 const categoryFilter = $("#categoryFilter").val();
@@ -70,11 +65,9 @@
                 });
             }
 
-            // Event listeners
             $("#searchButton").click(loadFilteredParts);
             $("#categoryFilter").change(loadFilteredParts);
 
-            // Sorting buttons
             $("#sortPrice").click(function () {
                 $(this).toggleClass("sort-active");
                 $(this).data("sort-order", $(this).hasClass("sort-active") ? "price_asc" : "price_desc");

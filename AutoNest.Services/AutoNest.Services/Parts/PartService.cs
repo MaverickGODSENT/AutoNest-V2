@@ -16,7 +16,7 @@ namespace AutoNest.Services.Parts
 
 
 
-        public async Task Add(PartAddViewModel partAddViewModel, string imageParth)
+        public async Task AddPartAsync(PartAddViewModel partAddViewModel, string imageParth)
         {
             Part part = new Part
             {
@@ -38,7 +38,7 @@ namespace AutoNest.Services.Parts
             await _partRepository.AddAsync(part);
             await _partRepository.SaveChangesAsync();
         }
-        public async Task<bool> Delete(string id)
+        public async Task<bool> DeletePartAsync(string id)
         {
             var list = _partRepository.All().ToList();
             foreach (var part in list)
@@ -71,7 +71,7 @@ namespace AutoNest.Services.Parts
             });
         }
 
-        public async Task Update(PartViewModel partViewModel)
+        public async Task UpdatePartAsync(PartViewModel partViewModel)
         {
             _partRepository.Update(new Part
             {

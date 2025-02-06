@@ -14,7 +14,7 @@ namespace AutoNest.Services.Engines
             _engineRepository = engineRepository;
         }
 
-        public async Task Add(EngineAddViewModel engine)
+        public async Task AddEngineAsync(EngineAddViewModel engine)
         {
             Engine engine1 = new Engine
             {
@@ -33,7 +33,7 @@ namespace AutoNest.Services.Engines
 
         }
 
-        public async Task<bool> Delete(string id)
+        public async Task<bool> DeleteEngineAsync(string id)
         {
             var list = _engineRepository.All().ToList();
             foreach (var engine in list)
@@ -61,7 +61,7 @@ namespace AutoNest.Services.Engines
             });
         }
 
-        public async Task Update(EngineViewModel engine)
+        public async Task UpdateEngineAsync(EngineViewModel engine)
         {
             _engineRepository.Update(new Engine
             {

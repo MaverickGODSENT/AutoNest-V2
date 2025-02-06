@@ -21,7 +21,7 @@ namespace AutoNest.Services.Carts
 
 
 
-        public async Task AddToCart(string userId, string partId, int quantity)
+        public async Task AddToCartAsync(string userId, string partId, int quantity)
         {
             var currentCart = _cartRepository.All().FirstOrDefault(x => x.UserId == userId);
 
@@ -63,7 +63,7 @@ namespace AutoNest.Services.Carts
             await _cartRepository.SaveChangesAsync();
         }
 
-        public async Task<Cart> GetCartForUser(string userId)
+        public async Task<Cart> RetrieveUserCartAsync(string userId)
         {
             var cart = _cartRepository.All().FirstOrDefault(x => x.UserId == userId);
             if(cart == null)
@@ -77,14 +77,20 @@ namespace AutoNest.Services.Carts
                 await _cartRepository.SaveChangesAsync();
             }
 
-            cart.Parts = _cartItemRepository.All().Where(x => x.CartId == cart.Id).ToList();
+            cart.Parts = (ICollection<CartItem>) await this.GetCartItemsForCartAsync(cart.Id);
 
 
 
             return cart;
         }
 
-        public async Task RemoveFromCart(string userId, string partId)
+        public async Task<List<CartItem>> GetCartItemsForCartAsync(string cartId)
+        {
+            return _cartItemRepository.All().Where(c=>c.CartId == cartId).ToList();
+        }
+
+
+        public async Task RemoveFromCartAsync(string userId, string partId)
         {
             var cart = _cartRepository.All().FirstOrDefault(x => x.UserId == userId);
             var parts = _cartItemRepository.All().Where(x => x.CartId==cart.Id).ToList();
@@ -97,7 +103,7 @@ namespace AutoNest.Services.Carts
             }
         }
 
-        public async Task UpdateCart(Cart cart)
+        public async Task UpdateCartAsync(Cart cart)
         {
             _cartRepository.Update(cart);
             await _cartRepository.SaveChangesAsync();

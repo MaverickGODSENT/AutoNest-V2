@@ -49,7 +49,7 @@ namespace AutoNest.Web.Controllers
             {
                 RedirectToAction("Index");
             }
-            await _partService.Add(partAddViewModel, $"{_environment.WebRootPath}/images");
+            await _partService.AddPartAsync(partAddViewModel, $"{_environment.WebRootPath}/images");
             return RedirectToAction("Index");
         }
 
@@ -70,7 +70,7 @@ namespace AutoNest.Web.Controllers
             {
                 RedirectToAction("Index");
             }
-            await _partService.Update(partViewModel);
+            await _partService.UpdatePartAsync(partViewModel);
             return RedirectToAction("Index");
         }
 
@@ -78,7 +78,7 @@ namespace AutoNest.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> DeletePart(string id)
         {
-            await _partService.Delete(id);
+            await _partService.DeletePartAsync(id);
             return RedirectToAction("Index");
         }
         [HttpGet]

@@ -7,12 +7,20 @@ namespace AutoNest.Web.Controllers
 {
     public class PaymentController : Controller
     {
-        /*private readonly IStripeService _stripeService;
+        private readonly IStripeService _stripeService;
 
         public PaymentController(IStripeService stripeService)
         {
             _stripeService = stripeService;
         }
+
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+
 
         [HttpPost]
         public async Task<IActionResult> Checkout(decimal ammount)
@@ -39,6 +47,6 @@ namespace AutoNest.Web.Controllers
                 };
             }
             return View();
-        }*/
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace AutoNest.Services.Categories
         }
 
 
-        public async Task Add(CategoryAddViewModel category)
+        public async Task AddCategoryAsync(CategoryAddViewModel category)
         {
             Category category1 = new Category
             {
@@ -25,7 +25,7 @@ namespace AutoNest.Services.Categories
                 await _categoryRepository.SaveChangesAsync();
         }
 
-        public async Task<bool> Delete(string id)
+        public async Task<bool> DeleteCategoryAsync(string id)
         {
             var list = _categoryRepository.All().ToList();
             foreach(var category in list)
@@ -51,7 +51,7 @@ namespace AutoNest.Services.Categories
             });
         }
 
-        public async Task Update(CategoryViewModel category)
+        public async Task UpdateCategoryAsync(CategoryViewModel category)
         {
             _categoryRepository.Update(new Category
             {

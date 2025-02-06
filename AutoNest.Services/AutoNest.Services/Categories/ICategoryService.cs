@@ -5,8 +5,8 @@ namespace AutoNest.Services.Categories
     public interface ICategoryService
     {
         IEnumerable<CategoryViewModel> GetAll();
-        Task Add(CategoryAddViewModel category);
-        Task Update(CategoryViewModel category);
-        Task<bool> Delete(string id);
+        Task AddCategoryAsync(CategoryAddViewModel category);
+        Task UpdateCategoryAsync(CategoryViewModel category);
+        Task<bool> DeleteCategoryAsync(string id);
     }
 }

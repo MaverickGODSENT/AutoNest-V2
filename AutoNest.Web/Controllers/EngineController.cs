@@ -37,14 +37,14 @@ namespace AutoNest.Web.Controllers
                 RedirectToAction("Index");
             }
 
-            await _engineService.Add(engineModel);
+            await _engineService.AddEngineAsync(engineModel);
             return RedirectToAction("Index");
         }
 
         [Authorize]
         public async Task<IActionResult> DeleteEngine(string id)
         {
-            await _engineService.Delete(id);
+            await _engineService.DeleteEngineAsync(id);
             return RedirectToAction("Index");
         }
 
@@ -73,7 +73,7 @@ namespace AutoNest.Web.Controllers
             {
                 return RedirectToAction("Index");
             }
-            await _engineService.Update(engineModel);
+            await _engineService.UpdateEngineAsync(engineModel);
             return RedirectToAction("Index");
         }
     }

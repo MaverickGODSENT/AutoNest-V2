@@ -21,11 +21,11 @@
                 <tr>
                     <td>@item.Brand</td>
                     <td>@item.Model</td>
-                    <td>@item.Price.ToString("C")</td>
+                    <td class="price">@item.Price.ToString("C")</td>
                     <td>
                         <input type="number" class="quantity-input form-control" value="@item.Quantity" min="1" style="width: 60px; display: inline-block;">
                     </td>
-                    <td>@((item.Price * item.Quantity).ToString("C"))</td>
+                    <td class="total">@((item.Price * item.Quantity).ToString("C"))</td>
                     <td>
                         <a asp-controller="Cart" asp-action="RemoveFromCart" asp-route-Id="@item.PartId"
                            class="btn btn-danger">Remove</a>
@@ -34,7 +34,9 @@
             }
         </tbody>
     </table>
-    <h3>Total: @Model.TotalPrice.ToString("C")</h3>
+    <h3>Total: <span id="cart-total">@Model.TotalPrice.ToString("C")</span></h3>
+
+    <a asp-controller="Order" asp-action="Order" class="btn btn-primary">Proceed to Order</a>
 }
 else
 {

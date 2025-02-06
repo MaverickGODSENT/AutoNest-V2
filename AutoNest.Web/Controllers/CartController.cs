@@ -19,7 +19,7 @@ namespace AutoNest.Web.Controllers
         public async Task<IActionResult> AddToCart(string partId, int quantity)
         {
             var userId = _userManager.GetUserId(User);
-            await _cartService.AddToCart(userId, partId, quantity);
+            await _cartService.AddToCartAsync(userId, partId, quantity);
             return RedirectToAction("Index", "Home");
         }
 
@@ -27,7 +27,7 @@ namespace AutoNest.Web.Controllers
         public IActionResult ViewCart()
         {
             var userId = _userManager.GetUserId(User);
-            var cart = _cartService.GetCartForUser(userId).Result;
+            var cart = _cartService.RetrieveUserCartAsync(userId).Result;
 
             var cartModel = new CartModel
             {
@@ -47,7 +47,7 @@ namespace AutoNest.Web.Controllers
         public async Task<IActionResult> RemoveFromCart(string Id)
         {
             var userId = _userManager.GetUserId(User);
-            await _cartService.RemoveFromCart(userId, Id);
+            await _cartService.RemoveFromCartAsync(userId, Id);
             return RedirectToAction("ViewCart");
         }
         [Authorize]
@@ -67,7 +67,7 @@ namespace AutoNest.Web.Controllers
 
             try
             {
-                var cart = _cartService.GetCartForUser(userId).Result;
+                var cart = _cartService.RetrieveUserCartAsync(userId).Result;
                 if (cart == null || cart.Parts == null)
                 {
                     return NotFound(new { message = "Cart not found." });
@@ -80,7 +80,7 @@ namespace AutoNest.Web.Controllers
                 }
 
                 updatedItem.Quantity = request.Quantity;
-                await _cartService.UpdateCart(cart);
+                await _cartService.UpdateCartAsync(cart);
 
                 return Json(new
                 {

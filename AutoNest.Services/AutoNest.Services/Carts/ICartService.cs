@@ -4,9 +4,10 @@ namespace AutoNest.Services.Carts
 {
     public interface ICartService
     {
-        Task<Cart> GetCartForUser(string userId);
-        Task AddToCart(string userId, string partId, int quantity);
-        Task RemoveFromCart(string userId, string partId);
-        Task UpdateCart(Cart cart);
+        Task<Cart> RetrieveUserCartAsync(string userId);
+        public Task<List<CartItem>> GetCartItemsForCartAsync(string cartId);
+        Task AddToCartAsync(string userId, string partId, int quantity);
+        Task RemoveFromCartAsync(string userId, string partId);
+        Task UpdateCartAsync(Cart cart);
     }
 }
