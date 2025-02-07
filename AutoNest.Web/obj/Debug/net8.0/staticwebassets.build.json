@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ztsFnGVOiKO47APmAy6EMiHNzaYEFCpOTKeRyWbgaw4=",
+  "Hash": "qRfE41VT1+EuCU/hapdjSWVUhc/foz2a4LEtiFzs3EY=",
   "Source": "AutoNest.Web",
   "BasePath": "_content/AutoNest.Web",
   "Mode": "Default",
@@ -1361,6 +1361,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\d6608482-f1b7-42b7-b396-6993e74df1ef.jpg",
+      "SourceId": "AutoNest.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\",
+      "BasePath": "_content/AutoNest.Web",
+      "RelativePath": "images/parts/d6608482-f1b7-42b7-b396-6993e74df1ef#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "88ouifqnpp",
+      "Integrity": "2NsgW1R2WyTMsEj91YO0wwCMhFoymuTZ/J7yfgwcLiE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\parts\\d6608482-f1b7-42b7-b396-6993e74df1ef.jpg"
+    },
+    {
       "Identity": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\js\\site.js",
       "SourceId": "AutoNest.Web",
       "SourceType": "Discovered",
@@ -1396,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "sys4kz7b7j",
-      "Integrity": "pJsxZMSVBScgCfXv50X81WRnWY6MHmScBryv95LNm8o=",
+      "Fingerprint": "3m0i97hbun",
+      "Integrity": "ZTeb/MxNtbGPK/C/XOrHeRMnOyxJMG3YIjIw9azrmSI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
@@ -1417,8 +1438,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8pjoquoyek",
-      "Integrity": "RPR49bxfGuni66NbDb+Iwi5WHjPGQhfqvsVPmnehiYQ=",
+      "Fingerprint": "kh3qxdrvgl",
+      "Integrity": "2OZwoEnfNlbViDRwwL1D9eYVQZsXlP9RGRndadUPWRM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
@@ -5003,6 +5024,88 @@
       ]
     },
     {
+      "Route": "images/parts/d6608482-f1b7-42b7-b396-6993e74df1ef.88ouifqnpp.jpg",
+      "AssetFile": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\d6608482-f1b7-42b7-b396-6993e74df1ef.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9065"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2NsgW1R2WyTMsEj91YO0wwCMhFoymuTZ/J7yfgwcLiE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 12:18:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "88ouifqnpp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/parts/d6608482-f1b7-42b7-b396-6993e74df1ef.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2NsgW1R2WyTMsEj91YO0wwCMhFoymuTZ/J7yfgwcLiE="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/d6608482-f1b7-42b7-b396-6993e74df1ef.jpg",
+      "AssetFile": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\d6608482-f1b7-42b7-b396-6993e74df1ef.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9065"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2NsgW1R2WyTMsEj91YO0wwCMhFoymuTZ/J7yfgwcLiE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 12:18:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2NsgW1R2WyTMsEj91YO0wwCMhFoymuTZ/J7yfgwcLiE="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -5085,6 +5188,51 @@
       ]
     },
     {
+      "Route": "lib/bootstrap/dist/css/bootstrap.3m0i97hbun.css",
+      "AssetFile": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "281758"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZTeb/MxNtbGPK/C/XOrHeRMnOyxJMG3YIjIw9azrmSI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Feb 2025 08:52:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3m0i97hbun"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/bootstrap.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZTeb/MxNtbGPK/C/XOrHeRMnOyxJMG3YIjIw9azrmSI="
+        }
+      ]
+    },
+    {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetFile": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
@@ -5095,7 +5243,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "305916"
+          "Value": "281758"
         },
         {
           "Name": "Content-Type",
@@ -5103,11 +5251,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pJsxZMSVBScgCfXv50X81WRnWY6MHmScBryv95LNm8o=\""
+          "Value": "\"ZTeb/MxNtbGPK/C/XOrHeRMnOyxJMG3YIjIw9azrmSI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 07:55:40 GMT"
+          "Value": "Fri, 07 Feb 2025 08:52:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5117,52 +5265,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pJsxZMSVBScgCfXv50X81WRnWY6MHmScBryv95LNm8o="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/css/bootstrap.min.8pjoquoyek.css",
-      "AssetFile": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "254417"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RPR49bxfGuni66NbDb+Iwi5WHjPGQhfqvsVPmnehiYQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 07:53:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8pjoquoyek"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/css/bootstrap.min.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-RPR49bxfGuni66NbDb+Iwi5WHjPGQhfqvsVPmnehiYQ="
+          "Value": "sha256-ZTeb/MxNtbGPK/C/XOrHeRMnOyxJMG3YIjIw9azrmSI="
         }
       ]
     },
@@ -5177,7 +5280,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "254417"
+          "Value": "233429"
         },
         {
           "Name": "Content-Type",
@@ -5185,11 +5288,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RPR49bxfGuni66NbDb+Iwi5WHjPGQhfqvsVPmnehiYQ=\""
+          "Value": "\"2OZwoEnfNlbViDRwwL1D9eYVQZsXlP9RGRndadUPWRM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 07:53:16 GMT"
+          "Value": "Fri, 07 Feb 2025 08:37:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5199,13 +5302,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RPR49bxfGuni66NbDb+Iwi5WHjPGQhfqvsVPmnehiYQ="
+          "Value": "sha256-2OZwoEnfNlbViDRwwL1D9eYVQZsXlP9RGRndadUPWRM="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap.sys4kz7b7j.css",
-      "AssetFile": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap.min.kh3qxdrvgl.css",
+      "AssetFile": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5214,7 +5317,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "305916"
+          "Value": "233429"
         },
         {
           "Name": "Content-Type",
@@ -5222,11 +5325,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pJsxZMSVBScgCfXv50X81WRnWY6MHmScBryv95LNm8o=\""
+          "Value": "\"2OZwoEnfNlbViDRwwL1D9eYVQZsXlP9RGRndadUPWRM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 07:55:40 GMT"
+          "Value": "Fri, 07 Feb 2025 08:37:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5236,15 +5339,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sys4kz7b7j"
+          "Value": "kh3qxdrvgl"
         },
         {
           "Name": "label",
-          "Value": "lib/bootstrap/dist/css/bootstrap.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap.min.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pJsxZMSVBScgCfXv50X81WRnWY6MHmScBryv95LNm8o="
+          "Value": "sha256-2OZwoEnfNlbViDRwwL1D9eYVQZsXlP9RGRndadUPWRM="
         }
       ]
     },

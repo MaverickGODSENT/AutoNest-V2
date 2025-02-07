@@ -10,7 +10,6 @@ namespace AutoNest.Data.Entities
         {
             this.Id = Guid.NewGuid().ToString();
             this.CompatibleCars = new HashSet<Car>();
-            this.Images = new HashSet<Image>();
         }
 
         [Required]
@@ -38,7 +37,9 @@ namespace AutoNest.Data.Entities
         public string CategoryId { get; set; }
         public Category Category { get; set; }
 
-        public virtual ICollection<Image> Images { get; set; }
+        [ForeignKey(nameof(Image))]
+        public string ImageId { get; set; }
+        public virtual Image Image { get; set; }
         public virtual ICollection<Car> CompatibleCars { get; set; }
     }
 }

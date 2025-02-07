@@ -67,7 +67,7 @@ namespace AutoNest.Web.Controllers
 
             try
             {
-                var cart = _cartService.RetrieveUserCartAsync(userId).Result;
+                var cart = await _cartService.RetrieveUserCartAsync(userId);
                 if (cart == null || cart.Parts == null)
                 {
                     return NotFound(new { message = "Cart not found." });
@@ -82,15 +82,17 @@ namespace AutoNest.Web.Controllers
                 updatedItem.Quantity = request.Quantity;
                 await _cartService.UpdateCartAsync(cart);
 
+                decimal cartTotal = cart.Parts.Sum(x => x.Price * x.Quantity);
+
                 return Json(new
                 {
                     itemTotal = (updatedItem.Price * updatedItem.Quantity).ToString("C"),
-                    cartTotal = cart.TotalCost.ToString("C")
+                    cartTotal = cartTotal.ToString("C")
                 });
             }
             catch (Exception ex)
             {
-                // Log the exception (ex) here
+                Console.WriteLine(ex.Message);
                 return StatusCode(500, new { message = "An error occurred while updating the cart." });
             }
         }

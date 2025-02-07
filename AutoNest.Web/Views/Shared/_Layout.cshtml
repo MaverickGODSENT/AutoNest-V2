@@ -11,15 +11,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body class="bg-light">
+
+    <!-- Header (Navbar) -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AutoNest.Web</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
@@ -41,16 +43,21 @@
             </div>
         </nav>
     </header>
-    <div class="container mt-4 p-4 bg-white shadow rounded">
-        <main role="main" class="pb-3">
+
+    <!-- Main Content -->
+    <div class="container mt-4 p-4 bg-white shadow-sm rounded">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
-    <footer class="footer text-center mt-4 bg-dark text-white py-3">
-        <div class="container">
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-3 mt-4">
+        <div class="container text-center">
             &copy; 2025 - AutoNest.Web - <a asp-controller="Home" asp-action="Privacy" class="text-light">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

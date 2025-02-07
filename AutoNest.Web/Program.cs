@@ -24,6 +24,7 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddScoped<IDeletableEntityRepository<Category>, DeletableEntityRepository<Category>>();
 builder.Services.AddScoped<IDeletableEntityRepository<Engine>, DeletableEntityRepository<Engine>>();
 builder.Services.AddScoped<IDeletableEntityRepository<Part>, DeletableEntityRepository<Part>>();
+builder.Services.AddScoped<IRepository<Image>, Repository<Image>>();
 builder.Services.AddScoped<IDeletableEntityRepository<Cart>, DeletableEntityRepository<Cart>>();
 builder.Services.AddScoped<IDeletableEntityRepository<CartItem>, DeletableEntityRepository<CartItem>>();
 builder.Services.AddScoped<IDeletableEntityRepository<Payment>, DeletableEntityRepository<Payment>>();

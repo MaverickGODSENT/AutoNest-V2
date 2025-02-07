@@ -31,6 +31,6 @@ namespace AutoNest.Models.Parts
         public string CategoryId { get; set; }
 
         public IEnumerable<KeyValuePair<string, string>> Categories { get; set; }
-        public IEnumerable<IFormFile> Images { get; set; }
+        public IFormFile Image { get; set; }
     }
 }

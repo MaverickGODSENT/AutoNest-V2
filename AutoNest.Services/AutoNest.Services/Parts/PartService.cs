@@ -8,15 +8,19 @@ namespace AutoNest.Services.Parts
     {
         private readonly IDeletableEntityRepository<Part> _partRepository;
         private readonly IDeletableEntityRepository<Category> _categoryRepository;
-        public PartService(IDeletableEntityRepository<Part> partRepository, IDeletableEntityRepository<Category> categoryRepository)
+        private readonly IRepository<Image> _imageRepository;
+        public PartService(IDeletableEntityRepository<Part> partRepository,
+            IDeletableEntityRepository<Category> categoryRepository,
+            IRepository<Image> imageRepository)
         {
             _partRepository = partRepository;
             _categoryRepository = categoryRepository;
+            _imageRepository = imageRepository;
         }
 
 
 
-        public async Task AddPartAsync(PartAddViewModel partAddViewModel, string imageParth)
+        public async Task AddPartAsync(PartAddViewModel partAddViewModel, string imagePath)
         {
             Part part = new Part
             {
@@ -28,15 +32,39 @@ namespace AutoNest.Services.Parts
                 Price = partAddViewModel.Price,
             };
 
-            //Directory.CreateDirectory($"{imageParth}/parts/");
-
-            //var allowedExtensions = new[] { "jpg", "jpeg", "png", "gif" };
-
-
-
-
             await _partRepository.AddAsync(part);
             await _partRepository.SaveChangesAsync();
+
+            Directory.CreateDirectory($"{imagePath}/parts/");
+
+            var allowedExtensions = new[] { "jpg", "jpeg", "png", "gif" };
+
+            var image = partAddViewModel.Image;
+            var extension = Path.GetExtension(image.FileName).TrimStart('.');
+            if (!allowedExtensions.Any(x => extension.EndsWith(x)))
+            {
+                throw new Exception($"Invalid image extension {extension}");
+            }
+            var dbImage = new Image
+            {
+                PartId = part.Id,
+                Extension = extension,
+                RemoteImageUrl = $"/images/parts/{part.Id}.{extension}",
+            };
+
+            await _imageRepository.AddAsync(dbImage);
+            await _imageRepository.SaveChangesAsync();
+
+            var physicalPath = $"{imagePath}/parts/{part.Id}.{extension}";
+
+            using (Stream fileStream = new FileStream(physicalPath, FileMode.Create))
+            {
+                await image.CopyToAsync(fileStream);
+            }
+
+
+
+
         }
         public async Task<bool> DeletePartAsync(string id)
         {
@@ -56,7 +84,7 @@ namespace AutoNest.Services.Parts
         public IEnumerable<PartViewModel> GetAll()
         {
             var categories = _categoryRepository.All();
-
+            var images = _imageRepository.All();
 
 
             return _partRepository.AllAsNoTracking().Select(p => new PartViewModel
@@ -68,6 +96,7 @@ namespace AutoNest.Services.Parts
                 Quantity = p.Quantity,
                 Price = p.Price,
                 CategoryName = categories.Where(c => c.Id == p.CategoryId).FirstOrDefault().Name,
+                RemoteImageUrl = images.Where(i => i.PartId == p.Id).FirstOrDefault().RemoteImageUrl,
             });
         }
 

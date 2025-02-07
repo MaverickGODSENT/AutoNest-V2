@@ -1,57 +1,80 @@
 ﻿@using AutoNest.Models.Carts
 @model CartModel
-<h1>Shopping Cart</h1>
 
-@if (Model?.Items?.Any() == true)
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Brand</th>
-                <th>Model</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Total</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Items)
-            {
-                <tr>
-                    <td>@item.Brand</td>
-                    <td>@item.Model</td>
-                    <td class="price">@item.Price.ToString("C")</td>
-                    <td>
-                        <input type="number" class="quantity-input form-control" value="@item.Quantity" min="1" style="width: 60px; display: inline-block;">
-                    </td>
-                    <td class="total">@((item.Price * item.Quantity).ToString("C"))</td>
-                    <td>
-                        <a asp-controller="Cart" asp-action="RemoveFromCart" asp-route-Id="@item.PartId"
-                           class="btn btn-danger">Remove</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-    <h3>Total: <span id="cart-total">@Model.TotalPrice.ToString("C")</span></h3>
+<div class="container mt-4">
+    <h2 class="mb-3">Количка</h2>
 
-    <a asp-controller="Order" asp-action="Order" class="btn btn-primary">Proceed to Order</a>
-}
-else
-{
-    <p>Your cart is empty.</p>
-}
+    @if (Model?.Items?.Any() == true)
+    {
+        <div class="row">
+            <!-- Cart Items -->
+            <div class="col-md-8">
+                <div class="card p-3">
+                    @foreach (var item in Model.Items)
+                    {
+                        <div class="row mb-3 pb-3 border-bottom">
+                            <!-- Product Image Placeholder -->
+                            <div class="col-3">
+                                <img src="https://via.placeholder.com/100" class="img-fluid" alt="@item.Model">
+                            </div>
+                            <!-- Product Details -->
+                            <div class="col-9">
+                                <h5>@item.Brand @item.Model</h5>
+                                <p class="text-muted">Part ID: @item.PartId</p>
+                                <div class="d-flex align-items-center">
+                                    <label class="me-2">Quantity:</label>
+                                    <input type="number" class="quantity-input form-control" value="@item.Quantity" min="1" style="width: 60px;">
+                                </div>
+                                <p class="price mt-2">@item.Price.ToString("C")</p>
+                                <p class="total"><strong>@((item.Price * item.Quantity).ToString("C"))</strong></p>
+                                <a asp-controller="Cart" asp-action="RemoveFromCart" asp-route-Id="@item.PartId" data-id="@item.PartId"
+                                   class="btn btn-danger btn-sm">Remove</a>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h4>Вашата поръчка:</h4>
+                    <p><strong>Обща цена на продуктите:</strong> <span id="cart-total">@Model.TotalPrice.ToString("C")</span></p>
+                    <a class="btn btn-danger w-100 mb-2" asp-controller="Order" asp-action="Order">Направи поръчка</a>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p>Вашата количка е празна.</p>
+    }
+</div>
+
 <script>
-            document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll(".quantity-input").forEach(input => {
             input.addEventListener("change", function () {
-                let row = this.closest("tr");
-                let partId = row.querySelector("a").getAttribute("data-part-id"); // Ensure this is correct
-                let quantity = this.value;
-                let price = parseFloat(row.querySelector(".price").innerText.replace(/[^0-9.]/g, ""));
+                let row = this.closest(".row");
+                let partIdElement = row.querySelector("a[data-id]");
 
-                if (quantity < 1) {
+                if (!partIdElement) {
+                    console.error("Part ID element not found.");
+                    return;
+                }
+
+                let partId = partIdElement.getAttribute("data-id");
+                let quantity = parseInt(this.value);
+                let priceElement = row.querySelector(".price");
+
+                if (!priceElement) {
+                    console.error("Price element not found.");
+                    return;
+                }
+
+                let price = parseFloat(priceElement.textContent.trim().replace(/[^0-9.]/g, ""));
+
+                if (isNaN(quantity) || quantity < 1) {
                     this.value = 1;
                     quantity = 1;
                 }
@@ -71,10 +94,14 @@ else
                     return response.json();
                 })
                 .then(data => {
-                    row.querySelector(".total").innerText = data.itemTotal;
-                    document.getElementById("cart-total").innerText = data.cartTotal;
+                    row.querySelector(".total").textContent = data.itemTotal;
+
+                    let cartTotalElement = document.getElementById("cart-total");
+                    if (cartTotalElement) {
+                        cartTotalElement.textContent = data.cartTotal;
+                    }
                 })
-                .catch(error => console.error("Error:", error));
+                .catch(error => console.error("Error updating cart:", error));
             });
         });
     });
