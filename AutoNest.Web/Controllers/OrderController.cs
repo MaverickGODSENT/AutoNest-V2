@@ -32,7 +32,6 @@ namespace AutoNest.Web.Controllers
             inputModel.SubTotal = cartItemms.Sum(x => x.Price * x.Quantity);
             inputModel.TotalAmount = inputModel.ShippingCost + inputModel.SubTotal;
 
-            inputModel.CartItems = cartItemms;
             return View(inputModel);
         }
         [HttpPost]
@@ -43,7 +42,7 @@ namespace AutoNest.Web.Controllers
                 return RedirectToAction("Order");
             }
             var userId = _userManager.GetUserId(User);
-            await _orderService.AddOrderAsync(inputModel,userId);
+            await _orderService.AddOrderAsync(inputModel,userId); 
 
             return RedirectToAction("Index", "Payment");
         }

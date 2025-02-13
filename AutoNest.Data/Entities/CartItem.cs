@@ -29,7 +29,9 @@ namespace AutoNest.Data.Entities
         [Required]
         public decimal Price { get; set; } 
         public virtual Cart Cart { get; set; } 
-        public virtual Part Part { get; set; } 
+        public virtual Part Part { get; set; }
+        [Required]
+        public string ImageUrl { get; set; }
 
     }
 }

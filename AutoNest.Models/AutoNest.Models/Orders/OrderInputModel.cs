@@ -30,7 +30,7 @@ namespace AutoNest.Models.Orders
         [Required, StringLength(50, ErrorMessage = "State name must be within 50 characters.")]
         public string? ShippingState { get; set; }
 
-        [Required, RegularExpression(@"^\d{5}(-\d{4})?$", ErrorMessage = "Enter a valid ZIP code.")]
+        [Required, RegularExpression(@"^\d{4}$", ErrorMessage = "Enter a valid Bulgarian ZIP code (4 digits).")]
         public string? ShippingZipCode { get; set; }
 
         [Required]

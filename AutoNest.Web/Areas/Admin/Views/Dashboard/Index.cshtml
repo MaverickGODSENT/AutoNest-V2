@@ -1,0 +1,65 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h3>Welcome to the Admin Dashboard</h3>
+            <p>Use the sidebar to navigate and manage the system.</p>
+        </div>
+    </div>
+
+    <!-- Analytics Section -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h4>Sales Analytics</h4>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Monthly Revenue</h5>
+                    <canvas id="salesChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4>Order Analytics</h4>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Orders Overview</h5>
+                    <canvas id="orderChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        var ctx = document.getElementById('salesChart').getContext('2d');
+        var salesChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                datasets: [{
+                    label: 'Monthly Sales',
+                    data: [5000, 10000, 7000, 8000],
+                    borderColor: '#007bff',
+                    fill: false
+                }]
+            }
+        });
+
+        var ctxOrder = document.getElementById('orderChart').getContext('2d');
+        var orderChart = new Chart(ctxOrder, {
+            type: 'bar',
+            data: {
+                labels: ['Pending', 'Shipped', 'Delivered', 'Cancelled'],
+                datasets: [{
+                    label: 'Orders Status',
+                    data: [10, 20, 50, 5],
+                    backgroundColor: ['#ffc107', '#28a745', '#007bff', '#dc3545']
+                }]
+            }
+        });
+    </script>
+}

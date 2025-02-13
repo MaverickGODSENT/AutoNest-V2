@@ -1,6 +1,5 @@
 ﻿using AutoNest.Data.Common.Repositories;
 using AutoNest.Data.Entities;
-using AutoNest.Models.Carts;
 
 namespace AutoNest.Services.Carts
 {
@@ -9,13 +8,17 @@ namespace AutoNest.Services.Carts
         private readonly IDeletableEntityRepository<Cart> _cartRepository;
         private readonly IDeletableEntityRepository<Part> _partRepository;
         private readonly IDeletableEntityRepository<CartItem> _cartItemRepository;
+        private readonly IRepository<Image> _imageRepository;
+
         public CartService(IDeletableEntityRepository<Cart> cartRepository,
             IDeletableEntityRepository<Part> partRepository, 
-            IDeletableEntityRepository<CartItem> cartItemRepository)
+            IDeletableEntityRepository<CartItem> cartItemRepository,
+            IRepository<Image> imageRepository)
         {
             _cartRepository = cartRepository;
             _partRepository = partRepository;
             _cartItemRepository = cartItemRepository;
+            _imageRepository = imageRepository;
         }
 
 
@@ -43,6 +46,7 @@ namespace AutoNest.Services.Carts
             else
             {
                 var part = _partRepository.GetById(partId);
+                var image = _imageRepository.All().FirstOrDefault(x => x.PartId == partId);
                 if (part == null)
                 {
                     throw new ArgumentException("Part not found");
@@ -55,7 +59,8 @@ namespace AutoNest.Services.Carts
                     Brand = part.Brand,
                     Model = part.Model,
                     Price = part.Price,
-                    Quantity = quantity
+                    Quantity = quantity,
+                    ImageUrl = image?.RemoteImageUrl,
                 };
                 currentCart.Parts.Add(cartItem);
                 _cartRepository.Update(currentCart);

@@ -37,7 +37,8 @@ namespace AutoNest.Web.Controllers
                     Brand = x.Brand,
                     Model = x.Model,
                     Price = x.Price,
-                    Quantity = x.Quantity
+                    Quantity = x.Quantity,
+                    ImageUrl = x.ImageUrl
                 }).ToList(),
                 TotalPrice = cart.Parts.Sum(x => x.Price * x.Quantity)
             };

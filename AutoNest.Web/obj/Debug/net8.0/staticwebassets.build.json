@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qRfE41VT1+EuCU/hapdjSWVUhc/foz2a4LEtiFzs3EY=",
+  "Hash": "fH+ma1e0Z2Y7Yb8r5vZCu8pVFMBWcVHFjjsRjFUI6N4=",
   "Source": "AutoNest.Web",
   "BasePath": "_content/AutoNest.Web",
   "Mode": "Default",
@@ -1359,6 +1359,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\29c8fea4-7588-4c14-8da9-7f3d5ae2b7e1.jpg",
+      "SourceId": "AutoNest.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\",
+      "BasePath": "_content/AutoNest.Web",
+      "RelativePath": "images/parts/29c8fea4-7588-4c14-8da9-7f3d5ae2b7e1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8odwmjv583",
+      "Integrity": "OD9DLDyUtKpUUBirOafqafLbQuix6CR0wpnrFpznjPo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\parts\\29c8fea4-7588-4c14-8da9-7f3d5ae2b7e1.jpg"
     },
     {
       "Identity": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\d6608482-f1b7-42b7-b396-6993e74df1ef.jpg",
@@ -5020,6 +5041,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/29c8fea4-7588-4c14-8da9-7f3d5ae2b7e1.8odwmjv583.jpg",
+      "AssetFile": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\29c8fea4-7588-4c14-8da9-7f3d5ae2b7e1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9716"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OD9DLDyUtKpUUBirOafqafLbQuix6CR0wpnrFpznjPo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 12:48:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8odwmjv583"
+        },
+        {
+          "Name": "label",
+          "Value": "images/parts/29c8fea4-7588-4c14-8da9-7f3d5ae2b7e1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OD9DLDyUtKpUUBirOafqafLbQuix6CR0wpnrFpznjPo="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/29c8fea4-7588-4c14-8da9-7f3d5ae2b7e1.jpg",
+      "AssetFile": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\29c8fea4-7588-4c14-8da9-7f3d5ae2b7e1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9716"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OD9DLDyUtKpUUBirOafqafLbQuix6CR0wpnrFpznjPo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 12:48:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OD9DLDyUtKpUUBirOafqafLbQuix6CR0wpnrFpznjPo="
         }
       ]
     },
