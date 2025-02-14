@@ -54,6 +54,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\08e8c053-1e1f-4b0d-a553-b6a0dd07c90b.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoNest.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AutoNest.Web</BasePath>
+      <RelativePath>images/parts/08e8c053-1e1f-4b0d-a553-b6a0dd07c90b.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>y19saywkdr</Fingerprint>
+      <Integrity>KtHpNDvQGzK/jcGUaPyic3f7vmXhTdx1/mF9l5SbRJQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\08e8c053-1e1f-4b0d-a553-b6a0dd07c90b.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\29c8fea4-7588-4c14-8da9-7f3d5ae2b7e1.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>AutoNest.Web</SourceId>

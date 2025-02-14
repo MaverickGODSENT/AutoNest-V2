@@ -1,4 +1,8 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
     Layout = null;
 }
 <!DOCTYPE html>
@@ -10,6 +14,8 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AutoNest.Web.styles.css" asp-append-version="true" />
     <style>
         .sidebar {
             height: 100vh;
@@ -51,16 +57,25 @@
                 <a class="nav-link active" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Dashboard</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" asp-area="Admin" asp-controller="Analytics" asp-action="Index">Analytics</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" asp-area="Admin" asp-controller="Users" asp-action="Index">Manage Users</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" asp-area="Admin" asp-controller="Orders" asp-action="Index">Manage Orders</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" asp-area="Admin" asp-controller="Analytics" asp-action="Index">Analytics</a>
+                <a class="nav-link" asp-area="Admin" asp-controller="AdminPart" asp-action="Index">Manage Parts</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" asp-area="Admin" asp-controller="Settings" asp-action="Index">Settings</a>
+                <a class="nav-link" asp-area="Admin" asp-controller="AdminCategory" asp-action="Index">Manage Categories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="Admin" asp-controller="AdminEngine" asp-action="Index">Manage Engines</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="Admin" asp-controller="AdminCar" asp-action="Index">Manage Cars</a>
             </li>
         </ul>
     </div>
@@ -76,10 +91,12 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
+                        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"><i class="bi bi-person-circle"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Logout</a>
+                        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                            <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+                        </form>
                     </li>
                 </ul>
             </div>

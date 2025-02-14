@@ -1,14 +1,14 @@
 ﻿@using AutoNest.Models.Parts
-@model PartAddViewModel
+@model PartViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 @{
-    ViewData["Title"] = "Add Part";
-    var categories = Model.Categories.Select(x => new SelectListItem(x.Value, x.Key));
+    ViewData["Title"] = "Edit Part";
 }
 
-<h1>Add Part</h1>
+<h1>Edit Part</h1>
 
-<form asp-action="CreatePart" method="post" enctype="multipart/form-data">
+<form asp-action="EditPart" method="post">
     <div class="form-group">
         <label asp-for="Brand" class="control-label"></label>
         <input asp-for="Brand" class="form-control" />
@@ -34,20 +34,9 @@
         <input asp-for="Price" class="form-control" />
         <span asp-validation-for="Price" class="text-danger"></span>
     </div>
-    <div class="form-group">
-        <label asp-for="CategoryId" class="control-label"></label>
-        <select asp-for="CategoryId" class="form-control" asp-items="categories"></select>
-        <span asp-validation-for="CategoryId" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Image" class="control-label"></label>
-        <input asp-for="Image" type="file" class="form-control" multiple />
-        <span asp-validation-for="Image" class="text-danger"></span>
-    </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
 @section Scripts {
-        <partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial" />
 }
-

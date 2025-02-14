@@ -24,6 +24,9 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\AdminCar\" />
+    <Folder Include="Views\Category\" />
+    <Folder Include="Views\Engine\" />
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\images\parts\" />
   </ItemGroup>
