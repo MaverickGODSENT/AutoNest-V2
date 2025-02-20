@@ -20,15 +20,64 @@ namespace AutoNest.Services.Orders
                 CartId = inputModel.CartId,
                 UserId = userId,
                 SubTotal = inputModel.SubTotal,
+                TotalAmount = inputModel.TotalAmount,
                 ShippingAddress = inputModel.ShippingAddress,
                 ShippingCity = inputModel.ShippingCity,
                 ShippingCost = inputModel.ShippingCost,
-                TotalAmount = inputModel.TotalAmount,
+                ShippingState = inputModel.ShippingState,
+                ShippingZipCode = inputModel.ShippingZipCode,
             };
 
             await _orderRepository.AddAsync(newOrder);
             await _orderRepository.SaveChangesAsync();
 
+        }
+        public async Task DeleteOrderAsync(string orderId)
+        {
+            var order =  _orderRepository.GetById(orderId);
+            _orderRepository.Delete(order);
+            await _orderRepository.SaveChangesAsync();
+        }
+
+        public List<OrderInputModel> GetAllOrders()
+        {
+            return _orderRepository.All().Select(o => new OrderInputModel
+            {
+                CartId = o.CartId,
+                ShippingAddress = o.ShippingAddress,
+                ShippingCity = o.ShippingCity,
+                ShippingCost = o.ShippingCost,
+                ShippingState = o.ShippingState,
+                ShippingZipCode = o.ShippingZipCode,
+                SubTotal = o.SubTotal,
+                TotalAmount = o.TotalAmount,
+                UserId = o.UserId,
+            }).ToList();
+        }
+
+        public Order GetOrderById(string id) 
+        {
+            return _orderRepository.GetById(id);
+        }
+
+        public async Task UpdateOrderAsync(OrderInputModel order)
+        {
+            Order order1 = new Order
+            {
+                Id = order.OrderId,
+                CartId = order.CartId,
+                UserId = order.UserId,
+                SubTotal = order.SubTotal,
+                ShippingCost = order.ShippingCost,
+                TotalAmount = order.TotalAmount,
+                ShippingAddress = order.ShippingAddress,
+                ShippingCity = order.ShippingCity,
+                ShippingState = order.ShippingState,
+                ShippingZipCode = order.ShippingZipCode,
+            };
+
+            _orderRepository.Update(order1);
+            await _orderRepository.SaveChangesAsync();
         }
     }
 }

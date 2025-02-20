@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminCar/CreateCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5DYXJcQ3JlYXRlQ2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminCategory/CreateCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5DYXRlZ29yeVxDcmVhdGVDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +48,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5FbmdpbmVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminOrder/DetailedOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5PcmRlclxEZXRhaWxlZE9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminOrder/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5PcmRlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminPart/CreatePart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5QYXJ0XENyZWF0ZVBhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,6 +66,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminPart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5QYXJ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminUser/DetailedUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Vc2VyXERldGFpbGVkVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminUser/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Vc2VyXEVkaXRVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminUser/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Vc2VyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/Dashboard/Index.cshtml]

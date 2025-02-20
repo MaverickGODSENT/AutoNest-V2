@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AutoNest.Web.Areas.Admin.Controllers
 {
+    [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class AdminEngineController : Controller
     {
         private readonly IEngineService _engineService;

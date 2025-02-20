@@ -18,7 +18,6 @@ namespace AutoNest.Web.Data
         public DbSet<Image> Images { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Part> Parts { get; set; }
-        public DbSet<Payment> Payments { get; set; }
 
     }
 }

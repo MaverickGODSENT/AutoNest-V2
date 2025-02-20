@@ -1,6 +1,7 @@
 using AutoNest.Data.Common.Repositories;
 using AutoNest.Data.Entities;
 using AutoNest.Data.Repositories;
+using AutoNest.Services.Cars;
 using AutoNest.Services.Carts;
 using AutoNest.Services.Categories;
 using AutoNest.Services.Engines;
@@ -12,11 +13,14 @@ using AutoNest.Web.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
+
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
@@ -29,8 +33,8 @@ builder.Services.AddScoped<IDeletableEntityRepository<Part>, DeletableEntityRepo
 builder.Services.AddScoped<IRepository<Image>, Repository<Image>>();
 builder.Services.AddScoped<IDeletableEntityRepository<Cart>, DeletableEntityRepository<Cart>>();
 builder.Services.AddScoped<IDeletableEntityRepository<CartItem>, DeletableEntityRepository<CartItem>>();
-builder.Services.AddScoped<IDeletableEntityRepository<Payment>, DeletableEntityRepository<Payment>>();
 builder.Services.AddScoped<IDeletableEntityRepository<Order>, DeletableEntityRepository<Order>>();
+builder.Services.AddScoped<IDeletableEntityRepository<Car>, DeletableEntityRepository<Car>>();
 
 // Identity config
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
@@ -48,6 +52,7 @@ builder.Services.AddTransient<ICartService, CartService>();
 builder.Services.AddTransient<IOrderService, OrderService>();
 builder.Services.AddTransient<IStripeService, StripeService>();
 builder.Services.AddTransient<IAdminService, AdminService>();
+builder.Services.AddTransient<ICarService, CarService>();
 
 var app = builder.Build();
 

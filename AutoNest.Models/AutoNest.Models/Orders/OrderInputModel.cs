@@ -6,6 +6,7 @@ namespace AutoNest.Models.Orders
 
     public class OrderInputModel
     {
+        public string OrderId { get; set; }
         [Required]
         public string? UserId { get; set; }
 

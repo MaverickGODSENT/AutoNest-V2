@@ -1,31 +1,72 @@
-﻿<div class="container mt-4">
-    <h2>Payment</h2>
-    <p>Total Amount: <strong>@Model.TotalPrice.ToString("C")</strong></p>
+﻿@using AutoNest.Models.Orders
+@model OrderInputModel
 
-    <form asp-controller="Payment" asp-action="ProcessPayment" method="post">
-        <div class="mb-3">
-            <label for="cardName" class="form-label">Cardholder Name</label>
-            <input type="text" class="form-control" id="cardName" name="CardName" required>
+<div class="container mt-4">
+    <h3 class="fw-bold mb-4 text-center">Order Summary</h3>
+
+    <div class="row">
+        <!-- Order Details -->
+        <div class="col-md-8">
+            <div class="card shadow-sm p-3">
+                <h5 class="fw-bold mb-3">Order Details</h5>
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Brand</th>
+                            <th>Model</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.CartItems)
+                        {
+                            <tr>
+                                <td>
+                                    <img src="@item.ImageUrl" alt="Product Image" class="img-fluid rounded" style="max-width: 80px;">
+                                </td>
+                                <td>@item.Brand</td>
+                                <td>@item.Model</td>
+                                <td>@item.Price</td>
+                                <td>@item.Quantity</td>
+                                <td>@(item.Price * item.Quantity).ToString("C")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
         </div>
 
-        <div class="mb-3">
-            <label for="cardNumber" class="form-label">Card Number</label>
-            <input type="text" class="form-control" id="cardNumber" name="CardNumber" required maxlength="16" pattern="\d{16}">
-        </div>
-
-        <div class="row">
-            <div class="col-md-6 mb-3">
-                <label for="expiryDate" class="form-label">Expiry Date</label>
-                <input type="text" class="form-control" id="expiryDate" name="ExpiryDate" placeholder="MM/YY" required pattern="\d{2}/\d{2}">
+        <!-- Shipping & Payment Details -->
+        <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-3">
+                <h5 class="fw-bold">Shipping Details</h5>
+                <p><strong>Address:</strong> @Model.ShippingAddress</p>
+                <p><strong>City:</strong> @Model.ShippingCity</p>
+                <p><strong>State:</strong> @Model.ShippingState</p>
+                <p><strong>ZIP Code:</strong> @Model.ShippingZipCode</p>
             </div>
 
-            <div class="col-md-6 mb-3">
-                <label for="cvv" class="form-label">CVV</label>
-                <input type="text" class="form-control" id="cvv" name="CVV" required maxlength="3" pattern="\d{3}">
-            </div>
-        </div>
+            <div class="card shadow-sm p-3">
+                <h5 class="fw-bold">Order Summary</h5>
+                <p class="fw-bold">Subtotal: <span class="float-end">@Model.SubTotal</span></p>
+                <p class="fw-bold">Shipping: <span class="float-end">@Model.ShippingCost</span></p>
+                <p class="fw-bold text-success">Total: <span class="float-end">@Model.TotalAmount</span></p>
 
-        <button type="submit" class="btn btn-success">Pay Now</button>
-        <a asp-controller="Cart" asp-action="Index" class="btn btn-secondary">Back to Cart</a>
-    </form>
+                <form asp-controller="Payment" asp-action="Checkout" method="post">
+                    <input type="hidden" name="amount" value="@Model.TotalAmount" />
+                    <button type="submit" class="btn btn-success w-100 mt-3">Proceed to Payment</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
 </div>
+
+@section Scripts {
+    <script>
+        // Optional: Add any JavaScript for dynamic interactions here
+    </script>
+}

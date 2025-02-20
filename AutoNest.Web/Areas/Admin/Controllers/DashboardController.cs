@@ -7,6 +7,13 @@ namespace AutoNest.Web.Areas.Admin.Controllers
     [Authorize(Roles = "Admin")]
     public class DashboardController:Controller
     {
+        public DashboardController()
+        {
+
+        }
+
+
+
         public IActionResult Index()
         {
             return View();

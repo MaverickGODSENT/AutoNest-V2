@@ -1,0 +1,47 @@
+﻿@using AutoNest.Models.Cars
+@model AddCarViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Add New Car";
+}
+
+<h2>Add New Car</h2>
+
+<form asp-action="Add" method="post">
+    <div class="mb-3">
+        <label asp-for="Brand" class="form-label"></label>
+        <input asp-for="Brand" class="form-control" />
+        <span asp-validation-for="Brand" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Model" class="form-label"></label>
+        <input asp-for="Model" class="form-control" />
+        <span asp-validation-for="Model" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ModelYear" class="form-label"></label>
+        <input asp-for="ModelYear" type="number" class="form-control" />
+        <span asp-validation-for="ModelYear" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Compatible Engines</label>
+        <select asp-for="SelectedEngineIds" asp-items="Model.AvailableEngines" class="form-select" multiple></select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Compatible Parts</label>
+        <select asp-for="SelectedPartIds" asp-items="Model.AvailableParts" class="form-select" multiple></select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Car</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+ 

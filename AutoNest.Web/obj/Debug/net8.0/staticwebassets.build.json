@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RuzGWBRXBQSU5ev4K5geBOKdRPN0Hko/o2zKyh+Z2lo=",
+  "Hash": "MmLA3lZDWMwDU5oNgs25wrMQMKJgttP3YDMLh1yjgnI=",
   "Source": "AutoNest.Web",
   "BasePath": "_content/AutoNest.Web",
   "Mode": "Default",
@@ -1424,27 +1424,6 @@
       "OriginalItemSpec": "wwwroot\\images\\parts\\d6608482-f1b7-42b7-b396-6993e74df1ef.jpg"
     },
     {
-      "Identity": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\js\\site.js",
-      "SourceId": "AutoNest.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\",
-      "BasePath": "_content/AutoNest.Web",
-      "RelativePath": "js/site#[.{fingerprint}]?.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "xtxxf3hu2r",
-      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
-    },
-    {
       "Identity": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "AutoNest.Web",
       "SourceType": "Discovered",
@@ -2540,7 +2519,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 12:45:09 GMT"
+          "Value": "Thu, 20 Feb 2025 13:58:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2585,7 +2564,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 12:45:09 GMT"
+          "Value": "Thu, 20 Feb 2025 13:58:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2630,7 +2609,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 12:45:09 GMT"
+          "Value": "Thu, 20 Feb 2025 13:58:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2667,7 +2646,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 12:45:09 GMT"
+          "Value": "Thu, 20 Feb 2025 13:58:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5308,88 +5287,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-2NsgW1R2WyTMsEj91YO0wwCMhFoymuTZ/J7yfgwcLiE="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.js",
-      "AssetFile": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "231"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 07:54:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "231"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 07:54:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
         }
       ]
     },

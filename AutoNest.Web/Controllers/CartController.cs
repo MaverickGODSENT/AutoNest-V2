@@ -24,10 +24,10 @@ namespace AutoNest.Web.Controllers
         }
 
         [Authorize]
-        public IActionResult ViewCart()
+        public async Task<IActionResult> ViewCart()
         {
             var userId = _userManager.GetUserId(User);
-            var cart = _cartService.RetrieveUserCartAsync(userId).Result;
+            var cart = await _cartService.RetrieveUserCartAsync(userId);
 
             var cartModel = new CartModel
             {

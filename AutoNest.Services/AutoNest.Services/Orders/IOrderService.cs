@@ -1,14 +1,14 @@
-﻿using AutoNest.Models.Orders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutoNest.Data.Entities;
+using AutoNest.Models.Orders;
 
 namespace AutoNest.Services.Orders
 {
     public interface IOrderService
     {
+        public List<OrderInputModel> GetAllOrders();
         public Task AddOrderAsync(OrderInputModel inputModel, string userId);
+        public Task DeleteOrderAsync(string orderId);
+        public Order GetOrderById(string id);
+        public Task UpdateOrderAsync(OrderInputModel order);
     }
 }

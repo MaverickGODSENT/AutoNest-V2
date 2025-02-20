@@ -37,14 +37,14 @@ namespace AutoNest.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> SubmitOrder(OrderInputModel inputModel)
         {
-            if (!ModelState.IsValid)
-            {
-                return RedirectToAction("Order");
-            }
             var userId = _userManager.GetUserId(User);
+            var cart = await _cartService.RetrieveUserCartAsync(userId);
+            inputModel.CartId = cart.Id;
+            inputModel.CartItems = await _cartService.GetCartItemsForCartAsync(cart.Id);
+
             await _orderService.AddOrderAsync(inputModel,userId); 
 
-            return RedirectToAction("Index", "Payment");
+            return RedirectToAction("Index", "Payment",inputModel);
         }
 
     }

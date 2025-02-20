@@ -25,10 +25,6 @@
       "PackagePath": "staticwebassets\\images\\parts\\d6608482-f1b7-42b7-b396-6993e74df1ef.jpg"
     },
     {
-      "Id": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
-    },
-    {
       "Id": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
