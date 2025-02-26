@@ -16,27 +16,32 @@ namespace AutoNest.Services.Stripe
 
         public async Task<string> CreateCheckoutSessionAsync(decimal amount, string currency, string successUrl, string cancelUrl)
         {
+            var successUri = new UriBuilder(successUrl);
+            var query = System.Web.HttpUtility.ParseQueryString(successUri.Query);
+            query["session_id"] = "{CHECKOUT_SESSION_ID}";
+            successUri.Query = query.ToString();
+
             var options = new SessionCreateOptions
             {
                 PaymentMethodTypes = new List<string> { "card" },
                 LineItems = new List<SessionLineItemOptions>
+        {
+            new SessionLineItemOptions
+            {
+                PriceData = new SessionLineItemPriceDataOptions
                 {
-                    new SessionLineItemOptions
+                    UnitAmount = (long)(amount * 100),
+                    Currency = currency,
+                    ProductData = new SessionLineItemPriceDataProductDataOptions
                     {
-                        PriceData = new SessionLineItemPriceDataOptions
-                        {
-                            UnitAmount = (long)(amount * 100),
-                            Currency = currency,
-                            ProductData = new SessionLineItemPriceDataProductDataOptions
-                            {
-                                Name = "Order Payment",
-                            },
-                        },
-                        Quantity = 1,
+                        Name = "Order Payment",
                     },
                 },
+                Quantity = 1,
+            },
+        },
                 Mode = "payment",
-                SuccessUrl = successUrl + "&session_id={CHECKOUT_SESSION_ID}",
+                SuccessUrl = successUri.ToString(),
                 CancelUrl = cancelUrl,
             };
 
@@ -45,6 +50,7 @@ namespace AutoNest.Services.Stripe
 
             return session.Url;
         }
+
 
         public async Task<bool> VerifyPaymentAsync(string sessionId)
         {

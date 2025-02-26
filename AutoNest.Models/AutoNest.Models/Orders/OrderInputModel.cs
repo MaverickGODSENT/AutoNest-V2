@@ -36,9 +36,9 @@ namespace AutoNest.Models.Orders
 
         [Required]
         [EnumDataType(typeof(PaymentMethod), ErrorMessage = "Invalid payment method.")]
-        public PaymentMethod PaymentMethod { get; set; }
+        public PaymentMethod PaymentMethod { get; set; } = PaymentMethod.CreditCard;
 
-
+        public OrderStatus OrderStatus { get; set; }
         public List<CartItem>? CartItems { get; set; }
     }
 

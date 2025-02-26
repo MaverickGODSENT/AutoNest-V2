@@ -1,5 +1,5 @@
 ﻿@using AutoNest.Models.Cars
-@model AddCarViewModel
+@model CarInputModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 @{
@@ -8,7 +8,7 @@
 
 <h2>Add New Car</h2>
 
-<form asp-action="Add" method="post">
+<form asp-action="Create" method="post">
     <div class="mb-3">
         <label asp-for="Brand" class="form-label"></label>
         <input asp-for="Brand" class="form-control" />
@@ -28,13 +28,13 @@
     </div>
 
     <div class="mb-3">
-        <label class="form-label">Compatible Engines</label>
-        <select asp-for="SelectedEngineIds" asp-items="Model.AvailableEngines" class="form-select" multiple></select>
+        <label class="form-label">Available Engines</label>
+        <select asp-for="CompatibleEngineIds" asp-items="Model.AllEngines.Select(x=>new SelectListItem{Value=x.Id,Text=x.EngineCode})" class="form-select" multiple></select>
     </div>
 
     <div class="mb-3">
-        <label class="form-label">Compatible Parts</label>
-        <select asp-for="SelectedPartIds" asp-items="Model.AvailableParts" class="form-select" multiple></select>
+        <label class="form-label">Available Parts</label>
+        <select asp-for="CompatiblePartIds" asp-items="Model.AllParts.Select(x=>new SelectListItem{Value=x.Id,Text=x.Brand+' '+x.Model})" class="form-select" multiple></select>
     </div>
 
     <button type="submit" class="btn btn-primary">Save Car</button>

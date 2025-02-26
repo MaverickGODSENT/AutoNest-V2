@@ -26,6 +26,7 @@ namespace AutoNest.Services.Orders
                 ShippingCost = inputModel.ShippingCost,
                 ShippingState = inputModel.ShippingState,
                 ShippingZipCode = inputModel.ShippingZipCode,
+                OrderStatus = OrderStatus.Pending,
             };
 
             await _orderRepository.AddAsync(newOrder);
@@ -43,6 +44,7 @@ namespace AutoNest.Services.Orders
         {
             return _orderRepository.All().Select(o => new OrderInputModel
             {
+                OrderId = o.Id,
                 CartId = o.CartId,
                 ShippingAddress = o.ShippingAddress,
                 ShippingCity = o.ShippingCity,
@@ -52,6 +54,7 @@ namespace AutoNest.Services.Orders
                 SubTotal = o.SubTotal,
                 TotalAmount = o.TotalAmount,
                 UserId = o.UserId,
+                OrderStatus = o.OrderStatus,
             }).ToList();
         }
 
@@ -74,6 +77,7 @@ namespace AutoNest.Services.Orders
                 ShippingCity = order.ShippingCity,
                 ShippingState = order.ShippingState,
                 ShippingZipCode = order.ShippingZipCode,
+                OrderStatus = order.OrderStatus
             };
 
             _orderRepository.Update(order1);

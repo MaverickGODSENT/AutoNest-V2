@@ -15,7 +15,7 @@ namespace AutoNest.Services.Cars
             _engineRepository = engineRepository;
         }
 
-        public async Task AddCarAsync(AddCarViewModel car)
+        public async Task AddCarAsync(CarInputModel car)
         {
             Car newCar = new Car
             {
@@ -28,13 +28,13 @@ namespace AutoNest.Services.Cars
             await _carRepository.SaveChangesAsync();
         }
 
-        public bool DeleteCar(string id)
+        public async Task<bool> DeleteCar(string id)
         {
             var car = _carRepository.GetById(id);
             if (car != null)
             {
                 _carRepository.Delete(car);
-                _carRepository.SaveChangesAsync();
+                await _carRepository.SaveChangesAsync();
                 return true;
             }
             return false;

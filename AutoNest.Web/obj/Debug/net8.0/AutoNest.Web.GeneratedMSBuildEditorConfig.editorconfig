@@ -20,8 +20,12 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminCar/CreateCar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5DYXJcQ3JlYXRlQ2FyLmNzaHRtbA==
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminCar/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5DYXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminCar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5DYXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminCategory/CreateCategory.cshtml]
@@ -48,8 +52,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5FbmdpbmVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminOrder/DetailedOrder.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5PcmRlclxEZXRhaWxlZE9yZGVyLmNzaHRtbA==
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminOrder/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5PcmRlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminOrder/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5PcmRlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminOrder/Index.cshtml]
@@ -118,6 +126,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Views/Payment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Views/Payment/PaymentCancel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxQYXltZW50Q2FuY2VsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Views/Payment/PaymentSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxQYXltZW50U3VjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Views/Shared/Error.cshtml]

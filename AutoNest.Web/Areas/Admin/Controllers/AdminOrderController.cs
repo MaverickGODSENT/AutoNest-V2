@@ -2,10 +2,13 @@
 using AutoNest.Models.Orders;
 using AutoNest.Services.Carts;
 using AutoNest.Services.Orders;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AutoNest.Web.Areas.Admin.Controllers
 {
+    [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class AdminOrderController:Controller
     {
         private readonly IOrderService _orderService;
@@ -35,9 +38,9 @@ namespace AutoNest.Web.Areas.Admin.Controllers
             return View(orders);
         }
 
-        public async Task<IActionResult> Details(string Id)
+        public async Task<IActionResult> Details(string orderId)
         {
-            var order = _orderService.GetOrderById(Id);
+            var order = _orderService.GetOrderById(orderId);
             var cartItems = await _cartService.GetCartItemsForCartAsync(order.CartId);
             
             OrderViewModel orderViewModel = new OrderViewModel
@@ -53,7 +56,7 @@ namespace AutoNest.Web.Areas.Admin.Controllers
                 ShippingCity = order.ShippingCity,
                 ShippingState = order.ShippingState,
                 ShippingZipCode = order.ShippingZipCode,
-                CartItems = (List<CartItemModel>)cartItems.Select(c => new CartItemModel
+                CartItems = cartItems.Select(c => new CartItemModel
                 {
                     PartId = c.PartId,
                     Quantity = c.Quantity,
@@ -61,21 +64,21 @@ namespace AutoNest.Web.Areas.Admin.Controllers
                     Model = c.Model,
                     Price = c.Price,
                     ImageUrl = c.ImageUrl,
-                }),
+                }).ToList(),
             };
 
-            return View(order);
+            return View(orderViewModel);
         }
 
-        public async Task<IActionResult> Delete(string Id)
+        public async Task<IActionResult> Delete(string orderId)
         {
-            await _orderService.DeleteOrderAsync(Id);
+            await _orderService.DeleteOrderAsync(orderId);
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public IActionResult Edit(string Id)
+        public IActionResult Edit(string orderId)
         {
-            var order = _orderService.GetOrderById(Id);
+            var order = _orderService.GetOrderById(orderId);
             var model = new OrderInputModel
             {
                 OrderId = order.Id,
@@ -89,16 +92,16 @@ namespace AutoNest.Web.Areas.Admin.Controllers
                 ShippingState = order.ShippingState,
                 ShippingZipCode = order.ShippingZipCode,
             };
-            return View(order);
+            return View(model);
         }
         [HttpPost]
-        public IActionResult Edit(OrderInputModel orderInputModel)
+        public async Task<IActionResult> Edit(OrderInputModel orderInputModel)
         {
             if (!ModelState.IsValid)
             {
                 return RedirectToAction("Index");
             }
-            _orderService.UpdateOrderAsync(orderInputModel);
+            await _orderService.UpdateOrderAsync(orderInputModel);
             return RedirectToAction("Index");
         }
     }

@@ -5,8 +5,8 @@ namespace AutoNest.Services.Cars
     public interface ICarService
     {
         IEnumerable<CarViewModel> GetAll();
-        Task AddCarAsync(AddCarViewModel car);
+        Task AddCarAsync(CarInputModel car);
         Task UpdateCarAsync(CarViewModel car);
-        bool DeleteCar(string id);
+        Task<bool> DeleteCar(string id);
     }
 }
