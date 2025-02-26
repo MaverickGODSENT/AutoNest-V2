@@ -18,6 +18,7 @@ namespace AutoNest.Web.Areas.Admin.Controllers
         public IActionResult Index()
         {
             var users = _adminService.GetAllUsers();
+
             return View(users);
         }
 

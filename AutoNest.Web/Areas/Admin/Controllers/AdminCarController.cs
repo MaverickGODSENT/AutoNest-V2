@@ -38,20 +38,27 @@ namespace AutoNest.Web.Areas.Admin.Controllers
             car.AllEngines = _engineService.GetAll().ToList();
             return View(car);
         }
-        public async Task<IActionResult> Create(CarInputModel model)
+        [HttpPost]
+        public async Task<IActionResult> Create(CarInputModel carModel)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                RedirectToAction("Index");
+                carModel.AllParts = _partsService.GetAll().ToList();
+                carModel.AllEngines = _engineService.GetAll().ToList();
+                return View(carModel);
             }
 
-            await _carSerivce.AddCarAsync(model);
+            await _carSerivce.AddCarAsync(carModel);
             return RedirectToAction("Index");
         }
         public IActionResult Details(string carId)
         {
+            var car = _carSerivce.GetCarById(carId);
+
+
+
             return View();
-        }
+        } 
 
         public IActionResult Delete(string carId)
         {

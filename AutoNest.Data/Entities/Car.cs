@@ -21,8 +21,9 @@ namespace AutoNest.Data.Entities
         public string Model { get; set; }
         [Required]
         public int ModelYear { get; set; }
-
+        [Required]
         public virtual ICollection<Engine> CompatibleEngines { get; set; }
+        [Required]
         public virtual ICollection<Part> CompatibleParts { get; set; }
     }
 }

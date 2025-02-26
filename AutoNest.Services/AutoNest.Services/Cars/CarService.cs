@@ -8,11 +8,13 @@ namespace AutoNest.Services.Cars
     {
         private readonly IDeletableEntityRepository<Car> _carRepository;
         private readonly IDeletableEntityRepository<Engine> _engineRepository;
+        private readonly IDeletableEntityRepository<Part> _partRepository;
 
-        public CarService(IDeletableEntityRepository<Car> carRepository, IDeletableEntityRepository<Engine> engineRepository)
+        public CarService(IDeletableEntityRepository<Car> carRepository, IDeletableEntityRepository<Engine> engineRepository, IDeletableEntityRepository<Part> partRepository)
         {
             _carRepository = carRepository;
             _engineRepository = engineRepository;
+            _partRepository = partRepository;
         }
 
         public async Task AddCarAsync(CarInputModel car)
@@ -24,6 +26,25 @@ namespace AutoNest.Services.Cars
                 ModelYear = car.ModelYear,
             };
 
+           
+            foreach(var item in car.CompatibleEngineIds)
+            {
+                var engine = _engineRepository.GetById(item);
+                if(engine != null)
+                {
+                    newCar.CompatibleEngines.Add(engine);
+                }
+            }
+
+            foreach(var item in car.CompatiblePartIds)
+            {
+                var part = _partRepository.GetById(item);
+                if (part != null)
+                {
+                    newCar.CompatibleParts.Add(part);
+                }
+            }
+            
             await _carRepository.AddAsync(newCar);
             await _carRepository.SaveChangesAsync();
         }
@@ -52,6 +73,12 @@ namespace AutoNest.Services.Cars
                 CompatibleParts = c.CompatibleParts.Select(p => p.Id),
             });
         }
+        
+        public Car GetCarById(string id)
+        {
+            return _carRepository.GetById(id);
+        }
+
 
         public async Task UpdateCarAsync(CarViewModel car)
         {
@@ -61,6 +88,7 @@ namespace AutoNest.Services.Cars
                 Brand = car.Brand,
                 Model = car.Model,
                 ModelYear = car.ModelYear,
+                CompatibleEngines = car.CompatibleEngines.Select(e => _engineRepository.GetById(e)).ToList(),
             });
 
             await _carRepository.SaveChangesAsync();

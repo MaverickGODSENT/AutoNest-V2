@@ -8,7 +8,7 @@
 
 <h2>Add New Car</h2>
 
-<form asp-action="Create" method="post">
+<form asp-action="Create" asp-area="Admin" asp-controller="AdminCar" method="post" >
     <div class="mb-3">
         <label asp-for="Brand" class="form-label"></label>
         <input asp-for="Brand" class="form-control" />
