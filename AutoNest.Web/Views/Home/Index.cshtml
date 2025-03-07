@@ -1,84 +1,135 @@
-﻿@using AutoNest.Models.Parts
-@model List<PartViewModel>
+﻿@using AutoNest.Models.Home
+@model HomeViewModel
 
-@{
-    ViewData["Title"] = "Home Page";
-}
+<script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
-<div class="container">
-    <h1 class="my-4">Parts List</h1>
+<style>
+    .form-select {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 8px 12px;
+        font-size: 14px;
+        color: #333;
+        background-color: #fff;
+        transition: border-color 0.3s ease;
+    }
 
-    <div class="row mb-4">
-        <div class="col-md-6">
-            <div class="input-group">
-                <input type="text" id="searchString" class="form-control" placeholder="Search by brand, model, or description" />
-                <div class="input-group-append">
-                    <button id="searchButton" class="btn btn-primary">Search</button>
+        .form-select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+    .form-label {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    .col-md-4 {
+        padding: 0 15px;
+    }
+</style>
+
+<main>
+    <form method="post" asp-action="Search" asp-controller="Home">
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="brandSelect" class="form-label">Brand</label>
+                    <select id="brandSelect" class="form-select" asp-for="SelectedBrand">
+                        <option value="-1" selected="selected">Select Brand</option>
+                        @foreach (var car in Model.Cars)
+                        {
+                            <option value="@car.Brand">@car.Brand</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="modelSelect" class="form-label">Model</label>
+                    <select id="modelSelect" class="form-select" asp-for="SelectedModel">
+                        <option value="-1" selected="selected">Select Model</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="engineSelect" class="form-label">Modification</label>
+                    <select id="engineSelect" class="form-select" asp-for="SelectedEngine">
+                        <option value="-1" selected="selected">Select Modification</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Search</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <select id="categoryFilter" class="form-control">
-                <option value="">All Categories</option>
-                @foreach (var category in Model.Select(p => p.CategoryName).Distinct())
-                {
-                    <option value="@category">@category</option>
-                }
-            </select>
+    </form>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Categories</h5>
+                        <ul class="list-group list-group-flush">
+                            @foreach (var category in Model.Categories)
+                            {
+                                <li class="list-group-item"><a asp-action="CategorySearch" asp-controller="Home" asp-route-id="@category.Id">@category.Name</a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var cars = @Html.Raw(Json.Serialize(Model.Cars));
+        console.log(cars);
+        $('#brandSelect').change(function() {
+            var selectedBrand = $(this).val();
+            $('#modelSelect').empty().append('<option value="-1" selected="selected">Select Model</option>');
+            $('#engineSelect').empty().append('<option value="-1" selected="selected">Select Modification</option>');
 
-    <div class="row mb-4">
-        <div class="col-md-12">
-            <button id="sortPrice" class="btn btn-outline-secondary">Sort by Price</button>
-            <button id="sortSales" class="btn btn-outline-secondary">Sort by Sales</button>
-        </div>
-    </div>
+            if (selectedBrand != -1) {
+                var filteredModels = cars.filter(function(car) {
+                    return car.brand === selectedBrand;
+                });
 
-    <div id="partsListContainer">
-        @await Html.PartialAsync("_PartsListPartial", Model)
-    </div>
-</div>
-
-@section Scripts {
-    <script>
-        $(document).ready(function () {
-            function loadFilteredParts() {
-                const searchString = $("#searchString").val();
-                const categoryFilter = $("#categoryFilter").val();
-                const sortOrder = $(".sort-active").data("sort-order") || "";
-
-                $.ajax({
-                    url: "@Url.Action("GetFilteredParts", "Home")",
-                    type: "GET",
-                    data: {
-                        searchString: searchString,
-                        categoryFilter: categoryFilter,
-                        sortOrder: sortOrder
-                    },
-                    success: function (data) {
-                        $("#partsListContainer").html(data);
-                    },
-                    error: function () {
-                        alert("An error occurred while filtering parts.");
-                    }
+                filteredModels.forEach(function(car) {
+                    $('#modelSelect').append('<option value="' + car.model + '">' + car.model + ' ' + car.modelYear + '</option>');
                 });
             }
-
-            $("#searchButton").click(loadFilteredParts);
-            $("#categoryFilter").change(loadFilteredParts);
-
-            $("#sortPrice").click(function () {
-                $(this).toggleClass("sort-active");
-                $(this).data("sort-order", $(this).hasClass("sort-active") ? "price_asc" : "price_desc");
-                loadFilteredParts();
-            });
-
-            $("#sortSales").click(function () {
-                $(this).toggleClass("sort-active");
-                $(this).data("sort-order", $(this).hasClass("sort-active") ? "sales_asc" : "sales_desc");
-                loadFilteredParts();
-            });
         });
-    </script>
-}
+
+        $('#modelSelect').change(function() {
+            var selectedModel = $(this).val();
+            $('#engineSelect').empty().append('<option value="-1" selected="selected">Select Modification</option>');
+
+            if (selectedModel != -1) {
+                var selectedCar = cars.find(function(car) {
+                    return car.model === selectedModel;
+                });
+
+                if (selectedCar && selectedCar.compatibleEngineNames) {
+                    selectedCar.compatibleEngineNames.forEach(function(engine) {
+                        $('#engineSelect').append('<option value="' + engine + '">' + engine + '</option>');
+                    });
+                }
+            }
+        });
+    });
+</script>

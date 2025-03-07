@@ -10,7 +10,8 @@
 
         public int ModelYear { get; set; }
 
-        public IEnumerable<string> CompatibleEngines { get; set; } = new List<string>();
+        public IEnumerable<string> CompatibleEngineNames { get; set; } = new List<string>();
+        public IEnumerable<string> CompatibleEngineIds { get; set; } = new List<string>();
 
         public IEnumerable<string> CompatibleParts { get; set; } = new List<string>();
     }

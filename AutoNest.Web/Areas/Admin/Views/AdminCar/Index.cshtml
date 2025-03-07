@@ -42,11 +42,14 @@
                     }
                 </td>
                 <td>
-                    <a asp-action="Details" asp-route-id="@car.Id" class="btn btn-info btn-sm">
+                    <a asp-action="Details" asp-route-carId="@car.Id" class="btn btn-info btn-sm">
                         <i class="bi bi-eye"></i> View
                     </a>
-                    <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-warning btn-sm">
+                    <a asp-action="Edit" asp-route-carId="@car.Id" class="btn btn-warning btn-sm">
                         <i class="bi bi-pencil"></i> Edit
+                    </a>
+                    <a asp-action="Delete" asp-route-carId="@car.Id" class="btn btn-danger btn-sm">
+                        <i class="bi bi-pencil"></i> Delete
                     </a>
                 </td>
             </tr>

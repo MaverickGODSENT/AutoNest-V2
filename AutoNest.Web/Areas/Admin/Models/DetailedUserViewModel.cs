@@ -1,5 +1,6 @@
 ﻿namespace AutoNest.Web.Areas.Admin.Models
 {
+    using Microsoft.AspNetCore.Identity;
     using System.Collections.Generic;
 
     public class DetailedUserViewModel
@@ -11,13 +12,12 @@
         public string UserName { get; set; }
 
         public string PhoneNumber { get; set; }
-
+        public string Role { get; set; }
         public bool EmailConfirmed { get; set; }
 
         public bool PhoneNumberConfirmed { get; set; }
 
-        public IEnumerable<string> Roles { get; set; } = new List<string>();
-
+        public List<IdentityRole> Roles { get; set; }
         public string CreatedDate { get; set; }
     }
 

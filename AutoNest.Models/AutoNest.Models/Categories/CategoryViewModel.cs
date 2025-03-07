@@ -8,6 +8,7 @@ namespace AutoNest.Models.Categories
         public string Name { get; set; }
         public string Description { get; set; }
 
+        public string SelectedCarId { get; set; }
         public IEnumerable<Part>? Parts { get; set; }
     }
 }

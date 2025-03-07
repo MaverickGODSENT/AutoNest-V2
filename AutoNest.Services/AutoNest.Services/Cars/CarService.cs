@@ -69,7 +69,8 @@ namespace AutoNest.Services.Cars
                 Brand = c.Brand,
                 Model = c.Model,
                 ModelYear = c.ModelYear,
-                CompatibleEngines = c.CompatibleEngines.Select(e => e.Id),
+                CompatibleEngineNames = c.CompatibleEngines.Select(e => e.EngineDisplacement.ToString()+' '+e.EngineHorsePower.ToString()),
+                CompatibleEngineIds = c.CompatibleEngines.Select(e => e.Id),
                 CompatibleParts = c.CompatibleParts.Select(p => p.Id),
             });
         }
@@ -88,7 +89,7 @@ namespace AutoNest.Services.Cars
                 Brand = car.Brand,
                 Model = car.Model,
                 ModelYear = car.ModelYear,
-                CompatibleEngines = car.CompatibleEngines.Select(e => _engineRepository.GetById(e)).ToList(),
+                CompatibleEngines = car.CompatibleEngineIds.Select(e => _engineRepository.GetById(e)).ToList(),
             });
 
             await _carRepository.SaveChangesAsync();

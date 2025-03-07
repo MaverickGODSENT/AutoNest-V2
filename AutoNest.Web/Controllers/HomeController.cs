@@ -1,5 +1,8 @@
 using System.Diagnostics;
+using AutoNest.Models.Home;
 using AutoNest.Models.Parts;
+using AutoNest.Services.Cars;
+using AutoNest.Services.Categories;
 using AutoNest.Services.Parts;
 using AutoNest.Web.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -9,17 +12,41 @@ namespace AutoNest.Web.Controllers
     public class HomeController : Controller
     {
         private readonly IPartService _partService;
+        private readonly ICarService _carService;
+        private readonly ICategoryService _categoryService;
 
-        public HomeController(IPartService partService)
+        public HomeController(IPartService partService, ICarService carService,ICategoryService categoryService)
         {
             _partService = partService;
+            _carService = carService;
+            _categoryService = categoryService;
         }
 
         public IActionResult Index()
         {
-            List<PartViewModel> parts = _partService.GetAll().ToList();
-            return View(parts);
+            var cars = _carService.GetAll();
+            var categories = _categoryService.GetAll();
+            HomeViewModel homeViewModel = new HomeViewModel();
+            homeViewModel.Cars = cars.ToList();
+            homeViewModel.Categories = categories.ToList();
+
+            return View(homeViewModel);
         }
+
+        public IActionResult Search(HomeViewModel homeViewModel)
+        {
+            var carId = homeViewModel.SelectedCarId;
+
+            var categories = _categoryService.GetAll().ToList();
+            foreach(var item in categories)
+            {
+                item.SelectedCarId = carId;
+            }
+
+            return View(categories);
+        }
+
+
 
         public IActionResult GetFilteredParts(string searchString, string categoryFilter, string sortOrder)
         {

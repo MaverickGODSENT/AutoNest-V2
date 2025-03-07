@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 
 namespace AutoNest.Web.Areas.Admin.Models
 {
@@ -16,6 +17,7 @@ namespace AutoNest.Web.Areas.Admin.Models
 
         [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
+        public List<IdentityRole> Roles { get; set; }
     }
 
 }

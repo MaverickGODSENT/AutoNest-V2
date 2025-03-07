@@ -1,0 +1,48 @@
+﻿@using AutoNest.Models.Cars
+@model CarInputModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Edit Car";
+}
+
+<h2>Edit Car</h2>
+
+<form asp-action="Edit" asp-area="Admin" asp-controller="AdminCar" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="Brand" class="form-label"></label>
+        <input asp-for="Brand" class="form-control" />
+        <span asp-validation-for="Brand" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Model" class="form-label"></label>
+        <input asp-for="Model" class="form-control" />
+        <span asp-validation-for="Model" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ModelYear" class="form-label"></label>
+        <input asp-for="ModelYear" type="number" class="form-control" />
+        <span asp-validation-for="ModelYear" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Available Engines</label>
+        <select asp-for="CompatibleEngineIds" asp-items="Model.AllEngines.Select(x => new SelectListItem { Value = x.Id, Text = x.EngineCode })" class="form-select" multiple></select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Available Parts</label>
+        <select asp-for="CompatiblePartIds" asp-items="Model.AllParts.Select(x => new SelectListItem { Value = x.Id, Text = x.Brand + ' ' + x.Model })" class="form-select" multiple></select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
