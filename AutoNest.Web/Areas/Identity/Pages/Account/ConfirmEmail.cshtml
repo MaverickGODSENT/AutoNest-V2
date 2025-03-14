@@ -1,0 +1,196 @@
+﻿@page
+@model ConfirmEmailModel
+@{
+    ViewData["Title"] = "Confirm email";
+}
+
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-color: #ecf0f1;
+        --border-color: #e0e0e0;
+        --light-grey: #f8f9fa;
+        --dark-color: #2c3e50;
+    }
+
+    .confirmation-container {
+        max-width: 650px;
+        margin: 4rem auto;
+        text-align: center;
+    }
+
+    .confirmation-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        padding: 3rem 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .confirmation-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--success-color));
+        }
+
+    .page-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 1.5rem;
+    }
+
+    .confirmation-icon {
+        font-size: 4rem;
+        color: var(--success-color);
+        margin-bottom: 1.5rem;
+        opacity: 0.9;
+    }
+
+    .action-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 2rem;
+    }
+
+    .login-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
+    }
+
+        .login-btn:hover {
+            background: linear-gradient(135deg, #2980b9, var(--primary-color));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+            color: white;
+        }
+
+        .login-btn i {
+            margin-right: 8px;
+        }
+
+    .home-link {
+        display: inline-flex;
+        align-items: center;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+
+        .home-link:hover {
+            text-decoration: underline;
+        }
+
+        .home-link i {
+            margin-right: 5px;
+        }
+
+    .email-details {
+        background-color: var(--light-grey);
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 1.5rem;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .email-details-title {
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .email-details-title i {
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+
+    .email-details p {
+        color: #666;
+        margin-bottom: 0;
+        font-size: 0.95rem;
+    }
+</style>
+
+<div class="confirmation-container">
+    <div class="confirmation-card">
+        <h1 class="page-title">@ViewData["Title"]</h1>
+
+        <!-- This will show the success or error message -->
+        <partial name="_StatusMessage" model="Model.StatusMessage" />
+
+        <!-- We'll conditionally show these elements based on the status message -->
+        @if (Model.StatusMessage != null && Model.StatusMessage.Contains("confirmed"))
+        {
+            <div class="confirmation-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+
+            <div class="email-details">
+                <div class="email-details-title">
+                    <i class="fas fa-envelope-open"></i> What's next?
+                </div>
+                <p>
+                    Your email has been successfully verified. You can now access all features of your account.
+                </p>
+            </div>
+
+            <div class="action-buttons">
+                <a href="/Identity/Account/Login" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i> Log in
+                </a>
+            </div>
+        }
+        else
+        {
+            <div class="email-details">
+                <div class="email-details-title">
+                    <i class="fas fa-info-circle"></i> Need Help?
+                </div>
+                <p>
+                    If you're having trouble confirming your email, please try the following:
+                </p>
+                <ul class="text-left mt-2">
+                    <li>Check if the confirmation link has expired</li>
+                    <li>Make sure you're using the most recent confirmation email</li>
+                    <li>Contact support if the issue persists</li>
+                </ul>
+            </div>
+
+            <div class="action-buttons">
+                <a href="/Identity/Account/ResendEmailConfirmation" class="login-btn">
+                    <i class="fas fa-paper-plane"></i> Resend confirmation
+                </a>
+            </div>
+        }
+
+        <a href="/" class="home-link">
+            <i class="fas fa-home"></i> Return to Home
+        </a>
+    </div>
+</div>

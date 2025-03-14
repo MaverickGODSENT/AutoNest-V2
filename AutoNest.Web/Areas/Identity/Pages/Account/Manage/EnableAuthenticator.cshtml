@@ -1,0 +1,421 @@
+﻿@page
+@model EnableAuthenticatorModel
+@{
+    ViewData["Title"] = "Configure authenticator app";
+    ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+}
+
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-color: #ecf0f1;
+        --border-color: #e0e0e0;
+        --light-grey: #f8f9fa;
+        --dark-color: #2c3e50;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+        .page-title i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+    .content-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        padding: 25px;
+        margin-top: 1.5rem;
+    }
+
+    .intro-text {
+        color: #555;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .setup-steps {
+        counter-reset: step-counter;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .setup-step {
+        position: relative;
+        padding: 0 0 30px 60px;
+        counter-increment: step-counter;
+    }
+
+        .setup-step:last-child {
+            padding-bottom: 0;
+        }
+
+        .setup-step::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary-color), #2980b9);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .setup-step::after {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 40px;
+            bottom: 0;
+            width: 2px;
+            background-color: #e0e0e0;
+        }
+
+        .setup-step:last-child::after {
+            display: none;
+        }
+
+    .step-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-bottom: 10px;
+    }
+
+    .step-content {
+        margin-bottom: 15px;
+        color: #555;
+    }
+
+        .step-content p {
+            margin-bottom: 10px;
+        }
+
+        .step-content a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+            .step-content a:hover {
+                color: #2980b9;
+                text-decoration: underline;
+            }
+
+    .app-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 15px 0;
+    }
+
+    .app-link {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 15px;
+        background-color: var(--light-grey);
+        border-radius: 8px;
+        color: var(--dark-color);
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.2s ease;
+    }
+
+        .app-link:hover {
+            background-color: #e0e0e0;
+            transform: translateY(-2px);
+        }
+
+        .app-link i {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+
+    .qr-container {
+        background-color: var(--light-grey);
+        border-radius: 8px;
+        padding: 20px;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    #qrCode {
+        display: inline-block;
+        padding: 15px;
+        background-color: white;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .shared-key {
+        background-color: white;
+        padding: 10px 15px;
+        border-radius: 6px;
+        font-family: monospace;
+        font-size: 1rem;
+        word-break: break-all;
+        margin: 15px 0;
+        display: inline-block;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        border: 1px solid var(--border-color);
+    }
+
+    .info-box {
+        background-color: rgba(52, 152, 219, 0.1);
+        border-left: 4px solid var(--primary-color);
+        border-radius: 0 8px 8px 0;
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+        .info-box a {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+    .verification-form {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 15px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-bottom: 8px;
+        display: block;
+        font-size: 0.95rem;
+    }
+
+    .form-control {
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 12px 15px 12px 40px;
+        font-size: 15px;
+        color: #333;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 5px;
+        font-weight: 600;
+    }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+            outline: none;
+        }
+
+    .input-icon {
+        position: absolute;
+        left: 15px;
+        top: 42px;
+        color: #aaa;
+        transition: all 0.3s ease;
+    }
+
+    .validation-message {
+        font-size: 0.85rem;
+        color: var(--accent-color);
+        margin-top: 5px;
+        display: block;
+    }
+
+    .verify-btn {
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 14px 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .verify-btn:hover {
+            background: linear-gradient(135deg, #2980b9, var(--primary-color));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .verify-btn i {
+            margin-right: 8px;
+        }
+
+    @@media (max-width: 768px) {
+        .setup-step
+
+    {
+        padding-left: 50px;
+    }
+
+    .setup-step::before {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .setup-step::after {
+        left: 17px;
+    }
+
+    }
+</style>
+
+<partial name="_StatusMessage" for="StatusMessage" />
+
+<h3 class="page-title">
+    <i class="fas fa-shield-alt"></i> @ViewData["Title"]
+</h3>
+
+<div class="content-container">
+    <p class="intro-text">
+        Two-factor authentication adds an extra layer of security to your account by requiring you to enter a code
+        from your mobile device during sign-in.
+    </p>
+
+    <ol class="setup-steps">
+        <li class="setup-step">
+            <h4 class="step-title">Download an authenticator app</h4>
+            <div class="step-content">
+                <p>
+                    Install a two-factor authentication app on your mobile device. We recommend one of the following:
+                </p>
+
+                <div class="app-links">
+                    <a href="https://go.microsoft.com/fwlink/?Linkid=825072" class="app-link" target="_blank">
+                        <i class="fab fa-android"></i> Microsoft Authenticator for Android
+                    </a>
+                    <a href="https://go.microsoft.com/fwlink/?Linkid=825073" class="app-link" target="_blank">
+                        <i class="fab fa-apple"></i> Microsoft Authenticator for iOS
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&amp;hl=en" class="app-link" target="_blank">
+                        <i class="fab fa-android"></i> Google Authenticator for Android
+                    </a>
+                    <a href="https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8" class="app-link" target="_blank">
+                        <i class="fab fa-apple"></i> Google Authenticator for iOS
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <li class="setup-step">
+            <h4 class="step-title">Set up the authenticator app</h4>
+            <div class="step-content">
+                <p>
+                    Scan the QR code below or manually enter the key into your authenticator app:
+                </p>
+
+                <div class="qr-container">
+                    <div id="qrCode"></div>
+                    <div id="qrCodeData" data-url="@Model.AuthenticatorUri"></div>
+
+                    <p>Or enter this key manually:</p>
+                    <div class="shared-key">@Model.SharedKey</div>
+                    <p class="text-muted small">Spaces and casing do not matter.</p>
+                </div>
+
+                <div class="info-box">
+                    <i class="fas fa-info-circle"></i>
+                    Learn how to <a href="https://go.microsoft.com/fwlink/?Linkid=852423" target="_blank">enable QR code generation</a>.
+                </div>
+            </div>
+        </li>
+
+        <li class="setup-step">
+            <h4 class="step-title">Verify the setup</h4>
+            <div class="step-content">
+                <p>
+                    Once you have scanned the QR code or entered the key, your authenticator app will display a 6-digit code.
+                    Enter that code below to complete the setup:
+                </p>
+
+                <div class="verification-form">
+                    <form id="send-code" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+                        <div class="form-group">
+                            <label asp-for="Input.Code" class="form-label">Verification Code</label>
+                            <div class="position-relative">
+                                <input asp-for="Input.Code" class="form-control" autocomplete="off" placeholder="000000" maxlength="6" />
+                                <i class="fas fa-key input-icon"></i>
+                            </div>
+                            <span asp-validation-for="Input.Code" class="validation-message"></span>
+                        </div>
+
+                        <button type="submit" class="verify-btn">
+                            <i class="fas fa-check-circle"></i> Verify and Activate
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </li>
+    </ol>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            // This would need to be implemented with your QR code generation library
+            // The below is a placeholder for the QR code generation logic
+            new QRCode(document.getElementById("qrCode"),
+            {
+                text: "@Html.Raw(Model.AuthenticatorUri)",
+                width: 200,
+                height: 200
+            });
+
+            // Focus and select the code input when the page loads
+            const codeInput = document.getElementById('Input_Code');
+            if (codeInput) {
+                codeInput.focus();
+            }
+        });
+    </script>
+}

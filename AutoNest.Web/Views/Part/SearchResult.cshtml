@@ -1,0 +1,645 @@
+﻿@using AutoNest.Models.Parts
+@model List<PartViewModel>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --light-color: #ecf0f1;
+        --dark-color: #2c3e50;
+        --success-color: #2ecc71;
+        --shadow-color: rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .parts-section {
+        padding: 3rem 0;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+    }
+
+    .section-title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        position: relative;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+
+    .section-subtitle {
+        font-size: 1rem;
+        color: #777;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .parts-count {
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 50px;
+        padding: 5px 15px;
+        font-size: 0.9rem;
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
+    .part-card-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .part-card {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px var(--shadow-color);
+        background-color: white;
+        transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        height: 100%;
+        border: none;
+        position: relative;
+    }
+
+        .part-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+        }
+
+    .part-img-container {
+        position: relative;
+        padding-top: 65%;
+        overflow: hidden;
+        background-color: #f5f5f5;
+    }
+
+    .part-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .part-card:hover .part-img {
+        transform: scale(1.05);
+    }
+
+    .brand-badge {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background-color: rgba(255, 255, 255, 0.85);
+        color: var(--dark-color);
+        padding: 5px 12px;
+        font-weight: 600;
+        font-size: 0.8rem;
+        border-radius: 30px;
+        z-index: 10;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .category-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: linear-gradient(135deg, var(--secondary-color), var(--dark-color));
+        color: white;
+        padding: 5px 12px;
+        font-weight: 500;
+        font-size: 0.75rem;
+        border-radius: 30px;
+        z-index: 10;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .part-card .card-body {
+        padding: 25px;
+    }
+
+    .part-card .card-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: var(--dark-color);
+        line-height: 1.4;
+    }
+
+    .part-card .card-text {
+        font-size: 0.9rem;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 4.5em;
+    }
+
+    .price-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        letter-spacing: -0.5px;
+    }
+
+    .stock-status {
+        background-color: rgba(46, 204, 113, 0.15);
+        color: var(--success-color);
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+    }
+
+        .stock-status i {
+            margin-right: 5px;
+        }
+
+    .out-of-stock {
+        background-color: rgba(231, 76, 60, 0.15);
+        color: var(--accent-color);
+    }
+
+    .card-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .details-btn {
+        padding: 10px 15px;
+        background-color: rgba(52, 152, 219, 0.1);
+        color: var(--primary-color);
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: all 0.2s ease;
+        flex-grow: 1;
+        text-align: center;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .details-btn:hover {
+            background-color: rgba(52, 152, 219, 0.2);
+            color: var(--primary-color);
+        }
+
+        .details-btn i {
+            margin-right: 6px;
+        }
+
+    .cart-form {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .quantity-input {
+        width: 70px;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        padding: 8px;
+        text-align: center;
+        font-weight: 600;
+        color: var(--dark-color);
+    }
+
+    .cart-btn {
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        padding: 10px 15px;
+        flex-grow: 1;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .cart-btn:hover {
+            background: linear-gradient(135deg, #2980b9, var(--primary-color));
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+        }
+
+        .cart-btn i {
+            margin-right: 8px;
+        }
+
+    .no-results {
+        text-align: center;
+        padding: 40px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+        .no-results i {
+            font-size: 3rem;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .no-results h3 {
+            font-size: 1.5rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+
+    .sales-tag {
+        position: absolute;
+        top: 50px;
+        right: -35px;
+        background: linear-gradient(135deg, #f39c12, #e74c3c);
+        color: white;
+        padding: 5px 40px;
+        transform: rotate(45deg);
+        font-weight: 600;
+        font-size: 0.8rem;
+        z-index: 20;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Responsive adjustments */
+    @@media (max-width: 991.98px) {
+        .part-card .card-title
+
+    {
+        font-size: 1.1rem;
+    }
+
+    .price {
+        font-size: 1.4rem;
+    }
+
+    }
+
+    @@media (max-width: 767.98px) {
+        .card-actions
+
+    {
+        flex-direction: column;
+    }
+
+    .cart-form {
+        flex-wrap: wrap;
+    }
+
+    .quantity-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    }
+
+    /* Filters styling */
+    .filters-container {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .filters-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: var(--dark-color);
+        display: flex;
+        align-items: center;
+    }
+
+        .filters-title i {
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+
+    .filter-group {
+        margin-bottom: 15px;
+    }
+
+    .filter-label {
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        color: var(--dark-color);
+    }
+
+    .filter-select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        color: #555;
+    }
+
+    .sort-options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .sort-label {
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-right: 10px;
+    }
+
+    .sort-select {
+        padding: 8px 15px;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        color: #555;
+    }
+</style>
+
+<section class="parts-section">
+    <div class="container">
+        <div class="section-header">
+            <h1 class="section-title">Search Results <span class="parts-count">@Model.Count items</span></h1>
+            <p class="section-subtitle">We've found these parts that match your search criteria</p>
+        </div>
+
+        <!-- Sort and filter options -->
+        <div class="sort-options">
+            <div>
+                <span class="sort-label">Sort by:</span>
+                <select class="sort-select" id="sortOptions">
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="popular">Most Popular</option>
+                    <option value="newest">Newest First</option>
+                </select>
+            </div>
+            <div>
+                <button class="btn btn-outline-secondary btn-sm" id="toggleFilters">
+                    <i class="fas fa-filter"></i> Filters
+                </button>
+            </div>
+        </div>
+
+        <!-- Filters (hidden by default on mobile) -->
+        <div class="filters-container" id="filtersContainer" style="display: none;">
+            <div class="filters-title"><i class="fas fa-sliders-h"></i> Filter Options</div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="filter-group">
+                        <label class="filter-label">Brand</label>
+                        <select class="filter-select" id="brandFilter">
+                            <option value="">All Brands</option>
+                            <!-- Dynamic brands would be populated here -->
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="filter-group">
+                        <label class="filter-label">Category</label>
+                        <select class="filter-select" id="categoryFilter">
+                            <option value="">All Categories</option>
+                            <!-- Dynamic categories would be populated here -->
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="filter-group">
+                        <label class="filter-label">Price Range</label>
+                        <select class="filter-select" id="priceFilter">
+                            <option value="">Any Price</option>
+                            <option value="0-50">$0 - $50</option>
+                            <option value="50-100">$50 - $100</option>
+                            <option value="100-200">$100 - $200</option>
+                            <option value="200+">$200+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="filter-group">
+                        <label class="filter-label">Availability</label>
+                        <select class="filter-select" id="availabilityFilter">
+                            <option value="">All Items</option>
+                            <option value="in-stock">In Stock Only</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="text-end mt-3">
+                <button class="btn btn-sm btn-secondary me-2" id="clearFilters">Clear All</button>
+                <button class="btn btn-sm btn-primary" id="applyFilters">Apply Filters</button>
+            </div>
+        </div>
+
+        @if (Model.Count == 0)
+        {
+            <div class="no-results">
+                <i class="fas fa-search"></i>
+                <h3>No parts found</h3>
+                <p>Try adjusting your search criteria or browse our categories for more options.</p>
+                <a href="javascript:history.back()" class="btn btn-outline-primary mt-3">
+                    <i class="fas fa-arrow-left me-2"></i> Go Back
+                </a>
+            </div>
+        }
+        else
+        {
+            <div class="row" id="productsContainer">
+                @foreach (var part in Model)
+                {
+                    <div class="col-lg-4 col-md-6 part-card-wrapper">
+                        <div class="part-card">
+
+                            <div class="part-img-container">
+                                <img src="@part.RemoteImageUrl" class="part-img" alt="@part.Description">
+                                <div class="brand-badge">@part.Brand</div>
+                                <div class="category-badge">@part.CategoryName</div>
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">@part.Model</h5>
+                                <p class="card-text">@part.Description</p>
+
+                                <div class="price-container">
+                                    <span class="price">@part.Price.ToString("C")</span>
+                                    @if (part.InStock)
+                                    {
+                                        <span class="stock-status"><i class="fas fa-check-circle"></i> In Stock</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="stock-status out-of-stock"><i class="fas fa-times-circle"></i> Out of Stock</span>
+                                    }
+                                </div>
+
+                                <div class="card-actions">
+                                    <a asp-action="Details" asp-controller="Part" asp-route-id="@part.Id" class="details-btn">
+                                        <i class="fas fa-info-circle"></i> Details
+                                    </a>
+
+                                    <form asp-action="AddToCart" asp-controller="Cart" method="post" class="cart-form">
+                                        <input type="hidden" value="@part.Id" name="partId" />
+                                        <input type="number" value="1" min="1" max="10" name="quantity" class="quantity-input" />
+                                        <button type="submit" class="cart-btn">
+                                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</section>
+
+<!-- Include Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Toggle filters
+        $('#toggleFilters').click(function() {
+            $('#filtersContainer').slideToggle(300);
+        });
+
+        // Clear filters
+        $('#clearFilters').click(function() {
+            $('.filter-select').val('');
+        });
+
+        // Populate brand filter dynamically
+        const brands = [...new Set($('.brand-badge').map(function() {
+            return $(this).text();
+        }).get())];
+
+        brands.forEach(brand => {
+            $('#brandFilter').append(`<option value="${brand}">${brand}</option>`);
+        });
+
+        // Populate category filter dynamically
+        const categories = [...new Set($('.category-badge').map(function() {
+            return $(this).text();
+        }).get())];
+
+        categories.forEach(category => {
+            $('#categoryFilter').append(`<option value="${category}">${category}</option>`);
+        });
+
+        // Apply filters (this is just a demo - would need backend implementation)
+        $('#applyFilters').click(function() {
+            // Example of client-side filtering
+            filterProducts();
+        });
+
+        // Sort products
+        $('#sortOptions').change(function() {
+            sortProducts($(this).val());
+        });
+
+
+
+
+        // Basic client-side filtering (for demo - would need backend implementation)
+        function filterProducts() {
+            const brandFilter = $('#brandFilter').val();
+            const categoryFilter = $('#categoryFilter').val();
+            const priceFilter = $('#priceFilter').val();
+            const availabilityFilter = $('#availabilityFilter').val();
+
+            $('.part-card-wrapper').show();
+
+            if (brandFilter) {
+                $('.part-card-wrapper').each(function() {
+                    const brand = $(this).find('.brand-badge').text();
+                    if (brand !== brandFilter) {
+                        $(this).hide();
+                    }
+                });
+            }
+
+            if (categoryFilter) {
+                $('.part-card-wrapper').each(function() {
+                    const category = $(this).find('.category-badge').text();
+                    if (category !== categoryFilter) {
+                        $(this).hide();
+                    }
+                });
+            }
+
+            if (availabilityFilter === 'in-stock') {
+                $('.part-card-wrapper').each(function() {
+                    if ($(this).find('.out-of-stock').length) {
+                        $(this).hide();
+                    }
+                });
+            }
+        }
+
+        // Basic client-side sorting (for demo - would need backend implementation)
+        function sortProducts(sortOption) {
+            const container = $('#productsContainer');
+            const products = $('.part-card-wrapper').get();
+
+            products.sort(function(a, b) {
+                const priceA = parseFloat($(a).find('.price').text().replace('$', '').replace(',', ''));
+                const priceB = parseFloat($(b).find('.price').text().replace('$', '').replace(',', ''));
+
+                if (sortOption === 'price-asc') {
+                    return priceA - priceB;
+                } else if (sortOption === 'price-desc') {
+                    return priceB - priceA;
+                }
+
+                return 0;
+            });
+
+            $.each(products, function(i, product) {
+                container.append(product);
+            });
+        }
+    });
+</script>

@@ -1,0 +1,299 @@
+﻿@page
+@model ResetAuthenticatorModel
+@{
+    ViewData["Title"] = "Reset authenticator key";
+    ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+}
+
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-color: #ecf0f1;
+        --border-color: #e0e0e0;
+        --light-grey: #f8f9fa;
+        --dark-color: #2c3e50;
+        --warning-color: #f39c12;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+        .page-title i {
+            margin-right: 10px;
+            color: var(--warning-color);
+        }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--warning-color), var(--accent-color));
+        }
+
+    .content-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        padding: 25px;
+        margin-top: 1.5rem;
+    }
+
+    .warning-box {
+        background-color: #FEF5E7;
+        border-left: 4px solid var(--warning-color);
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+    .warning-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 2.5rem;
+        color: var(--warning-color);
+        opacity: 0.1;
+    }
+
+    .warning-content {
+        font-weight: 500;
+        color: #7E5109;
+        position: relative;
+    }
+
+        .warning-content p {
+            margin-bottom: 15px;
+        }
+
+            .warning-content p:last-child {
+                margin-bottom: 0;
+            }
+
+        .warning-content strong {
+            font-weight: 700;
+            color: #B7950B;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+    .what-happens {
+        margin-top: 25px;
+    }
+
+    .what-happens-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+        .what-happens-title i {
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+
+    .steps-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 25px;
+    }
+
+    .step-item {
+        padding: 0 0 15px 35px;
+        position: relative;
+        color: #555;
+    }
+
+        .step-item:last-child {
+            padding-bottom: 0;
+        }
+
+    .step-number {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 25px;
+        height: 25px;
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+    .action-buttons {
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .reset-btn {
+        background: linear-gradient(135deg, var(--accent-color), #c0392b);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 14px 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(231, 76, 60, 0.2);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .reset-btn:hover {
+            background: linear-gradient(135deg, #c0392b, var(--accent-color));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(231, 76, 60, 0.3);
+        }
+
+        .reset-btn i {
+            margin-right: 8px;
+        }
+
+    .cancel-link {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 15px;
+        color: var(--dark-color);
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+        .cancel-link:hover {
+            color: var(--primary-color);
+        }
+
+        .cancel-link i {
+            margin-right: 8px;
+        }
+
+    .confirmation-box {
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 8px;
+        background-color: #f8f9fa;
+        border: 1px solid #e0e0e0;
+    }
+
+        .confirmation-box label {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            color: var(--dark-color);
+            cursor: pointer;
+        }
+
+        .confirmation-box input[type="checkbox"] {
+            margin-right: 10px;
+        }
+</style>
+
+<partial name="_StatusMessage" for="StatusMessage" />
+
+<h3 class="page-title">
+    <i class="fas fa-sync-alt"></i> @ViewData["Title"]
+</h3>
+
+<div class="content-container">
+    <div class="warning-box">
+        <i class="fas fa-exclamation-triangle warning-icon"></i>
+        <div class="warning-content">
+            <strong>This action will require you to reconfigure your authenticator app</strong>
+            <p>
+                If you reset your authenticator key, your current authenticator app will stop working until you reconfigure it with the new key.
+            </p>
+            <p>
+                This process temporarily disables two-factor authentication (2FA) until you verify your authenticator app with the new key.
+                If you do not complete the authenticator app configuration, you may lose access to your account.
+            </p>
+        </div>
+    </div>
+
+    <div class="what-happens">
+        <h4 class="what-happens-title">
+            <i class="fas fa-info-circle"></i> What happens when you reset your key
+        </h4>
+
+        <ul class="steps-list">
+            <li class="step-item">
+                <div class="step-number">1</div>
+                Your current authenticator app configuration will be invalidated
+            </li>
+            <li class="step-item">
+                <div class="step-number">2</div>
+                2FA will be temporarily disabled on your account
+            </li>
+            <li class="step-item">
+                <div class="step-number">3</div>
+                You'll be redirected to set up a new authenticator key
+            </li>
+            <li class="step-item">
+                <div class="step-number">4</div>
+                You must scan the new QR code or manually enter the new key in your app
+            </li>
+            <li class="step-item">
+                <div class="step-number">5</div>
+                You'll need to verify the new setup to re-enable 2FA
+            </li>
+        </ul>
+    </div>
+
+    <div class="confirmation-box">
+        <label for="confirmReset">
+            <input type="checkbox" id="confirmReset" required />
+            I understand the risks and want to reset my authenticator key
+        </label>
+    </div>
+
+    <div class="action-buttons">
+        <form id="reset-authenticator-form" method="post">
+            <button id="reset-authenticator-button" class="reset-btn" type="submit" disabled>
+                <i class="fas fa-sync-alt"></i> Reset Authenticator Key
+            </button>
+        </form>
+        <a asp-page="./TwoFactorAuthentication" class="cancel-link">
+            <i class="fas fa-arrow-left"></i> Cancel
+        </a>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const confirmCheckbox = document.getElementById('confirmReset');
+        const resetButton = document.getElementById('reset-authenticator-button');
+
+        confirmCheckbox.addEventListener('change', function() {
+            resetButton.disabled = !this.checked;
+        });
+
+        // Add confirmation dialog
+        document.getElementById('reset-authenticator-form').addEventListener('submit', function(e) {
+            if (!confirm('Are you sure you want to reset your authenticator key? This action will require you to reconfigure your authenticator app.')) {
+                e.preventDefault();
+            }
+        });
+    });
+</script>

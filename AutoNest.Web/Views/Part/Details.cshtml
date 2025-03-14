@@ -1,43 +1,575 @@
 ﻿@using AutoNest.Models.Parts
 @model PartViewModel
 
-<div class="container mt-4">
-    <div class="card">
-        <div class="row g-0">
-            <div class="col-md-4">
-                <!-- Product Image (Placeholder for now) -->
-                <img src="@Model.RemoteImageUrl" alt="https://via.placeholder.com/300x300" class="img-fluid rounded-start" alt="@Model.Brand @Model.Model">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <!-- Product Name and Description -->
-                    <h2 class="card-title mb-3">@Model.Brand @Model.Model</h2>
-                    <p class="card-text mb-3">@Model.Description</p>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-                    <!-- Product Information -->
-                    <ul class="list-group list-group-flush mb-4">
-                        <li class="list-group-item"><strong>Price:</strong> @Model.Price.ToString("C")</li>
-                        <li class="list-group-item"><strong>Quantity Available:</strong> @Model.Quantity</li>
-                        <li class="list-group-item"><strong>Category:</strong> @Model.CategoryName</li>
-                    </ul>
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-grey: #f5f5f5;
+        --dark-color: #2c3e50;
+        --shadow-color: rgba(0, 0, 0, 0.08);
+    }
 
-                    <!-- Add to Cart Section -->
-                    <div class="d-flex align-items-center">
-                        <form asp-controller="Cart" asp-action="AddToCart" method="post" class="d-inline">
-                            <input type="hidden" name="partId" value="@Model.Id" />
-                            <div class="d-flex">
-                                <input type="number" name="quantity" value="1" min="1" class="form-control" style="width: 80px;">
-                                <button type="submit" class="btn btn-success ms-3">Add to Cart</button>
-                            </div>
-                        </form>
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .product-details-container {
+        padding: 3rem 0;
+    }
+
+    .breadcrumb-container {
+        margin-bottom: 25px;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: "›";
+        font-size: 1.2rem;
+        line-height: 1;
+        vertical-align: middle;
+        color: #aaa;
+    }
+
+    .breadcrumb-item a {
+        color: var(--dark-color);
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+        .breadcrumb-item a:hover {
+            color: var(--primary-color);
+        }
+
+    .breadcrumb-item.active {
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+
+    .product-card {
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px var(--shadow-color);
+        background-color: white;
+        border: none;
+    }
+
+    .product-image-container {
+        position: relative;
+        height: 100%;
+        background-color: var(--light-grey);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .product-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+    }
+
+        .product-image:hover {
+            transform: scale(1.05);
+        }
+
+    .image-gallery {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .thumbnail {
+        width: 70px;
+        height: 70px;
+        border-radius: 8px;
+        border: 2px solid transparent;
+        cursor: pointer;
+        object-fit: cover;
+        transition: all 0.2s;
+    }
+
+        .thumbnail:hover, .thumbnail.active {
+            border-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+    .product-badges {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-badge {
+        padding: 6px 12px;
+        border-radius: 30px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .badge-brand {
+        background-color: var(--dark-color);
+        color: white;
+    }
+
+    .badge-category {
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        color: white;
+    }
+
+    .badge-instock {
+        background-color: rgba(46, 204, 113, 0.9);
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+
+        .badge-instock i {
+            margin-right: 5px;
+        }
+
+    .product-details {
+        padding: 30px;
+    }
+
+    .product-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+
+    .product-description {
+        color: #666;
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    .product-meta {
+        background-color: var(--light-grey);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+    .meta-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+        .meta-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+    .meta-icon {
+        width: 35px;
+        height: 35px;
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .meta-label {
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-bottom: 2px;
+    }
+
+    .meta-value {
+        color: #666;
+    }
+
+    .price-container {
+        background: linear-gradient(135deg, var(--light-grey), #e8e8e8);
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .current-price {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        line-height: 1;
+    }
+
+    .original-price {
+        font-size: 1.2rem;
+        text-decoration: line-through;
+        color: #999;
+        margin-left: 10px;
+    }
+
+    .price-discount {
+        background-color: var(--accent-color);
+        color: white;
+        font-weight: 600;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+    }
+
+    .cart-form {
+        margin-bottom: 25px;
+    }
+
+    .quantity-selector {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .quantity-label {
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-right: 15px;
+    }
+
+    .quantity-input-group {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .quantity-btn {
+        width: 40px;
+        height: 40px;
+        background-color: var(--light-grey);
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        color: var(--dark-color);
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+        .quantity-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+    .quantity-input {
+        width: 60px;
+        height: 40px;
+        border: none;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--dark-color);
+    }
+
+        .quantity-input:focus {
+            outline: none;
+        }
+
+    .cart-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 30px;
+        background: linear-gradient(135deg, var(--success-color), #27ae60);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        width: 100%;
+    }
+
+        .cart-button:hover {
+            background: linear-gradient(135deg, #27ae60, var(--success-color));
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+        }
+
+        .cart-button i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+    .back-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 25px;
+        background-color: var(--light-grey);
+        color: var(--dark-color);
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-decoration: none;
+    }
+
+        .back-button:hover {
+            background-color: #e0e0e0;
+            color: var(--dark-color);
+        }
+
+        .back-button i {
+            margin-right: 10px;
+        }
+
+    .product-features {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .features-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-bottom: 15px;
+    }
+
+    .feature-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .feature-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+        .feature-item i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            margin-top: 4px;
+        }
+
+    /* Responsive adjustments */
+    @@media (max-width: 767.98px) {
+        .product-title
+
+    {
+        font-size: 1.5rem;
+    }
+
+    .current-price {
+        font-size: 2rem;
+    }
+
+    .product-details {
+        padding: 20px;
+    }
+
+    }
+</style>
+
+<div class="product-details-container">
+    <div class="container">
+        <nav aria-label="breadcrumb" class="breadcrumb-container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class="breadcrumb-item"><a asp-controller="Part" asp-action="Index">Parts</a></li>
+                <li class="breadcrumb-item"><a href="#">@Model.CategoryName</a></li>
+                <li class="breadcrumb-item active">@Model.Brand @Model.Model</li>
+            </ol>
+        </nav>
+
+        <div class="product-card">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <div class="product-image-container p-4">
+                        <div class="product-badges">
+                            <div class="product-badge badge-brand">@Model.Brand</div>
+                            <div class="product-badge badge-category">@Model.CategoryName</div>
+                            @if (Model.Quantity > 0)
+                            {
+                                <div class="product-badge badge-instock">
+                                    <i class="fas fa-check-circle"></i> In Stock
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="product-badge badge-instock" style="background-color: rgba(231, 76, 60, 0.9);">
+                                    <i class="fas fa-times-circle"></i> Out of Stock
+                                </div>
+                            }
+                        </div>
+                        <img src="@Model.RemoteImageUrl" alt="@Model.Brand @Model.Model" class="product-image">
                     </div>
+                    <div class="image-gallery px-4 pb-4">
+                        <img src="@Model.RemoteImageUrl" class="thumbnail active" alt="Main view">
+                        <!-- Additional images could be added here if available -->
+                        <img src="/api/placeholder/70/70" class="thumbnail" alt="Angle view">
+                        <img src="/api/placeholder/70/70" class="thumbnail" alt="Close-up view">
+                        <img src="/api/placeholder/70/70" class="thumbnail" alt="Detail view">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="product-details">
+                        <h1 class="product-title">@Model.Brand @Model.Model</h1>
+                        <p class="product-description">@Model.Description</p>
 
-                    <!-- Back to List Button -->
-                    <div class="mt-3">
-                        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Back to List</a>
+                        <div class="product-meta">
+                            <div class="meta-item">
+                                <div class="meta-icon">
+                                    <i class="fas fa-tag"></i>
+                                </div>
+                                <div>
+                                    <div class="meta-label">Part Number</div>
+                                    <div class="meta-value">@Model.Id.Substring(0, 8).ToUpper()</div>
+                                </div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-icon">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <div>
+                                    <div class="meta-label">Category</div>
+                                    <div class="meta-value">@Model.CategoryName</div>
+                                </div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-icon">
+                                    <i class="fas fa-box"></i>
+                                </div>
+                                <div>
+                                    <div class="meta-label">Availability</div>
+                                    <div class="meta-value">@Model.Quantity units in stock</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-container">
+                            <div>
+                                <span class="current-price">@Model.Price.ToString("C")</span>
+                                @if (Model.Price > 100)
+                                {
+                                    <span class="original-price">@(Model.Price.ToString("C"))</span>
+                                }
+                            </div>
+                            @if (Model.Price > 100)
+                            {
+                                <div class="price-discount">10% OFF</div>
+                            }
+                        </div>
+
+                        <form asp-controller="Cart" asp-action="AddToCart" method="post" class="cart-form">
+                            <input type="hidden" name="partId" value="@Model.Id" />
+
+                            <div class="quantity-selector">
+                                <span class="quantity-label">Quantity:</span>
+                                <div class="quantity-input-group">
+                                    <button type="button" class="quantity-btn decrease-btn" onclick="decreaseQuantity()">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <input type="number" name="quantity" id="quantity" value="1" min="1" max="@Model.Quantity" class="quantity-input">
+                                    <button type="button" class="quantity-btn increase-btn" onclick="increaseQuantity()">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="cart-button" @(Model.Quantity <= 0 ? "disabled" : "")>
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </form>
+
+                        <div class="product-features">
+                            <h3 class="features-title">Key Features</h3>
+                            <ul class="feature-list">
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Genuine @Model.Brand part for optimal performance</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Compatible with all @Model.Brand @Model.Model vehicles</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Factory tested for reliability and durability</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Includes manufacturer warranty</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a asp-controller="Home" asp-action="Index" class="back-button">
+                            <i class="fas fa-arrow-left"></i> Back to List
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Thumbnail gallery functionality
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.querySelector('.product-image');
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                // Remove active class from all thumbnails
+                thumbnails.forEach(t => t.classList.remove('active'));
+
+                // Add active class to clicked thumbnail
+                this.classList.add('active');
+
+                // Update main image source
+                mainImage.src = this.src;
+            });
+        });
+    });
+
+    // Quantity input functionality
+    function decreaseQuantity() {
+        const input = document.getElementById('quantity');
+        const currentValue = parseInt(input.value);
+        if (currentValue > 1) {
+            input.value = currentValue - 1;
+        }
+    }
+
+    function increaseQuantity() {
+        const input = document.getElementById('quantity');
+        const currentValue = parseInt(input.value);
+        const max = parseInt(input.getAttribute('max'));
+        if (currentValue < max) {
+            input.value = currentValue + 1;
+        }
+    }
+</script>

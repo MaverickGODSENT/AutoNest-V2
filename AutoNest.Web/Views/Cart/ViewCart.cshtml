@@ -1,34 +1,437 @@
 ﻿@using AutoNest.Models.Carts
 @model CartModel
 
-<div class="container mt-4">
-    <h2 class="mb-3">Количка</h2>
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-color: #ecf0f1;
+        --border-color: #e0e0e0;
+        --light-grey: #f8f9fa;
+        --dark-color: #2c3e50;
+    }
+
+    .cart-container {
+        margin: 3rem auto;
+    }
+
+    .cart-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 2rem;
+        position: relative;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+        .cart-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        .cart-title i {
+            margin-right: 12px;
+            color: var(--primary-color);
+        }
+
+    .cart-items-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .cart-header {
+        background: var(--light-grey);
+        padding: 15px 20px;
+        border-bottom: 1px solid var(--border-color);
+        font-weight: 600;
+        color: var(--dark-color);
+    }
+
+    .cart-item {
+        padding: 20px;
+        border-bottom: 1px solid var(--border-color);
+        margin: 0;
+        transition: all 0.3s ease;
+    }
+
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+
+        .cart-item:hover {
+            background-color: rgba(52, 152, 219, 0.05);
+        }
+
+    .product-image {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+        transition: all 0.3s ease;
+        height: 100px;
+        object-fit: contain;
+        background-color: white;
+    }
+
+    .cart-item:hover .product-image {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .product-details {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .product-name {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-bottom: 5px;
+    }
+
+    .product-info {
+        margin-bottom: 10px;
+        flex-grow: 1;
+    }
+
+    .product-id {
+        color: #777;
+        font-size: 0.85rem;
+        margin-bottom: 8px;
+        display: inline-block;
+        background-color: var(--light-grey);
+        padding: 2px 8px;
+        border-radius: 4px;
+    }
+
+    .price-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .product-price {
+        font-size: 1rem;
+        color: var(--accent-color);
+        font-weight: 600;
+    }
+
+    .product-total {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--dark-color);
+    }
+
+    .quantity-control {
+        display: flex;
+        align-items: center;
+        background-color: var(--light-grey);
+        border-radius: 8px;
+        padding: 5px;
+        width: fit-content;
+    }
+
+    .quantity-btn {
+        background-color: white;
+        border: 1px solid var(--border-color);
+        color: var(--dark-color);
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.2s ease;
+    }
+
+        .quantity-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+    .quantity-input {
+        width: 50px;
+        text-align: center;
+        border: none;
+        background-color: transparent;
+        font-weight: 600;
+        color: var(--dark-color);
+        padding: 0 5px;
+    }
+
+        .quantity-input:focus {
+            outline: none;
+        }
+
+    .remove-btn {
+        background-color: transparent;
+        color: var(--accent-color);
+        border: 1px solid var(--accent-color);
+        border-radius: 6px;
+        padding: 5px 10px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+        .remove-btn:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .remove-btn i {
+            margin-right: 5px;
+        }
+
+    /* Order Summary Styles */
+    .order-summary {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+        position: sticky;
+        top: 20px;
+    }
+
+    .summary-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .summary-line {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        color: #555;
+    }
+
+    .summary-label {
+        font-weight: 500;
+    }
+
+    .summary-value {
+        font-weight: 600;
+    }
+
+    .summary-total {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        padding-top: 10px;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .summary-total-value {
+        color: var(--accent-color);
+    }
+
+    .checkout-btn {
+        background: linear-gradient(135deg, var(--accent-color), #c0392b);
+        color: white;
+        border: none;
+        width: 100%;
+        padding: 15px 20px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(231, 76, 60, 0.2);
+    }
+
+        .checkout-btn:hover {
+            background: linear-gradient(135deg, #c0392b, var(--accent-color));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(231, 76, 60, 0.3);
+            color: white;
+        }
+
+        .checkout-btn i {
+            margin-left: 8px;
+        }
+
+    .continue-shopping {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        color: var(--dark-color);
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+        .continue-shopping:hover {
+            color: var(--primary-color);
+        }
+
+        .continue-shopping i {
+            margin-right: 8px;
+        }
+
+    /* Empty Cart Styles */
+    .empty-cart {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .empty-cart-icon {
+        font-size: 4rem;
+        color: #ccc;
+        margin-bottom: 20px;
+    }
+
+    .empty-cart-message {
+        font-size: 1.2rem;
+        color: #777;
+        margin-bottom: 30px;
+    }
+
+    .shop-now-btn {
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+    }
+
+        .shop-now-btn:hover {
+            background: linear-gradient(135deg, #2980b9, var(--primary-color));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+            color: white;
+        }
+
+        .shop-now-btn i {
+            margin-right: 8px;
+        }
+
+    /* Responsive Styles */
+    @@media (max-width: 767px) {
+        .product-image
+
+    {
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .product-name {
+        font-size: 1.1rem;
+    }
+
+    .product-price, .product-total {
+        font-size: 1rem;
+    }
+
+    .cart-title {
+        font-size: 1.5rem;
+    }
+
+    .summary-title {
+        font-size: 1.2rem;
+    }
+
+    .order-summary {
+        margin-top: 20px;
+        position: static;
+    }
+
+    }
+</style>
+
+<div class="container cart-container">
+    <h2 class="cart-title">
+        <i class="fas fa-shopping-cart"></i> Your Shopping Cart
+    </h2>
 
     @if (Model?.Items?.Any() == true)
     {
         <div class="row">
             <!-- Cart Items -->
-            <div class="col-md-8">
-                <div class="card p-3">
+            <div class="col-lg-8 mb-4">
+                <div class="cart-items-container">
+                    <div class="cart-header">
+                        Products in Cart (@Model.Items.Count)
+                    </div>
+
                     @foreach (var item in Model.Items)
                     {
-                        <div class="row mb-3 pb-3 border-bottom align-items-center">
+                        <div class="row cart-item align-items-center">
                             <!-- Product Image -->
-                            <div class="col-3">
-                                <img src="@item.ImageUrl" class="img-fluid rounded" alt="@item.Brand @item.Model">
+                            <div class="col-md-2 col-sm-3 mb-3 mb-md-0">
+                                <img src="@item.ImageUrl" class="product-image" alt="@item.Brand @item.Model">
                             </div>
+
                             <!-- Product Details -->
-                            <div class="col-9">
-                                <h5 class="fw-bold">@item.Brand @item.Model</h5>
-                                <p class="text-muted small">Part ID: @item.PartId</p>
-                                <div class="d-flex align-items-center">
-                                    <label class="me-2">Количество:</label>
-                                    <input type="number" class="quantity-input form-control text-center" value="@item.Quantity" min="1" style="width: 60px;">
+                            <div class="col-md-10 col-sm-9">
+                                <div class="product-details">
+                                    <div class="product-info">
+                                        <h5 class="product-name">@item.Brand @item.Model</h5>
+                                        <span class="product-id">Part Number: @item.PartId</span>
+                                    </div>
+
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4 col-12 mb-3 mb-md-0">
+                                            <div class="quantity-control">
+                                                <button type="button" class="quantity-btn decrease-btn" data-id="@item.PartId">−</button>
+                                                <input type="number" class="quantity-input" data-id="@item.PartId" value="@item.Quantity" min="1" readonly>
+                                                <button type="button" class="quantity-btn increase-btn" data-id="@item.PartId">+</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-5 col-6">
+                                            <div class="price-section">
+                                                <div>
+                                                    <div class="product-price">@item.Price.ToString("C") / unit</div>
+                                                    <div class="product-total">@((item.Price * item.Quantity).ToString("C"))</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3 col-6 text-end">
+                                            <a asp-controller="Cart" asp-action="RemoveFromCart" asp-route-Id="@item.PartId"
+                                               data-id="@item.PartId" class="remove-btn">
+                                                <i class="fas fa-trash-alt"></i> Remove
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="price mt-2 fw-semibold text-danger">@item.Price.ToString("C")</p>
-                                <p class="total fw-bold">@((item.Price * item.Quantity).ToString("C"))</p>
-                                <a asp-controller="Cart" asp-action="RemoveFromCart" asp-route-Id="@item.PartId" data-id="@item.PartId"
-                                   class="btn btn-outline-danger btn-sm">Премахни</a>
                             </div>
                         </div>
                     }
@@ -36,73 +439,115 @@
             </div>
 
             <!-- Order Summary -->
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h4 class="fw-bold">Вашата поръчка</h4>
-                    <p><strong>Обща цена на продуктите:</strong> <span id="cart-total" class="fw-bold text-danger">@Model.TotalPrice.ToString("C")</span></p>
-                    <a class="btn btn-danger w-100 mb-2" asp-controller="Order" asp-action="Order">Направи поръчка</a>
+            <div class="col-lg-4">
+                <div class="order-summary">
+                    <h4 class="summary-title">Order Summary</h4>
+
+                    <div class="summary-line">
+                        <span class="summary-label">Number of Products</span>
+                        <span class="summary-value">@Model.Items.Count</span>
+                    </div>
+
+                    <div class="summary-line">
+                        <span class="summary-label">Total Items</span>
+                        <span class="summary-value">@Model.Items.Sum(i => i.Quantity)</span>
+                    </div>
+
+                    <div class="summary-total">
+                        <span>Total Amount</span>
+                        <span id="cart-total" class="summary-total-value">@Model.TotalPrice.ToString("C")</span>
+                    </div>
+
+                    <a class="checkout-btn" asp-controller="Order" asp-action="Order">
+                        Checkout <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                    <a href="/" class="continue-shopping">
+                        <i class="fas fa-chevron-left"></i> Continue Shopping
+                    </a>
                 </div>
             </div>
         </div>
     }
     else
     {
-        <p class="text-center text-muted">Вашата количка е празна.</p>
+        <div class="empty-cart">
+            <div class="empty-cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3 class="empty-cart-message">Your cart is empty</h3>
+            <a href="/" class="shop-now-btn">
+                <i class="fas fa-store"></i> Shop Now
+            </a>
+        </div>
     }
 </div>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".quantity-input").forEach(input => {
-            input.addEventListener("change", function () {
-                let row = this.closest(".row");
-                let partIdElement = row.querySelector("a[data-id]");
-
-                if (!partIdElement) {
-                    console.error("Part ID element not found.");
-                    return;
-                }
-
-                let partId = partIdElement.getAttribute("data-id");
-                let quantity = parseInt(this.value);
-                let priceElement = row.querySelector(".price");
-
-                if (!priceElement) {
-                    console.error("Price element not found.");
-                    return;
-                }
-
-                let price = parseFloat(priceElement.textContent.trim().replace(/[^0-9.]/g, ""));
-
-                if (isNaN(quantity) || quantity < 1) {
-                    this.value = 1;
-                    quantity = 1;
-                }
-
-                fetch("/Cart/UpdateCart", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        "X-Requested-With": "XMLHttpRequest"
-                    },
-                    body: JSON.stringify({ partId, quantity })
-                })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    row.querySelector(".total").textContent = data.itemTotal;
-
-                    let cartTotalElement = document.getElementById("cart-total");
-                    if (cartTotalElement) {
-                        cartTotalElement.textContent = data.cartTotal;
-                    }
-                })
-                .catch(error => console.error("Error updating cart:", error));
+        // Increase/Decrease quantity buttons
+        document.querySelectorAll('.increase-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const input = this.parentNode.querySelector('.quantity-input');
+                let value = parseInt(input.value);
+                input.value = value + 1;
+                updateCartItem(input);
             });
         });
+
+        document.querySelectorAll('.decrease-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const input = this.parentNode.querySelector('.quantity-input');
+                let value = parseInt(input.value);
+                if (value > 1) {
+                    input.value = value - 1;
+                    updateCartItem(input);
+                }
+            });
+        });
+
+        // Direct input changes
+        document.querySelectorAll(".quantity-input").forEach(input => {
+            input.addEventListener("change", function() {
+                updateCartItem(this);
+            });
+        });
+
+        function updateCartItem(input) {
+            let partId = input.getAttribute("data-id");
+            let quantity = parseInt(input.value);
+            let cartItem = input.closest('.cart-item');
+
+            if (isNaN(quantity) || quantity < 1) {
+                input.value = 1;
+                quantity = 1;
+            }
+
+            fetch("/Cart/UpdateCart", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-Requested-With": "XMLHttpRequest"
+                },
+                body: JSON.stringify({ partId, quantity })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Update item total
+                cartItem.querySelector(".product-total").textContent = data.itemTotal;
+
+                // Update cart total
+                let cartTotalElement = document.getElementById("cart-total");
+                if (cartTotalElement) {
+                    cartTotalElement.textContent = data.cartTotal;
+                }
+            })
+            .catch(error => console.error("Error updating cart:", error));
+        }
     });
 </script>

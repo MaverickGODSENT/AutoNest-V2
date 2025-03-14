@@ -1,4 +1,5 @@
-﻿using AutoNest.Services.Parts;
+﻿using AutoNest.Models.Categories;
+using AutoNest.Services.Parts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AutoNest.Web.Controllers
@@ -24,5 +25,10 @@ namespace AutoNest.Web.Controllers
             return View(part);
         }
 
+        public IActionResult SearchResult(string id, string selectedCarId)
+        {
+            var parts = _partService.GetPartsForCar(selectedCarId).Where(p=>p.CategoryId == id).ToList();
+            return View(parts);
+        }
     }
 }

@@ -21,8 +21,32 @@
       "PackagePath": "staticwebassets\\images\\parts\\29c8fea4-7588-4c14-8da9-7f3d5ae2b7e1.jpg"
     },
     {
+      "Id": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\bardahl-logo.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\bardahl-logo.jpg"
+    },
+    {
+      "Id": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\bosch-logo.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\bosch-logo.jpg"
+    },
+    {
+      "Id": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\brembo-logo.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\brembo-logo.jpg"
+    },
+    {
       "Id": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\d6608482-f1b7-42b7-b396-6993e74df1ef.jpg",
       "PackagePath": "staticwebassets\\images\\parts\\d6608482-f1b7-42b7-b396-6993e74df1ef.jpg"
+    },
+    {
+      "Id": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\garett-logo.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\garett-logo.jpg"
+    },
+    {
+      "Id": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\ngk-logo.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\ngk-logo.jpg"
+    },
+    {
+      "Id": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\pennzoil-logo.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\pennzoil-logo.jpg"
     },
     {
       "Id": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\LICENSE",

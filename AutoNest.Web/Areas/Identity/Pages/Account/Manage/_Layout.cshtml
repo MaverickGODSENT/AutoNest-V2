@@ -1,0 +1,154 @@
+﻿@{
+    if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout != null)
+    {
+        Layout = parentLayout.ToString();
+    }
+    else
+    {
+        Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+    }
+}
+
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-color: #ecf0f1;
+        --border-color: #e0e0e0;
+        --light-grey: #f8f9fa;
+        --dark-color: #2c3e50;
+    }
+
+    .account-container {
+        max-width: 1100px;
+        margin: 3rem auto;
+        padding: 0 15px;
+    }
+
+    .account-header {
+        position: relative;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    .account-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+        .account-title i {
+            margin-right: 12px;
+            color: var(--primary-color);
+        }
+
+        .account-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+    .account-subtitle {
+        color: #666;
+        font-size: 1.2rem;
+        margin: 1.5rem 0 1rem;
+        font-weight: 600;
+    }
+
+    .account-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        margin-bottom: 2rem;
+        transition: all 0.3s ease;
+    }
+
+        .account-card:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+    .sidebar-nav {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+    }
+
+    .sidebar-header {
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        color: white;
+        padding: 1.25rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+    }
+
+        .sidebar-header i {
+            margin-right: 10px;
+        }
+
+    .content-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        padding: 25px;
+        height: 100%;
+    }
+
+    @@media (max-width: 767px) {
+        .account-title
+
+    {
+        font-size: 1.8rem;
+    }
+
+    .content-card {
+        margin-top: 1.5rem;
+    }
+
+    }
+</style>
+
+<div class="account-container">
+    <div class="account-header">
+        <h1 class="account-title">
+            <i class="fas fa-user-circle"></i> Manage Your Account
+        </h1>
+    </div>
+
+    <h2 class="account-subtitle">Change your account settings</h2>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="sidebar-nav">
+                <div class="sidebar-header">
+                    <i class="fas fa-cog"></i> Settings
+                </div>
+                <div class="p-3">
+                    <partial name="_ManageNav" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="content-card">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}

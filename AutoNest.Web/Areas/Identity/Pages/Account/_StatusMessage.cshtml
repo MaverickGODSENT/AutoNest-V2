@@ -1,0 +1,100 @@
+﻿@model string
+
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-color: #ecf0f1;
+        --border-color: #e0e0e0;
+        --light-grey: #f8f9fa;
+        --dark-color: #2c3e50;
+    }
+
+    .status-message {
+        position: relative;
+        padding: 15px 20px 15px 50px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border-left: 4px solid;
+        font-weight: 500;
+        animation: slideIn 0.3s ease-out;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .status-message-danger {
+        background-color: #FDECEA;
+        border-color: #E74C3C;
+        color: #E74C3C;
+    }
+
+    .status-message-success {
+        background-color: #E7F7EF;
+        border-color: #2ECC71;
+        color: #2ECC71;
+    }
+
+    .status-message-icon {
+        position: absolute;
+        left: 20px;
+        font-size: 1.2rem;
+    }
+
+    .status-message-content {
+        flex-grow: 1;
+        padding-right: 20px;
+    }
+
+    .status-message-close {
+        background: transparent;
+        border: none;
+        color: inherit;
+        opacity: 0.7;
+        cursor: pointer;
+        font-size: 0.9rem;
+        padding: 5px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+    }
+
+        .status-message-close:hover {
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+    @@keyframes slideIn {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+</style>
+
+@if (!String.IsNullOrEmpty(Model))
+{
+    var statusMessageClass = Model.StartsWith("Error") ? "danger" : "success";
+    var iconClass = statusMessageClass == "danger" ? "fas fa-exclamation-circle" : "fas fa-check-circle";
+
+    <div class="status-message status-message-@statusMessageClass" role="alert">
+        <i class="status-message-icon @iconClass"></i>
+        <div class="status-message-content">@Model</div>
+        <button type="button" class="status-message-close" data-bs-dismiss="alert" aria-label="Close">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+}

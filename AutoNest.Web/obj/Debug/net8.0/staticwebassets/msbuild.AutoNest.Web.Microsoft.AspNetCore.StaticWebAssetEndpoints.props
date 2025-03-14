@@ -60,6 +60,42 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OD9DLDyUtKpUUBirOafqafLbQuix6CR0wpnrFpznjPo="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9716"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022OD9DLDyUtKpUUBirOafqafLbQuix6CR0wpnrFpznjPo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 11 Feb 2025 12:48:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AutoNest.Web/images/parts/bardahl-logo.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\bardahl-logo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-N3fPhcrymAcfesIzkeFy6QzX8WdS0OrIXlQQ6qBjwgo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"14853"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022N3fPhcrymAcfesIzkeFy6QzX8WdS0OrIXlQQ6qBjwgo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 08:53:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AutoNest.Web/images/parts/bardahl-logo.ztwk4on9ct.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\bardahl-logo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ztwk4on9ct"},{"Name":"integrity","Value":"sha256-N3fPhcrymAcfesIzkeFy6QzX8WdS0OrIXlQQ6qBjwgo="},{"Name":"label","Value":"_content/AutoNest.Web/images/parts/bardahl-logo.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"14853"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022N3fPhcrymAcfesIzkeFy6QzX8WdS0OrIXlQQ6qBjwgo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 08:53:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AutoNest.Web/images/parts/bosch-logo.2rt5qz251o.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\bosch-logo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2rt5qz251o"},{"Name":"integrity","Value":"sha256-3kspPTNfr1hzUMhDkj9bS8V5IAL8xngtBvnnTTGeACM="},{"Name":"label","Value":"_content/AutoNest.Web/images/parts/bosch-logo.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"80144"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00223kspPTNfr1hzUMhDkj9bS8V5IAL8xngtBvnnTTGeACM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 11:26:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AutoNest.Web/images/parts/bosch-logo.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\bosch-logo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3kspPTNfr1hzUMhDkj9bS8V5IAL8xngtBvnnTTGeACM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"80144"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00223kspPTNfr1hzUMhDkj9bS8V5IAL8xngtBvnnTTGeACM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 11:26:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AutoNest.Web/images/parts/brembo-logo.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\brembo-logo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9HBGgYpEghcPhAJxIdQGeI1y\u002B3/xxSYBIkEmkNzori8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"12034"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229HBGgYpEghcPhAJxIdQGeI1y\u002B3/xxSYBIkEmkNzori8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 09:00:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AutoNest.Web/images/parts/brembo-logo.kw2d53pe56.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\brembo-logo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kw2d53pe56"},{"Name":"integrity","Value":"sha256-9HBGgYpEghcPhAJxIdQGeI1y\u002B3/xxSYBIkEmkNzori8="},{"Name":"label","Value":"_content/AutoNest.Web/images/parts/brembo-logo.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12034"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229HBGgYpEghcPhAJxIdQGeI1y\u002B3/xxSYBIkEmkNzori8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 09:00:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AutoNest.Web/images/parts/d6608482-f1b7-42b7-b396-6993e74df1ef.88ouifqnpp.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\d6608482-f1b7-42b7-b396-6993e74df1ef.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -71,6 +107,42 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2NsgW1R2WyTMsEj91YO0wwCMhFoymuTZ/J7yfgwcLiE="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9065"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00222NsgW1R2WyTMsEj91YO0wwCMhFoymuTZ/J7yfgwcLiE=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Feb 2025 12:18:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AutoNest.Web/images/parts/garett-logo.5ixo1zidjv.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\garett-logo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5ixo1zidjv"},{"Name":"integrity","Value":"sha256-Y9NISsR3vV2beMN2Mu7iGc\u002BsRRHRotkeBOSf56haaSg="},{"Name":"label","Value":"_content/AutoNest.Web/images/parts/garett-logo.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10175"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Y9NISsR3vV2beMN2Mu7iGc\u002BsRRHRotkeBOSf56haaSg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 11:18:45 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AutoNest.Web/images/parts/garett-logo.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\garett-logo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Y9NISsR3vV2beMN2Mu7iGc\u002BsRRHRotkeBOSf56haaSg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"10175"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Y9NISsR3vV2beMN2Mu7iGc\u002BsRRHRotkeBOSf56haaSg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 11:18:45 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AutoNest.Web/images/parts/ngk-logo.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\ngk-logo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Ugi4HjrQZqo\u002B3BdqSkWFetgMXMiTZcQT8ZjL2FDiOFc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"34921"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Ugi4HjrQZqo\u002B3BdqSkWFetgMXMiTZcQT8ZjL2FDiOFc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 09:00:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AutoNest.Web/images/parts/ngk-logo.ys87cdch2j.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\ngk-logo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ys87cdch2j"},{"Name":"integrity","Value":"sha256-Ugi4HjrQZqo\u002B3BdqSkWFetgMXMiTZcQT8ZjL2FDiOFc="},{"Name":"label","Value":"_content/AutoNest.Web/images/parts/ngk-logo.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"34921"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Ugi4HjrQZqo\u002B3BdqSkWFetgMXMiTZcQT8ZjL2FDiOFc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 09:00:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AutoNest.Web/images/parts/pennzoil-logo.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\pennzoil-logo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uB4O3zLzUEppqcYyjoktcwnT/5HebcxGH1yiHFK5Tb4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"52893"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022uB4O3zLzUEppqcYyjoktcwnT/5HebcxGH1yiHFK5Tb4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 11:20:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AutoNest.Web/images/parts/pennzoil-logo.sz3a0v9yxk.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\pennzoil-logo.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sz3a0v9yxk"},{"Name":"integrity","Value":"sha256-uB4O3zLzUEppqcYyjoktcwnT/5HebcxGH1yiHFK5Tb4="},{"Name":"label","Value":"_content/AutoNest.Web/images/parts/pennzoil-logo.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"52893"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022uB4O3zLzUEppqcYyjoktcwnT/5HebcxGH1yiHFK5Tb4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 11:20:04 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AutoNest.Web/lib/bootstrap/dist/css/bootstrap-grid.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>

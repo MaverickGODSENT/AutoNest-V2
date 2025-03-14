@@ -13,6 +13,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.12" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
     <PackageReference Include="Stripe.net" Version="47.3.0" />
   </ItemGroup>
 
@@ -25,8 +26,6 @@
   <ItemGroup>
     <Folder Include="Views\Category\" />
     <Folder Include="Views\Engine\" />
-    <Folder Include="wwwroot\images\" />
-    <Folder Include="wwwroot\images\parts\" />
     <Folder Include="wwwroot\js\" />
   </ItemGroup>
 

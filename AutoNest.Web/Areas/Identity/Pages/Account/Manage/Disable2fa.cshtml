@@ -1,0 +1,220 @@
+﻿@page
+@model Disable2faModel
+@{
+    ViewData["Title"] = "Disable two-factor authentication (2FA)";
+    ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+}
+
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-color: #ecf0f1;
+        --border-color: #e0e0e0;
+        --light-grey: #f8f9fa;
+        --dark-color: #2c3e50;
+        --warning-color: #f39c12;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+        .page-title i {
+            margin-right: 10px;
+            color: var(--accent-color);
+        }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-color), var(--warning-color));
+        }
+
+    .content-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        padding: 25px;
+        margin-top: 1.5rem;
+    }
+
+    .warning-box {
+        background-color: #FEF5E7;
+        border-left: 4px solid var(--warning-color);
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+    .warning-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 2rem;
+        color: var(--warning-color);
+        opacity: 0.2;
+    }
+
+    .warning-content {
+        font-weight: 500;
+        color: #7E5109;
+        margin-left: 20px;
+    }
+
+        .warning-content p {
+            margin-bottom: 10px;
+        }
+
+            .warning-content p:last-child {
+                margin-bottom: 0;
+            }
+
+        .warning-content strong {
+            font-weight: 700;
+            color: #B7950B;
+        }
+
+        .warning-content a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+            .warning-content a:hover {
+                color: #2980b9;
+                text-decoration: underline;
+            }
+
+    .action-buttons {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .disable-btn {
+        background: linear-gradient(135deg, var(--accent-color), #c0392b);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 20px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(231, 76, 60, 0.2);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .disable-btn:hover {
+            background: linear-gradient(135deg, #c0392b, var(--accent-color));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(231, 76, 60, 0.3);
+        }
+
+        .disable-btn i {
+            margin-right: 8px;
+        }
+
+    .cancel-link {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 15px;
+        color: var(--dark-color);
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+        .cancel-link:hover {
+            color: var(--primary-color);
+        }
+
+        .cancel-link i {
+            margin-right: 8px;
+        }
+
+    .info-box {
+        background-color: rgba(52, 152, 219, 0.1);
+        border-left: 4px solid var(--primary-color);
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 25px;
+    }
+
+        .info-box h5 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+            .info-box h5 i {
+                margin-right: 8px;
+            }
+
+        .info-box p {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+</style>
+
+<partial name="_StatusMessage" for="StatusMessage" />
+
+<h3 class="page-title">
+    <i class="fas fa-shield-alt"></i> @ViewData["Title"]
+</h3>
+
+<div class="content-container">
+    <div class="warning-box">
+        <i class="fas fa-exclamation-triangle warning-icon"></i>
+        <div class="warning-content">
+            <p>
+                <strong>This action only disables 2FA.</strong>
+            </p>
+            <p>
+                Disabling 2FA does not change the keys used in authenticator apps. If you wish to change the key
+                used in an authenticator app you should <a asp-page="./ResetAuthenticator">reset your authenticator keys.</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <h5><i class="fas fa-info-circle"></i> What happens when you disable 2FA?</h5>
+        <p>
+            By disabling two-factor authentication, your account will only require a password to sign in.
+            This reduces your account security since an attacker would only need your password to gain access.
+            We recommend keeping 2FA enabled for maximum security.
+        </p>
+    </div>
+
+    <div class="action-buttons">
+        <form method="post">
+            <button class="disable-btn" type="submit">
+                <i class="fas fa-times-circle"></i> Disable 2FA
+            </button>
+        </form>
+        <a asp-page="./TwoFactorAuthentication" class="cancel-link">
+            <i class="fas fa-arrow-left"></i> Cancel
+        </a>
+    </div>
+</div>

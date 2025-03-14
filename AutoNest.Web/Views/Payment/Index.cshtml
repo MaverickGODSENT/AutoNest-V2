@@ -1,72 +1,434 @@
 ﻿@using AutoNest.Models.Orders
 @model OrderInputModel
 
-<div class="container mt-4">
-    <h3 class="fw-bold mb-4 text-center">Order Summary</h3>
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-color: #ecf0f1;
+        --border-color: #e0e0e0;
+        --light-grey: #f8f9fa;
+        --dark-color: #2c3e50;
+    }
+
+    .order-summary-container {
+        max-width: 1100px;
+        margin: 3rem auto;
+        padding: 0 15px;
+    }
+
+    .order-header {
+        position: relative;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .order-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .order-subtitle {
+        color: #666;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .order-status {
+        display: inline-block;
+        background-color: rgba(46, 204, 113, 0.15);
+        color: var(--success-color);
+        font-weight: 600;
+        padding: 6px 15px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+    }
+
+        .order-status i {
+            margin-right: 5px;
+        }
+
+    .order-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        margin-bottom: 2rem;
+        transition: all 0.3s ease;
+    }
+
+        .order-card:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+    .card-header {
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        color: white;
+        padding: 1.25rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+
+        .card-header i {
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    /* Product table styles */
+    .products-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+        .products-table th {
+            background-color: var(--light-grey);
+            color: var(--dark-color);
+            font-weight: 600;
+            padding: 12px;
+            text-align: left;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .products-table td {
+            padding: 15px 12px;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+        }
+
+        .products-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .products-table tr:hover {
+            background-color: rgba(52, 152, 219, 0.05);
+        }
+
+    .product-image {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+
+    tr:hover .product-image {
+        transform: scale(1.05);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-brand {
+        font-weight: 600;
+        color: var(--dark-color);
+    }
+
+    .product-model {
+        color: #666;
+    }
+
+    .product-price {
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+
+    .product-quantity {
+        background-color: var(--light-grey);
+        padding: 4px 10px;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .product-total {
+        font-weight: 700;
+        color: var(--dark-color);
+    }
+
+    /* Shipping details styles */
+    .shipping-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .shipping-item {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .shipping-item:last-child {
+            border-bottom: none;
+        }
+
+    .shipping-label {
+        font-weight: 600;
+        color: var(--dark-color);
+    }
+
+    .shipping-value {
+        color: #666;
+    }
+
+    /* Order totals styles */
+    .order-totals {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .total-item {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .total-item:last-child {
+            border-bottom: none;
+            padding-top: 20px;
+            margin-top: 5px;
+        }
+
+    .total-label {
+        font-weight: 600;
+        color: var(--dark-color);
+    }
+
+    .total-value {
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+
+    .grand-total {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--success-color);
+    }
+
+    /* Button styles */
+    .checkout-btn {
+        background: linear-gradient(135deg, var(--success-color), #27ae60);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 15px 25px;
+        font-weight: 600;
+        font-size: 1.05rem;
+        transition: all 0.3s ease;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(46, 204, 113, 0.2);
+    }
+
+        .checkout-btn:hover {
+            background: linear-gradient(135deg, #27ae60, var(--success-color));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(46, 204, 113, 0.3);
+        }
+
+        .checkout-btn i {
+            margin-left: 8px;
+        }
+
+    .back-btn {
+        display: inline-flex;
+        align-items: center;
+        background-color: transparent;
+        color: var(--primary-color);
+        border: none;
+        padding: 8px 0;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+        margin-top: 15px;
+        text-decoration: none;
+    }
+
+        .back-btn:hover {
+            color: #2980b9;
+        }
+
+        .back-btn i {
+            margin-right: 8px;
+        }
+
+    /* Responsive adjustments */
+    @@media (max-width: 767px) {
+        .order-title
+
+    {
+        font-size: 1.8rem;
+    }
+
+    .card-header {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .products-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .product-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    }</style>
+
+<div class="order-summary-container">
+    <div class="order-header">
+        <h1 class="order-title">Order Summary</h1>
+        <p class="order-subtitle">Please review your order before proceeding to payment</p>
+        <div class="order-status">
+            <i class="fas fa-clipboard-check"></i> Order Ready
+        </div>
+    </div>
 
     <div class="row">
-        <!-- Order Details -->
-        <div class="col-md-8">
-            <div class="card shadow-sm p-3">
-                <h5 class="fw-bold mb-3">Order Details</h5>
-                <table class="table align-middle">
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Brand</th>
-                            <th>Model</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model.CartItems)
-                        {
-                            <tr>
-                                <td>
-                                    <img src="@item.ImageUrl" alt="Product Image" class="img-fluid rounded" style="max-width: 80px;">
-                                </td>
-                                <td>@item.Brand</td>
-                                <td>@item.Model</td>
-                                <td>@item.Price</td>
-                                <td>@item.Quantity</td>
-                                <td>@(item.Price * item.Quantity).ToString("C")</td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
+        <!-- Product Details -->
+        <div class="col-lg-8">
+            <div class="order-card">
+                <div class="card-header">
+                    <i class="fas fa-shopping-bag"></i> Order Items (@Model.CartItems.Count)
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="products-table">
+                            <thead>
+                                <tr>
+                                    <th width="90">Product</th>
+                                    <th>Brand</th>
+                                    <th>Model</th>
+                                    <th>Price</th>
+                                    <th>Qty</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.CartItems)
+                                {
+                                    <tr>
+                                        <td>
+                                            <img src="@item.ImageUrl" alt="@item.Brand @item.Model" class="product-image">
+                                        </td>
+                                        <td class="product-brand">@item.Brand</td>
+                                        <td class="product-model">@item.Model</td>
+                                        <td class="product-price">@item.Price.ToString("C")</td>
+                                        <td><span class="product-quantity">@item.Quantity</span></td>
+                                        <td class="product-total">@((item.Price * item.Quantity).ToString("C"))</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Shipping & Payment Details -->
-        <div class="col-md-4">
-            <div class="card shadow-sm p-3 mb-3">
-                <h5 class="fw-bold">Shipping Details</h5>
-                <p><strong>Address:</strong> @Model.ShippingAddress</p>
-                <p><strong>City:</strong> @Model.ShippingCity</p>
-                <p><strong>State:</strong> @Model.ShippingState</p>
-                <p><strong>ZIP Code:</strong> @Model.ShippingZipCode</p>
+        <!-- Order Details Summary -->
+        <div class="col-lg-4">
+            <!-- Shipping Details Card -->
+            <div class="order-card">
+                <div class="card-header">
+                    <i class="fas fa-map-marker-alt"></i> Shipping Details
+                </div>
+                <div class="card-body">
+                    <ul class="shipping-list">
+                        <li class="shipping-item">
+                            <span class="shipping-label">Address:</span>
+                            <span class="shipping-value">@Model.ShippingAddress</span>
+                        </li>
+                        <li class="shipping-item">
+                            <span class="shipping-label">City:</span>
+                            <span class="shipping-value">@Model.ShippingCity</span>
+                        </li>
+                        <li class="shipping-item">
+                            <span class="shipping-label">State:</span>
+                            <span class="shipping-value">@Model.ShippingState</span>
+                        </li>
+                        <li class="shipping-item">
+                            <span class="shipping-label">ZIP Code:</span>
+                            <span class="shipping-value">@Model.ShippingZipCode</span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="back-btn">
+                        <i class="fas fa-pencil-alt"></i> Edit Shipping Details
+                    </a>
+                </div>
             </div>
 
-            <div class="card shadow-sm p-3">
-                <h5 class="fw-bold">Order Summary</h5>
-                <p class="fw-bold">Subtotal: <span class="float-end">@Model.SubTotal</span></p>
-                <p class="fw-bold">Shipping: <span class="float-end">@Model.ShippingCost</span></p>
-                <p class="fw-bold text-success">Total: <span class="float-end">@Model.TotalAmount</span></p>
+            <!-- Order Totals Card -->
+            <div class="order-card">
+                <div class="card-header">
+                    <i class="fas fa-receipt"></i> Order Totals
+                </div>
+                <div class="card-body">
+                    <ul class="order-totals">
+                        <li class="total-item">
+                            <span class="total-label">Subtotal:</span>
+                            <span class="total-value">@Model.SubTotal.ToString("C")</span>
+                        </li>
+                        <li class="total-item">
+                            <span class="total-label">Shipping:</span>
+                            <span class="total-value">@Model.ShippingCost.ToString("C")</span>
+                        </li>
+                        <li class="total-item">
+                            <span class="total-label">Total Amount:</span>
+                            <span class="total-value grand-total">@Model.TotalAmount.ToString("C")</span>
+                        </li>
+                    </ul>
 
-                <form asp-controller="Payment" asp-action="Checkout" method="post">
-                    <input type="hidden" name="amount" value="@Model.TotalAmount" />
-                    <button type="submit" class="btn btn-success w-100 mt-3">Proceed to Payment</button>
-                </form>
+                    <form asp-controller="Payment" asp-action="Checkout" method="post">
+                        <input type="hidden" name="amount" value="@Model.TotalAmount" />
+                        <button type="submit" class="checkout-btn">
+                            Proceed to Payment <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <a href="javascript:history.back()" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Back to Cart
+                    </a>
+                </div>
             </div>
-
         </div>
     </div>
 </div>
 
 @section Scripts {
     <script>
-        // Optional: Add any JavaScript for dynamic interactions here
+        document.addEventListener("DOMContentLoaded", function() {
+            // Make table rows clickable for product details
+            const tableRows = document.querySelectorAll('.products-table tbody tr');
+            tableRows.forEach(row => {
+                row.style.cursor = 'pointer';
+                row.addEventListener('click', function() {
+                    // Could redirect to product details or expand for more info
+                    // window.location.href = "/products/" + row.dataset.productId;
+                    console.log("Product row clicked");
+                });
+            });
+        });
     </script>
 }

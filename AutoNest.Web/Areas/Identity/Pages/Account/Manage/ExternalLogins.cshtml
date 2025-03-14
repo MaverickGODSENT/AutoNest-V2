@@ -1,0 +1,388 @@
+﻿@page
+@model ExternalLoginsModel
+@{
+    ViewData["Title"] = "Manage your external logins";
+    ViewData["ActivePage"] = ManageNavPages.ExternalLogins;
+}
+
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-color: #ecf0f1;
+        --border-color: #e0e0e0;
+        --light-grey: #f8f9fa;
+        --dark-color: #2c3e50;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+        .page-title i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+    .content-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        padding: 25px;
+        margin-top: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+        .section-title i {
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+
+    .logins-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        margin-bottom: 25px;
+    }
+
+        .logins-table th {
+            text-align: left;
+            padding: 12px 15px;
+            background-color: var(--light-grey);
+            color: var(--dark-color);
+            font-weight: 600;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .logins-table td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+        }
+
+        .logins-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .logins-table tr:hover {
+            background-color: rgba(52, 152, 219, 0.05);
+        }
+
+    .provider-logo {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    .provider-name {
+        font-weight: 500;
+        color: var(--dark-color);
+        display: flex;
+        align-items: center;
+    }
+
+    .remove-btn {
+        background-color: transparent;
+        color: var(--accent-color);
+        border: 1px solid var(--accent-color);
+        border-radius: 6px;
+        padding: 8px 15px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+    }
+
+        .remove-btn:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .remove-btn i {
+            margin-right: 5px;
+        }
+
+    .logins-divider {
+        margin: 30px 0;
+        height: 1px;
+        background-color: var(--border-color);
+        position: relative;
+    }
+
+    .divider-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 0 15px;
+        color: #999;
+        font-size: 0.9rem;
+    }
+
+    .providers-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .provider-btn {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 15px;
+        background-color: white;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        color: var(--dark-color);
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+        .provider-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .provider-btn.google {
+            color: #4285F4;
+            border-color: #4285F4;
+        }
+
+            .provider-btn.google:hover {
+                background-color: rgba(66, 133, 244, 0.05);
+            }
+
+        .provider-btn.facebook {
+            color: #3b5998;
+            border-color: #3b5998;
+        }
+
+            .provider-btn.facebook:hover {
+                background-color: rgba(59, 89, 152, 0.05);
+            }
+
+        .provider-btn.microsoft {
+            color: #00a4ef;
+            border-color: #00a4ef;
+        }
+
+            .provider-btn.microsoft:hover {
+                background-color: rgba(0, 164, 239, 0.05);
+            }
+
+        .provider-btn.twitter {
+            color: #1da1f2;
+            border-color: #1da1f2;
+        }
+
+            .provider-btn.twitter:hover {
+                background-color: rgba(29, 161, 242, 0.05);
+            }
+
+        .provider-btn.github {
+            color: #333;
+            border-color: #333;
+        }
+
+            .provider-btn.github:hover {
+                background-color: rgba(51, 51, 51, 0.05);
+            }
+
+        .provider-btn i {
+            font-size: 1.2rem;
+            margin-right: 8px;
+        }
+
+    .info-box {
+        background-color: rgba(52, 152, 219, 0.1);
+        border-left: 4px solid var(--primary-color);
+        border-radius: 0 8px 8px 0;
+        padding: 15px;
+        margin: 20px 0 0;
+    }
+
+        .info-box i {
+            color: var(--primary-color);
+            margin-right: 5px;
+        }
+
+    .empty-state {
+        text-align: center;
+        padding: 30px;
+        color: #777;
+    }
+
+        .empty-state i {
+            font-size: 3rem;
+            color: #ddd;
+            margin-bottom: 15px;
+        }
+
+    @@media (max-width: 768px) {
+        .providers-container
+
+    {
+        flex-direction: column;
+    }
+
+    .provider-btn {
+        width: 100%;
+    }
+
+    }
+</style>
+
+<partial name="_StatusMessage" for="StatusMessage" />
+
+<h3 class="page-title">
+    <i class="fas fa-plug"></i> @ViewData["Title"]
+</h3>
+
+<div class="content-container">
+    @if (Model.CurrentLogins?.Count > 0)
+    {
+        <h4 class="section-title">
+            <i class="fas fa-link"></i> Connected Accounts
+        </h4>
+
+        <table class="logins-table">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var login in Model.CurrentLogins)
+                {
+                    <tr>
+                        <td id="@($"login-provider-{login.LoginProvider}")">
+                            <span class="provider-name">
+                                @GetProviderIcon(login.LoginProvider)
+                                @login.ProviderDisplayName
+                            </span>
+                        </td>
+                        <td>
+                            @if (Model.ShowRemoveButton)
+                            {
+                                <form id="@($"remove-login-{login.LoginProvider}")" asp-page-handler="RemoveLogin" method="post" class="d-inline">
+                                    <input asp-for="@login.LoginProvider" name="LoginProvider" type="hidden" />
+                                    <input asp-for="@login.ProviderKey" name="ProviderKey" type="hidden" />
+                                    <button type="submit" class="remove-btn" title="Remove this @login.ProviderDisplayName login from your account">
+                                        <i class="fas fa-unlink"></i> Disconnect
+                                    </button>
+                                </form>
+                            }
+                            else
+                            {
+                                <span class="text-muted">Primary login</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="empty-state">
+            <i class="fas fa-plug"></i>
+            <p>You don't have any external logins configured.</p>
+        </div>
+    }
+
+    @if (Model.OtherLogins?.Count > 0)
+    {
+        <div class="logins-divider">
+            <span class="divider-text">ADD NEW LOGIN</span>
+        </div>
+
+        <h4 class="section-title">
+            <i class="fas fa-plus-circle"></i> Connect Additional Accounts
+        </h4>
+
+        <p>Link your account with these services to sign in more easily:</p>
+
+        <form id="link-login-form" asp-page-handler="LinkLogin" method="post">
+            <div class="providers-container">
+                @foreach (var provider in Model.OtherLogins)
+                {
+                    <button id="@($"link-login-button-{provider.Name}")" type="submit"
+                            class="provider-btn @GetProviderClass(provider.Name)"
+                            name="provider" value="@provider.Name"
+                            title="Log in using your @provider.DisplayName account">
+                        @GetProviderIcon(provider.Name)
+                        @provider.DisplayName
+                    </button>
+                }
+            </div>
+        </form>
+
+        <div class="info-box">
+            <i class="fas fa-info-circle"></i>
+            Connecting an account allows you to sign in with that service in the future. Your account information remains secure.
+        </div>
+    }
+</div>
+
+@functions {
+    private string GetProviderClass(string providerName)
+    {
+        return providerName.ToLower() switch
+        {
+            "google" => "google",
+            "facebook" => "facebook",
+            "microsoft" => "microsoft",
+            "twitter" => "twitter",
+            "github" => "github",
+            _ => ""
+        };
+    }
+
+    private Microsoft.AspNetCore.Html.IHtmlContent GetProviderIcon(string providerName)
+    {
+        var iconClass = providerName.ToLower() switch
+        {
+            "google" => "fab fa-google",
+            "facebook" => "fab fa-facebook",
+            "microsoft" => "fab fa-microsoft",
+            "twitter" => "fab fa-twitter",
+            "github" => "fab fa-github",
+            _ => "fas fa-external-link-alt"
+        };
+
+        return new Microsoft.AspNetCore.Html.HtmlString($"<i class=\"{iconClass}\"></i>");
+    }
+}

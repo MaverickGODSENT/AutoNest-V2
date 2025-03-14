@@ -1,48 +1,294 @@
 ﻿@using AutoNest.Models.Categories
 @model List<CategoryViewModel>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
 <style>
-    .category-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --light-color: #ecf0f1;
+        --dark-color: #2c3e50;
+        --shadow-color: rgba(0, 0, 0, 0.1);
     }
 
-    .category-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    .categories-section {
+        padding: 3rem 0;
+        background-color: #f8f9fa;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        position: relative;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+        color: #777;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .category-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px var(--shadow-color);
+        background-color: white;
+        transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        height: 100%;
+        border: none;
+    }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+    .card-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        margin-bottom: 20px;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .category-card .card-body {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .category-card .card-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: var(--dark-color);
+    }
+
+    .category-card .card-text {
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.6;
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .category-btn {
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        border: none;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 8px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+        transition: all 0.3s ease;
+        margin-top: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    }
+
+        .category-btn:hover {
+            background: linear-gradient(135deg, #2980b9, var(--primary-color));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(52, 152, 219, 0.3);
+        }
+
+        .category-btn i {
+            margin-left: 8px;
+        }
+
+    .category-count {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: rgba(44, 62, 80, 0.1);
+        color: var(--dark-color);
+        font-weight: 600;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+    }
+
+    /* Animation for cards */
+    @@keyframes fadeInUp {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+
+    .animated-card {
+        animation: fadeInUp 0.6s ease forwards;
+    }
+
+    /* Adding delay for each card */
+    @@for $ i from 1 through 1 0 {
+        .animated-card:nth-child(#{$i})
+
+    {
+        animation-delay: #
+
+    {
+        $i * 0.1
+    }
+
+    s;
+    }
+    }
+
+    /* Responsive adjustments */
+    @@media (max-width: 767.98px) {
+        .section-title
+
+    {
+        font-size: 2rem;
     }
 
     .category-card .card-body {
         padding: 20px;
     }
 
-    .category-card .card-title {
-        font-size: 1.25rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    .category-card .card-text {
-        font-size: 0.9rem;
-        color: #555;
     }
 </style>
 
-<div class="container my-5">
-    <h1 class="text-center mb-4">Available Categories</h1>
-    <div class="row">
-        @foreach (var category in Model)
-        {
-            <div class="col-md-4 mb-4">
-                <div class="card category-card">
-                    <div class="card-body">
-                        <h5 class="card-title">@category.Name</h5>
-                        <p class="card-text">@category.Description</p>
-                        <a asp-action="SearchPartsForCar" asp-controller="Part" asp-route-id="@category.SelectedCarId" class="btn btn-primary">View Parts</a>
+<section class="categories-section">
+    <div class="container">
+        <div class="section-header">
+            <h1 class="section-title">Browse Parts Categories</h1>
+            <p class="section-subtitle">Explore our comprehensive selection of auto parts organized by category to find exactly what you need for your vehicle</p>
+        </div>
+
+        <div class="row">
+            @foreach (var category in Model)
+                {
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <form asp-controller="Part" asp-action="SearchResult" method="post">
+                            <div class="category-card animated-card">
+                                <div class="card-body">
+                                    @{
+                                        var iconClass = GetIconClass(category.Name);
+                                    }
+                                    <div class="card-icon">
+                                        <i class="@iconClass"></i>
+                                    </div>
+                                    <h5 class="card-title">@category.Name</h5>
+                                    <p class="card-text">@category.Description</p>
+                                    <input type="hidden" name="Id" value="@category.Id" />
+                                    <input type="hidden" name="SelectedCarId" value="@category.SelectedCarId" />
+                                    <button type="submit" class="category-btn">
+                                        Browse Parts <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                </div>
-            </div>
-        }
+                }
+        </div>
     </div>
-</div>
+</section>
+
+<!-- Add this helper function at the bottom of your Razor view or in a partial view -->
+@functions {
+    string GetIconClass(string categoryName)
+    {
+        // Map category names to appropriate Font Awesome icons
+        return categoryName.ToLower() switch
+        {
+            var name when name.Contains("engine") => "fas fa-cogs",
+            var name when name.Contains("brake") => "fas fa-stopwatch",
+            var name when name.Contains("transmission") => "fas fa-exchange-alt",
+            var name when name.Contains("suspension") => "fas fa-car-side",
+            var name when name.Contains("exhaust") => "fas fa-smog",
+            var name when name.Contains("oil") => "fas fa-oil-can",
+            var name when name.Contains("filter") => "fas fa-filter",
+            var name when name.Contains("electric") => "fas fa-bolt",
+            var name when name.Contains("light") => "fas fa-lightbulb",
+            var name when name.Contains("body") => "fas fa-car",
+            var name when name.Contains("interior") => "fas fa-couch",
+            var name when name.Contains("battery") => "fas fa-car-battery",
+            var name when name.Contains("wheel") || name.Contains("tire") => "fas fa-circle-notch",
+            var name when name.Contains("air") => "fas fa-wind",
+            var name when name.Contains("cooling") => "fas fa-temperature-low",
+            var name when name.Contains("fuel") => "fas fa-gas-pump",
+            _ => "fas fa-tools" // Default icon for other categories
+        };
+    }
+}
 
 <!-- Include Bootstrap JS and dependencies -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Add animation classes as elements come into viewport
+    document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.animated-card');
+
+        // Initial animation for cards in viewport
+        animateCardsInViewport();
+
+        // Animation on scroll
+        window.addEventListener('scroll', animateCardsInViewport);
+
+        function animateCardsInViewport() {
+            cards.forEach(card => {
+                const cardPosition = card.getBoundingClientRect();
+                // Check if card is in viewport
+                if (cardPosition.top < window.innerHeight) {
+                    card.style.opacity = "1";
+                }
+            });
+        }
+    });
+</script>

@@ -1,0 +1,388 @@
+﻿@page
+@using Microsoft.AspNetCore.Http.Features
+@model TwoFactorAuthenticationModel
+@{
+    ViewData["Title"] = "Two-factor authentication (2FA)";
+    ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+}
+
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-color: #ecf0f1;
+        --border-color: #e0e0e0;
+        --light-grey: #f8f9fa;
+        --dark-color: #2c3e50;
+        --warning-color: #f39c12;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+        .page-title i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+    .content-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        padding: 25px;
+        margin-top: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--dark-color);
+        margin: 25px 0 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        align-items: center;
+    }
+
+        .section-title i {
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+
+    .status-section {
+        background-color: var(--light-grey);
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+    .status-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .status-title {
+        font-weight: 600;
+        color: var(--dark-color);
+        display: flex;
+        align-items: center;
+    }
+
+        .status-title i {
+            margin-right: 8px;
+        }
+
+    .status-badge {
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .status-badge-enabled {
+        background-color: rgba(46, 204, 113, 0.15);
+        color: var(--success-color);
+    }
+
+    .status-badge-disabled {
+        background-color: rgba(231, 76, 60, 0.15);
+        color: var(--accent-color);
+    }
+
+    .danger-alert {
+        background-color: rgba(231, 76, 60, 0.1);
+        border-left: 4px solid var(--accent-color);
+        border-radius: 0 8px 8px 0;
+        padding: 15px;
+        margin: 15px 0;
+        color: #7B241C;
+    }
+
+        .danger-alert strong {
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .danger-alert a {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+            .danger-alert a:hover {
+                text-decoration: underline;
+            }
+
+    .warning-alert {
+        background-color: rgba(243, 156, 18, 0.1);
+        border-left: 4px solid var(--warning-color);
+        border-radius: 0 8px 8px 0;
+        padding: 15px;
+        margin: 15px 0;
+        color: #7E5109;
+    }
+
+        .warning-alert strong {
+            font-weight: 700;
+            color: var(--warning-color);
+        }
+
+        .warning-alert a {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+            .warning-alert a:hover {
+                text-decoration: underline;
+            }
+
+    .action-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .action-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+    .primary-btn {
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        color: white;
+        border: none;
+        box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
+    }
+
+        .primary-btn:hover {
+            background: linear-gradient(135deg, #2980b9, var(--primary-color));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+            color: white;
+        }
+
+    .danger-btn {
+        background: linear-gradient(135deg, var(--accent-color), #c0392b);
+        color: white;
+        border: none;
+        box-shadow: 0 4px 10px rgba(231, 76, 60, 0.2);
+    }
+
+        .danger-btn:hover {
+            background: linear-gradient(135deg, #c0392b, var(--accent-color));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(231, 76, 60, 0.3);
+            color: white;
+        }
+
+    .secondary-btn {
+        background-color: var(--light-grey);
+        color: var(--dark-color);
+        border: none;
+    }
+
+        .secondary-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+    .action-btn i {
+        margin-right: 8px;
+    }
+
+    .info-box {
+        background-color: rgba(52, 152, 219, 0.1);
+        border-left: 4px solid var(--primary-color);
+        border-radius: 0 8px 8px 0;
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .info-box-title {
+        font-weight: 600;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+        .info-box-title i {
+            margin-right: 8px;
+        }
+
+    .info-box p {
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+    @@media (max-width: 768px) {
+        .action-buttons
+
+    {
+        flex-direction: column;
+    }
+
+    .action-btn {
+        width: 100%;
+    }
+
+    }
+</style>
+
+<partial name="_StatusMessage" for="StatusMessage" />
+
+<h3 class="page-title">
+    <i class="fas fa-shield-alt"></i> @ViewData["Title"]
+</h3>
+
+<div class="content-container">
+    @{
+        var consentFeature = HttpContext.Features.Get<ITrackingConsentFeature>();
+        @if (consentFeature?.CanTrack ?? true)
+        {
+            <div class="status-section">
+                <div class="status-header">
+                    <div class="status-title">
+                        <i class="fas fa-lock"></i> 2FA Status
+                    </div>
+                    @if (Model.Is2faEnabled)
+                    {
+                        <span class="status-badge status-badge-enabled">Enabled</span>
+                    }
+                    else
+                    {
+                        <span class="status-badge status-badge-disabled">Disabled</span>
+                    }
+                </div>
+
+                <p>
+                    Two-factor authentication adds an extra layer of security to your account by requiring more than just a password to sign in.
+                </p>
+
+                @if (Model.Is2faEnabled)
+                {
+                    if (Model.RecoveryCodesLeft == 0)
+                    {
+                        <div class="danger-alert">
+                            <strong>You have no recovery codes left.</strong>
+                            <p>You must <a asp-page="./GenerateRecoveryCodes">generate a new set of recovery codes</a> before you can log in with a recovery code.</p>
+                        </div>
+                    }
+                    else if (Model.RecoveryCodesLeft == 1)
+                    {
+                        <div class="danger-alert">
+                            <strong>You have 1 recovery code left.</strong>
+                            <p>You can <a asp-page="./GenerateRecoveryCodes">generate a new set of recovery codes</a>.</p>
+                        </div>
+                    }
+                    else if (Model.RecoveryCodesLeft <= 3)
+                    {
+                        <div class="warning-alert">
+                            <strong>You have @Model.RecoveryCodesLeft recovery codes left.</strong>
+                            <p>You should <a asp-page="./GenerateRecoveryCodes">generate a new set of recovery codes</a>.</p>
+                        </div>
+                    }
+
+                    <div class="action-buttons">
+                        @if (Model.IsMachineRemembered)
+                        {
+                            <form method="post" style="display: inline-block">
+                                <button type="submit" class="action-btn secondary-btn">
+                                    <i class="fas fa-laptop"></i> Forget this browser
+                                </button>
+                            </form>
+                        }
+                        <a asp-page="./Disable2fa" class="action-btn danger-btn">
+                            <i class="fas fa-toggle-off"></i> Disable 2FA
+                        </a>
+                        <a asp-page="./GenerateRecoveryCodes" class="action-btn primary-btn">
+                            <i class="fas fa-sync-alt"></i> Reset recovery codes
+                        </a>
+                    </div>
+                }
+                else
+                {
+                    <div class="info-box">
+                        <div class="info-box-title">
+                            <i class="fas fa-info-circle"></i> Why enable 2FA?
+                        </div>
+                        <p>With 2FA, even if someone knows your password, they can't access your account without your second factor (typically your phone).</p>
+                        <p>Set up 2FA to significantly increase your account security.</p>
+                    </div>
+                }
+            </div>
+
+            <h4 class="section-title">
+                <i class="fas fa-mobile-alt"></i> Authenticator App
+            </h4>
+
+            <p>
+                An authenticator app generates one-time verification codes that provide additional security when logging in.
+            </p>
+
+            <div class="action-buttons">
+                @if (!Model.HasAuthenticator)
+                {
+                    <a id="enable-authenticator" asp-page="./EnableAuthenticator" class="action-btn primary-btn">
+                        <i class="fas fa-plus-circle"></i> Add authenticator app
+                    </a>
+                }
+                else
+                {
+                    <a id="enable-authenticator" asp-page="./EnableAuthenticator" class="action-btn primary-btn">
+                        <i class="fas fa-cog"></i> Set up authenticator app
+                    </a>
+                    <a id="reset-authenticator" asp-page="./ResetAuthenticator" class="action-btn danger-btn">
+                        <i class="fas fa-redo"></i> Reset authenticator app
+                    </a>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="danger-alert">
+                <strong>Privacy and cookie policy have not been accepted.</strong>
+                <p>You must accept the policy before you can enable two factor authentication.</p>
+            </div>
+        }
+    }
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

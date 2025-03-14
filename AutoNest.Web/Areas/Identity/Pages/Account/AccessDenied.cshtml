@@ -1,0 +1,176 @@
+﻿@page
+@model AccessDeniedModel
+@{
+    ViewData["Title"] = "Access denied";
+}
+
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-color: #ecf0f1;
+        --border-color: #e0e0e0;
+        --light-grey: #f8f9fa;
+        --dark-color: #2c3e50;
+    }
+
+    .access-denied-container {
+        max-width: 650px;
+        margin: 5rem auto;
+        text-align: center;
+    }
+
+    .error-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        padding: 3rem 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .error-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--accent-color), #c0392b);
+        }
+
+    .error-icon {
+        font-size: 4rem;
+        color: var(--accent-color);
+        margin-bottom: 1.5rem;
+        opacity: 0.9;
+    }
+
+    .error-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--accent-color);
+        margin-bottom: 1rem;
+    }
+
+    .error-message {
+        font-size: 1.1rem;
+        color: #555;
+        margin-bottom: 2rem;
+    }
+
+    .action-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 2rem;
+    }
+
+    .home-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
+    }
+
+        .home-btn:hover {
+            background: linear-gradient(135deg, #2980b9, var(--primary-color));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+            color: white;
+        }
+
+        .home-btn i {
+            margin-right: 8px;
+        }
+
+    .contact-link {
+        display: inline-flex;
+        align-items: center;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        .contact-link i {
+            margin-right: 5px;
+        }
+
+    .error-details {
+        background-color: var(--light-grey);
+        border-radius: 8px;
+        padding: 15px;
+        margin-top: 2rem;
+        text-align: left;
+    }
+
+    .error-details-title {
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+        .error-details-title i {
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+
+    .error-details p {
+        color: #666;
+        margin-bottom: 0;
+        font-size: 0.95rem;
+    }
+</style>
+
+<div class="access-denied-container">
+    <div class="error-card">
+        <div class="error-icon">
+            <i class="fas fa-ban"></i>
+        </div>
+        <h1 class="error-title">@ViewData["Title"]</h1>
+        <p class="error-message">You do not have permission to access this resource.</p>
+
+        <div class="error-details">
+            <div class="error-details-title">
+                <i class="fas fa-info-circle"></i> What happened?
+            </div>
+            <p>
+                The page or resource you attempted to access requires specific permissions that are not
+                associated with your current account. This could be due to:
+            </p>
+            <ul>
+                <li>Insufficient privileges for your user role</li>
+                <li>Restricted area that requires additional authorization</li>
+                <li>Resource that belongs to another user</li>
+            </ul>
+        </div>
+
+        <div class="action-buttons">
+            <a asp-area="" asp-action="Index" asp-controller="Home" class="home-btn">
+                <i class="fas fa-home"></i> Return to Home
+            </a>
+        </div>
+
+        <a href="/Contact" class="contact-link">
+            <i class="fas fa-envelope"></i> Contact Support
+        </a>
+    </div>
+</div>

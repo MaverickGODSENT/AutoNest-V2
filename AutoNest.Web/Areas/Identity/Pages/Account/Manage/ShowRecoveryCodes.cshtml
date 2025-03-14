@@ -1,0 +1,387 @@
+﻿@page
+@model ShowRecoveryCodesModel
+@{
+    ViewData["Title"] = "Recovery codes";
+    ViewData["ActivePage"] = "TwoFactorAuthentication";
+}
+
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-color: #ecf0f1;
+        --border-color: #e0e0e0;
+        --light-grey: #f8f9fa;
+        --dark-color: #2c3e50;
+        --warning-color: #f39c12;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+        .page-title i {
+            margin-right: 10px;
+            color: var(--warning-color);
+        }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--warning-color), var(--accent-color));
+        }
+
+    .content-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        padding: 25px;
+        margin-top: 1.5rem;
+    }
+
+    .warning-box {
+        background-color: #FEF5E7;
+        border-left: 4px solid var(--warning-color);
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 25px;
+        position: relative;
+        display: flex;
+    }
+
+    .warning-icon {
+        font-size: 2rem;
+        color: var(--warning-color);
+        margin-right: 15px;
+    }
+
+    .warning-content {
+        flex: 1;
+    }
+
+        .warning-content p {
+            margin-bottom: 10px;
+            color: #7E5109;
+        }
+
+            .warning-content p:last-child {
+                margin-bottom: 0;
+            }
+
+        .warning-content strong {
+            font-weight: 700;
+            color: #B7950B;
+        }
+
+    .codes-container {
+        background-color: var(--light-grey);
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+    .recovery-codes-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    @@media (min-width: 768px) {
+        .recovery-codes-grid
+
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    }
+
+    @@media (min-width: 992px) {
+        .recovery-codes-grid
+
+    {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    }
+
+    .recovery-code {
+        background-color: white;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        padding: 10px;
+        font-family: monospace;
+        font-size: 1rem;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        transition: all 0.2s ease;
+        user-select: all;
+    }
+
+        .recovery-code:hover {
+            background-color: #f0f7fc;
+            border-color: var(--primary-color);
+            box-shadow: 0 3px 10px rgba(52, 152, 219, 0.1);
+        }
+
+    .action-buttons {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .action-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .print-btn {
+        background-color: var(--light-grey);
+        color: var(--dark-color);
+        border: none;
+    }
+
+        .print-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+    .download-btn {
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        color: white;
+        border: none;
+        box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
+    }
+
+        .download-btn:hover {
+            background: linear-gradient(135deg, #2980b9, var(--primary-color));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+            color: white;
+        }
+
+    .copy-btn {
+        background-color: var(--light-grey);
+        color: var(--dark-color);
+        border: none;
+    }
+
+        .copy-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+    .action-btn i {
+        margin-right: 8px;
+    }
+
+    .security-info {
+        margin-top: 25px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .security-info-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+        .security-info-title i {
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+
+    .security-tips {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .security-tips li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+            color: #555;
+        }
+
+            .security-tips li::before {
+                content: '\f058';
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                position: absolute;
+                left: 0;
+                top: 9px;
+                font-size: 0.9rem;
+                color: var(--success-color);
+            }
+
+    .back-to-2fa {
+        display: inline-flex;
+        align-items: center;
+        color: var(--primary-color);
+        margin-top: 15px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+        .back-to-2fa:hover {
+            text-decoration: underline;
+        }
+
+        .back-to-2fa i {
+            margin-right: 5px;
+        }
+
+    @@media print {
+        .warning-box, .action-buttons, .security-info, .back-to-2fa, .page-title
+
+    {
+        display: none !important;
+    }
+
+    .content-container {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .codes-container {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .recovery-code {
+        border: 1px solid #000;
+        box-shadow: none;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    .codes-container, .codes-container * {
+        visibility: visible;
+    }
+
+    .codes-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    }
+</style>
+
+<partial name="_StatusMessage" for="StatusMessage" />
+
+<h3 class="page-title">
+    <i class="fas fa-key"></i> @ViewData["Title"]
+</h3>
+
+<div class="content-container">
+    <div class="warning-box">
+        <div class="warning-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <div class="warning-content">
+            <p>
+                <strong>Put these codes in a safe place.</strong>
+            </p>
+            <p>
+                If you lose your device and don't have the recovery codes, you will lose access to your account.
+                These codes are the only way to log in if you can't use your authenticator app.
+            </p>
+        </div>
+    </div>
+
+    <div class="codes-container">
+        <div class="recovery-codes-grid">
+            @for (var i = 0; i < Model.RecoveryCodes.Length; i++)
+            {
+                <div class="recovery-code">@Model.RecoveryCodes[i]</div>
+            }
+        </div>
+    </div>
+
+    <div class="action-buttons">
+        <button class="action-btn print-btn" onclick="window.print()">
+            <i class="fas fa-print"></i> Print Codes
+        </button>
+
+        <button class="action-btn download-btn" onclick="downloadCodes()">
+            <i class="fas fa-download"></i> Download as Text
+        </button>
+
+        <button class="action-btn copy-btn" onclick="copyAllCodes()">
+            <i class="fas fa-copy"></i> Copy to Clipboard
+        </button>
+    </div>
+
+    <div class="security-info">
+        <h4 class="security-info-title">
+            <i class="fas fa-shield-alt"></i> Security Recommendations
+        </h4>
+        <ul class="security-tips">
+            <li>Store these codes securely, separate from your authenticator device</li>
+            <li>Consider using a password manager to save these codes</li>
+            <li>Print these codes and store them in a secure physical location</li>
+            <li>Each code can only be used once for login</li>
+            <li>After using a code, it will be marked as used and cannot be used again</li>
+        </ul>
+    </div>
+
+    <a href="./TwoFactorAuthentication" class="back-to-2fa">
+        <i class="fas fa-arrow-left"></i> Back to two-factor authentication
+    </a>
+</div>
+
+<script>
+    function copyAllCodes() {
+        const codes = @Html.Raw(Json.Serialize(Model.RecoveryCodes));
+        const codesText = codes.join('\n');
+
+        navigator.clipboard.writeText(codesText).then(function() {
+            alert('Recovery codes copied to clipboard');
+        }, function(err) {
+            console.error('Could not copy text: ', err);
+            alert('Failed to copy codes. Please try another method.');
+        });
+    }
+
+    function downloadCodes() {
+        const codes = @Html.Raw(Json.Serialize(Model.RecoveryCodes));
+        const codesText = codes.join('\n');
+        const blob = new Blob([codesText], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'recovery-codes.txt';
+        document.body.appendChild(a);
+        a.click();
+
+        // Cleanup
+        setTimeout(function() {
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }, 0);
+    }
+</script>

@@ -21,7 +21,18 @@ namespace AutoNest.Services.Carts
             _imageRepository = imageRepository;
         }
 
-
+        public async Task InitCartForUser(string userId)
+        {
+            var check = _cartRepository.All();
+            if (check.Any(x => x.UserId == userId)) return;
+            var cart = new Cart
+            {
+                UserId = userId,
+                TotalCost = 0,
+            };
+            await _cartRepository.AddAsync(cart);
+            await _cartRepository.SaveChangesAsync();
+        }
 
 
         public async Task AddToCartAsync(string userId, string partId, int quantity)

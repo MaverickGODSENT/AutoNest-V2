@@ -96,7 +96,29 @@ namespace AutoNest.Services.Parts
                 Quantity = p.Quantity,
                 Price = p.Price,
                 CategoryName = categories.Where(c => c.Id == p.CategoryId).FirstOrDefault().Name,
+                CategoryId = p.CategoryId,
                 RemoteImageUrl = images.Where(i => i.PartId == p.Id).FirstOrDefault().RemoteImageUrl,
+            });
+        }
+
+        public IEnumerable<PartViewModel> GetPartsForCar(string carId)
+        {
+            var cateogires = _categoryRepository.All();
+            var images = _imageRepository.All();
+
+            return _partRepository.All().Select(p => new PartViewModel
+            {
+                Id = p.Id,
+                Brand = p.Brand,
+                Model = p.Model,
+                Description = p.Description,
+                Quantity = p.Quantity,
+                InStock = p.Quantity > 0,
+                Price = p.Price,
+                CategoryName = cateogires.Where(c => c.Id == p.CategoryId).FirstOrDefault().Name,
+                CategoryId = p.CategoryId,
+                CarId = carId,
+                RemoteImageUrl = images.Where(i=>i.PartId==p.Id).FirstOrDefault().RemoteImageUrl,
             });
         }
 

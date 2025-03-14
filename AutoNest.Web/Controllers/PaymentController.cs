@@ -64,17 +64,6 @@ public class PaymentController : Controller
                 return NotFound("Order not found.");
             }
         }
-        var userID = _userManager.GetUserId(User);
-        var userCart = await _cartService.RetrieveUserCartAsync(userID);
-        if(userCart == null)
-        {
-            return NotFound("Cart not found.");
-        }
-
-        foreach(var item in userCart.Parts)
-        {
-            await _cartService.RemoveFromCartAsync(userID,item.Id);
-        }
 
         if (string.IsNullOrEmpty(orderId))
         {
@@ -114,6 +103,7 @@ public class PaymentController : Controller
                 ImageUrl = c.ImageUrl,
             }).ToList()
         };
+        
 
         return View(orderViewModel);
     }

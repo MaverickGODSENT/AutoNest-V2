@@ -12,6 +12,7 @@ using AutoNest.Web.Areas.Admin.Services;
 using AutoNest.Web.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using AutoNest.Data;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -133,4 +134,3 @@ async Task EnsureRolesExist(RoleManager<IdentityRole> roleManager, UserManager<I
         }
     }
 }
-

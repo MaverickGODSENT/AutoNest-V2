@@ -1,61 +1,444 @@
 ﻿@using AutoNest.Models.Orders
 @model OrderInputModel
-<div class="container mt-4">
-    <h2>Place Your Order</h2>
 
-    <form asp-controller="Order" asp-action="SubmitOrder" method="post" >
-        <div class="mb-3">
-            <label class="form-label">Shipping Address</label>
-            <input type="text" class="form-control" asp-for="ShippingAddress" required>
-            <span class="text-danger" asp-validation-for="ShippingAddress"></span>
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-color: #ecf0f1;
+        --border-color: #e0e0e0;
+        --light-grey: #f8f9fa;
+        --dark-color: #2c3e50;
+    }
+
+    .order-container {
+        max-width: 900px;
+        margin: 3rem auto;
+        padding: 0 15px;
+    }
+
+    .order-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+        .order-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--success-color), #27ae60);
+        }
+
+        .order-title i {
+            margin-right: 12px;
+            color: var(--success-color);
+        }
+
+    .order-form {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+    }
+
+    .form-section {
+        padding: 30px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+        .form-section:last-child {
+            border-bottom: none;
+        }
+
+    .section-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+        .section-title i {
+            margin-right: 10px;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+    .form-control {
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 12px 15px;
+        font-size: 15px;
+        color: #333;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+    }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+            outline: none;
+        }
+
+    .form-select {
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 12px 15px;
+        font-size: 15px;
+        color: #333;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+    }
+
+        .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+            outline: none;
+        }
+
+    .form-label {
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-bottom: 8px;
+        display: block;
+        font-size: 0.95rem;
+    }
+
+    .field-validation-error {
+        font-size: 0.85rem;
+        color: var(--accent-color);
+        margin-top: 5px;
+        display: block;
+    }
+
+    .readonly-field {
+        background-color: var(--light-grey);
+        font-weight: 600;
+    }
+
+    /* Order summary styles */
+    .order-summary {
+        background-color: var(--light-grey);
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .summary-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+    }
+
+    .summary-label {
+        color: #666;
+    }
+
+    .summary-value {
+        font-weight: 600;
+        color: var(--dark-color);
+    }
+
+    .total-row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid var(--border-color);
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .total-value {
+        color: var(--success-color);
+    }
+
+    /* Payment method styles */
+    .payment-options {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+
+    .payment-option {
+        display: none;
+    }
+
+        .payment-option + label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 90px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .payment-option:checked + label {
+            border-color: var(--success-color);
+            background-color: rgba(46, 204, 113, 0.05);
+        }
+
+        .payment-option + label i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #777;
+        }
+
+        .payment-option:checked + label i {
+            color: var(--success-color);
+        }
+
+        .payment-option + label span {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .payment-option:checked + label span {
+            color: var(--dark-color);
+        }
+
+    /* Form actions */
+    .form-actions {
+        display: flex;
+        gap: 15px;
+    }
+
+    .submit-btn {
+        background: linear-gradient(135deg, var(--success-color), #27ae60);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        box-shadow: 0 4px 10px rgba(46, 204, 113, 0.2);
+    }
+
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #27ae60, var(--success-color));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(46, 204, 113, 0.3);
+        }
+
+        .submit-btn i {
+            margin-right: 8px;
+        }
+
+    .back-btn {
+        background-color: var(--light-grey);
+        color: var(--dark-color);
+        border: none;
+        border-radius: 8px;
+        padding: 12px 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+    }
+
+        .back-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+        .back-btn i {
+            margin-right: 8px;
+        }
+
+    /* Responsive */
+    @@media (max-width: 767px) {
+        .form-section
+
+    {
+        padding: 20px;
+    }
+
+    .order-title {
+        font-size: 1.5rem;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .submit-btn, .back-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    }
+</style>
+
+<div class="order-container">
+    <h2 class="order-title">
+        <i class="fas fa-clipboard-check"></i> Complete Your Order
+    </h2>
+
+    <form asp-controller="Order" asp-action="SubmitOrder" method="post" class="order-form">
+        <!-- Shipping Address Section -->
+        <div class="form-section">
+            <h3 class="section-title">
+                <i class="fas fa-map-marker-alt"></i> Shipping Address
+            </h3>
+
+            <div class="mb-3">
+                <label class="form-label" for="ShippingAddress">Address</label>
+                <input type="text" class="form-control" asp-for="ShippingAddress" placeholder="Enter your full address" required>
+                <span class="field-validation-error" asp-validation-for="ShippingAddress"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label" for="ShippingCity">City</label>
+                    <input type="text" class="form-control" asp-for="ShippingCity" placeholder="Enter city" required>
+                    <span class="field-validation-error" asp-validation-for="ShippingCity"></span>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label" for="ShippingState">State/Province</label>
+                    <input type="text" class="form-control" asp-for="ShippingState" placeholder="State or province" required>
+                    <span class="field-validation-error" asp-validation-for="ShippingState"></span>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label" for="ShippingZipCode">ZIP Code</label>
+                    <input type="text" class="form-control" asp-for="ShippingZipCode" placeholder="Postal code" required>
+                    <span class="field-validation-error" asp-validation-for="ShippingZipCode"></span>
+                </div>
+            </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-6 mb-3">
-                <label class="form-label">City</label>
-                <input type="text" class="form-control" asp-for="ShippingCity" required>
-                <span class="text-danger" asp-validation-for="ShippingCity"></span>
+        <!-- Order Summary Section -->
+        <div class="form-section">
+            <h3 class="section-title">
+                <i class="fas fa-receipt"></i> Order Summary
+            </h3>
+
+            <div class="order-summary">
+                <div class="summary-row">
+                    <span class="summary-label">Subtotal:</span>
+                    <span class="summary-value">@Model.SubTotal.ToString("C")</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Shipping:</span>
+                    <span class="summary-value">@Model.ShippingCost.ToString("C")</span>
+                </div>
+                <div class="total-row">
+                    <span>Total Amount:</span>
+                    <span class="total-value">@Model.TotalAmount.ToString("C")</span>
+                </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <label class="form-label">State</label>
-                <input type="text" class="form-control" asp-for="ShippingState" required>
-                <span class="text-danger" asp-validation-for="ShippingState"></span>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label class="form-label">ZIP Code</label>
-                <input type="text" class="form-control" asp-for="ShippingZipCode" required>
-                <span class="text-danger" asp-validation-for="ShippingZipCode"></span>
+
+            <div class="row d-none">
+                <div class="col-md-4 mb-3">
+                    <input type="hidden" asp-for="SubTotal">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <input type="hidden" asp-for="ShippingCost">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <input type="hidden" asp-for="TotalAmount">
+                </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <label class="form-label">Subtotal</label>
-                <input type="text" class="form-control" asp-for="SubTotal" readonly>
+        <!-- Payment Method Section -->
+        <div class="form-section">
+            <h3 class="section-title">
+                <i class="fas fa-credit-card"></i> Payment Method
+            </h3>
+
+            <div class="payment-options">
+                @foreach (var paymentMethod in Enum.GetValues(typeof(PaymentMethod)))
+                {
+                    <input type="radio" class="payment-option"
+                           name="PaymentMethod"
+                           id="payment_@paymentMethod"
+                           value="@((int)paymentMethod)"
+                    @(Model.PaymentMethod == (PaymentMethod)paymentMethod ? "checked" : "") />
+                    <label for="payment_@paymentMethod">
+                        @switch (paymentMethod.ToString())
+                        {
+                            case "CreditCard":
+                                <i class="far fa-credit-card"></i>
+                                <span>Credit Card</span>
+                                break;
+                            case "PayPal":
+                                <i class="fab fa-paypal"></i>
+                                <span>PayPal</span>
+                                break;
+                            case "BankTransfer":
+                                <i class="fas fa-university"></i>
+                                <span>Bank Transfer</span>
+                                break;
+                            case "CashOnDelivery":
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>Cash on Delivery</span>
+                                break;
+                            default:
+                                <i class="fas fa-money-check"></i>
+                                <span>@paymentMethod</span>
+                                break;
+                        }
+                    </label>
+                }
             </div>
-            <div class="col-md-4 mb-3">
-                <label class="form-label">Shipping Cost</label>
-                <input type="text" class="form-control" asp-for="ShippingCost" readonly>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label class="form-label">Total Amount</label>
-                <input type="text" class="form-control" asp-for="TotalAmount" readonly>
-            </div>
+            <span class="field-validation-error mt-2" asp-validation-for="PaymentMethod"></span>
         </div>
 
-        <div class="mb-3">
-            <label class="form-label">Payment Method</label>
-            <select class="form-select" asp-for="PaymentMethod" asp-items="Html.GetEnumSelectList<PaymentMethod>()" required></select>
-            <span class="text-danger" asp-validation-for="PaymentMethod"></span>
+        <!-- Form Actions -->
+        <div class="form-section">
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-check-circle"></i> Place Order
+                </button>
+                <a asp-controller="Cart" asp-action="ViewCart" class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Cart
+                </a>
+            </div>
         </div>
-
-        <button type="submit" class="btn btn-success">Place Order</button>
-        <a asp-controller="Cart" asp-action="Index" class="btn btn-secondary">Back to Cart</a>
     </form>
 </div>
 
-
-
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Custom validation if needed
+
+            // Example: Check if shipping address is valid
+            const form = document.querySelector("form");
+            form.addEventListener("submit", function(e) {
+                const address = document.getElementById("ShippingAddress").value;
+                if (address.length < 5) {
+                    e.preventDefault();
+                    alert("Please enter a valid shipping address");
+                }
+            });
+        });
+    </script>
 }

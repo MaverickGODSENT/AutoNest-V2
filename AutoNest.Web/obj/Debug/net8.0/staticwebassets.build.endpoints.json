@@ -2633,6 +2633,252 @@
       ]
     },
     {
+      "Route": "images/parts/bardahl-logo.jpg",
+      "AssetFile": "images/parts/bardahl-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14853"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N3fPhcrymAcfesIzkeFy6QzX8WdS0OrIXlQQ6qBjwgo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:53:07 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N3fPhcrymAcfesIzkeFy6QzX8WdS0OrIXlQQ6qBjwgo="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/bardahl-logo.ztwk4on9ct.jpg",
+      "AssetFile": "images/parts/bardahl-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14853"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N3fPhcrymAcfesIzkeFy6QzX8WdS0OrIXlQQ6qBjwgo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:53:07 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ztwk4on9ct"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N3fPhcrymAcfesIzkeFy6QzX8WdS0OrIXlQQ6qBjwgo="
+        },
+        {
+          "Name": "label",
+          "Value": "images/parts/bardahl-logo.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/bosch-logo.2rt5qz251o.jpg",
+      "AssetFile": "images/parts/bosch-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3kspPTNfr1hzUMhDkj9bS8V5IAL8xngtBvnnTTGeACM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 11:26:28 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2rt5qz251o"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3kspPTNfr1hzUMhDkj9bS8V5IAL8xngtBvnnTTGeACM="
+        },
+        {
+          "Name": "label",
+          "Value": "images/parts/bosch-logo.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/bosch-logo.jpg",
+      "AssetFile": "images/parts/bosch-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3kspPTNfr1hzUMhDkj9bS8V5IAL8xngtBvnnTTGeACM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 11:26:28 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3kspPTNfr1hzUMhDkj9bS8V5IAL8xngtBvnnTTGeACM="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/brembo-logo.jpg",
+      "AssetFile": "images/parts/brembo-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12034"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9HBGgYpEghcPhAJxIdQGeI1y+3/xxSYBIkEmkNzori8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 09:00:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9HBGgYpEghcPhAJxIdQGeI1y+3/xxSYBIkEmkNzori8="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/brembo-logo.kw2d53pe56.jpg",
+      "AssetFile": "images/parts/brembo-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12034"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9HBGgYpEghcPhAJxIdQGeI1y+3/xxSYBIkEmkNzori8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 09:00:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kw2d53pe56"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9HBGgYpEghcPhAJxIdQGeI1y+3/xxSYBIkEmkNzori8="
+        },
+        {
+          "Name": "label",
+          "Value": "images/parts/brembo-logo.jpg"
+        }
+      ]
+    },
+    {
       "Route": "images/parts/d6608482-f1b7-42b7-b396-6993e74df1ef.88ouifqnpp.jpg",
       "AssetFile": "images/parts/d6608482-f1b7-42b7-b396-6993e74df1ef.jpg",
       "Selectors": [],
@@ -2711,6 +2957,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-2NsgW1R2WyTMsEj91YO0wwCMhFoymuTZ/J7yfgwcLiE="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/garett-logo.5ixo1zidjv.jpg",
+      "AssetFile": "images/parts/garett-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10175"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y9NISsR3vV2beMN2Mu7iGc+sRRHRotkeBOSf56haaSg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 11:18:45 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ixo1zidjv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y9NISsR3vV2beMN2Mu7iGc+sRRHRotkeBOSf56haaSg="
+        },
+        {
+          "Name": "label",
+          "Value": "images/parts/garett-logo.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/garett-logo.jpg",
+      "AssetFile": "images/parts/garett-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10175"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y9NISsR3vV2beMN2Mu7iGc+sRRHRotkeBOSf56haaSg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 11:18:45 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y9NISsR3vV2beMN2Mu7iGc+sRRHRotkeBOSf56haaSg="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/ngk-logo.jpg",
+      "AssetFile": "images/parts/ngk-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34921"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ugi4HjrQZqo+3BdqSkWFetgMXMiTZcQT8ZjL2FDiOFc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 09:00:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ugi4HjrQZqo+3BdqSkWFetgMXMiTZcQT8ZjL2FDiOFc="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/ngk-logo.ys87cdch2j.jpg",
+      "AssetFile": "images/parts/ngk-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34921"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ugi4HjrQZqo+3BdqSkWFetgMXMiTZcQT8ZjL2FDiOFc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 09:00:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ys87cdch2j"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ugi4HjrQZqo+3BdqSkWFetgMXMiTZcQT8ZjL2FDiOFc="
+        },
+        {
+          "Name": "label",
+          "Value": "images/parts/ngk-logo.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/pennzoil-logo.jpg",
+      "AssetFile": "images/parts/pennzoil-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52893"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uB4O3zLzUEppqcYyjoktcwnT/5HebcxGH1yiHFK5Tb4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 11:20:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uB4O3zLzUEppqcYyjoktcwnT/5HebcxGH1yiHFK5Tb4="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/pennzoil-logo.sz3a0v9yxk.jpg",
+      "AssetFile": "images/parts/pennzoil-logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52893"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uB4O3zLzUEppqcYyjoktcwnT/5HebcxGH1yiHFK5Tb4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 11:20:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sz3a0v9yxk"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uB4O3zLzUEppqcYyjoktcwnT/5HebcxGH1yiHFK5Tb4="
+        },
+        {
+          "Name": "label",
+          "Value": "images/parts/pennzoil-logo.jpg"
         }
       ]
     },

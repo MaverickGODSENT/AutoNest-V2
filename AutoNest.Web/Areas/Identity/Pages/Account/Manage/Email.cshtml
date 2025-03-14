@@ -1,0 +1,309 @@
+﻿@page
+@model EmailModel
+@{
+    ViewData["Title"] = "Manage Email";
+    ViewData["ActivePage"] = ManageNavPages.Email;
+}
+
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2c3e50;
+        --accent-color: #e74c3c;
+        --success-color: #2ecc71;
+        --light-color: #ecf0f1;
+        --border-color: #e0e0e0;
+        --light-grey: #f8f9fa;
+        --dark-color: #2c3e50;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+        .page-title i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+    .email-form-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        padding: 25px;
+        margin-top: 1.5rem;
+    }
+
+    .email-section {
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+        .email-section:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+    .section-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+        .section-title i {
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: var(--dark-color);
+        margin-bottom: 8px;
+        display: block;
+        font-size: 0.95rem;
+    }
+
+    .form-control {
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 12px 15px 12px 40px;
+        font-size: 15px;
+        color: #333;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        width: 100%;
+        height: auto;
+    }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+            outline: none;
+        }
+
+        .form-control:disabled {
+            background-color: var(--light-grey);
+            color: #666;
+        }
+
+    .input-icon {
+        position: absolute;
+        left: 15px;
+        top: 42px;
+        color: #aaa;
+        transition: all 0.3s ease;
+    }
+
+    .form-control:focus + .input-icon {
+        color: var(--primary-color);
+    }
+
+    .verification-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(46, 204, 113, 0.1);
+        color: var(--success-color);
+        font-weight: 600;
+        border-radius: 20px;
+        padding: 5px 12px;
+        font-size: 0.85rem;
+        margin-left: 10px;
+    }
+
+        .verification-badge i {
+            margin-right: 5px;
+        }
+
+    .verification-btn {
+        background-color: transparent;
+        color: var(--primary-color);
+        border: none;
+        padding: 0;
+        font-weight: 600;
+        font-size: 0.9rem;
+        display: inline-flex;
+        align-items: center;
+        margin-top: 8px;
+        transition: all 0.2s ease;
+    }
+
+        .verification-btn:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        .verification-btn i {
+            margin-right: 5px;
+        }
+
+    .validation-message {
+        font-size: 0.85rem;
+        color: var(--accent-color);
+        margin-top: 5px;
+        display: block;
+    }
+
+    .update-btn {
+        background: linear-gradient(135deg, var(--primary-color), #2980b9);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 14px 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .update-btn:hover {
+            background: linear-gradient(135deg, #2980b9, var(--primary-color));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .update-btn i {
+            margin-right: 8px;
+        }
+
+    .info-box {
+        background-color: rgba(52, 152, 219, 0.1);
+        border-left: 4px solid var(--primary-color);
+        border-radius: 8px;
+        padding: 15px;
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+
+        .info-box i {
+            color: var(--primary-color);
+            margin-right: 5px;
+        }
+</style>
+
+<h3 class="page-title">
+    <i class="fas fa-envelope"></i> @ViewData["Title"]
+</h3>
+
+<partial name="_StatusMessage" for="StatusMessage" />
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="email-form-container">
+            <form id="email-form" method="post">
+                <div asp-validation-summary="All" class="text-danger" role="alert"></div>
+
+                <!-- Current Email Section -->
+                <div class="email-section">
+                    <h4 class="section-title">
+                        <i class="fas fa-envelope-open"></i> Current Email
+                    </h4>
+
+                    <div class="form-group">
+                        <label asp-for="Email" class="form-label">Email Address</label>
+                        <div class="d-flex align-items-center">
+                            <div class="position-relative flex-grow-1">
+                                <input asp-for="Email" class="form-control" placeholder="Your email address" disabled />
+                                <i class="fas fa-envelope input-icon"></i>
+                            </div>
+
+                            @if (Model.IsEmailConfirmed)
+                            {
+                                <span class="verification-badge">
+                                    <i class="fas fa-check-circle"></i> Verified
+                                </span>
+                            }
+                        </div>
+
+                        @if (!Model.IsEmailConfirmed)
+                        {
+                            <button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail" class="verification-btn">
+                                <i class="fas fa-paper-plane"></i> Send verification email
+                            </button>
+
+                            <div class="info-box mt-3">
+                                <i class="fas fa-info-circle"></i> Your email address has not been verified. Please check your inbox for a verification link.
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                <!-- New Email Section -->
+                <div class="email-section">
+                    <h4 class="section-title">
+                        <i class="fas fa-edit"></i> Change Email
+                    </h4>
+
+                    <div class="form-group">
+                        <label asp-for="Input.NewEmail" class="form-label">New Email Address</label>
+                        <div class="position-relative">
+                            <input asp-for="Input.NewEmail" class="form-control" autocomplete="email" aria-required="true" placeholder="Enter new email address" />
+                            <i class="fas fa-envelope-open input-icon"></i>
+                        </div>
+                        <span asp-validation-for="Input.NewEmail" class="validation-message"></span>
+                    </div>
+
+                    <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="update-btn">
+                        <i class="fas fa-save"></i> Update Email
+                    </button>
+
+                    <div class="info-box">
+                        <i class="fas fa-info-circle"></i> After changing your email, you will need to verify your new address.
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="email-form-container">
+            <h4 class="section-title">
+                <i class="fas fa-question-circle"></i> About Email Management
+            </h4>
+            <p class="mb-3">Your email address is used for:</p>
+            <ul class="ps-3">
+                <li class="mb-2">Account security and notifications</li>
+                <li class="mb-2">Password recovery</li>
+                <li class="mb-2">Important account alerts</li>
+                <li class="mb-2">Order confirmations and updates</li>
+            </ul>
+            <p class="mt-3">Keep your email address up to date to ensure you receive important communications about your account.</p>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
