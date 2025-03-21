@@ -24,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Identity\Data\" />
     <Folder Include="Views\Category\" />
     <Folder Include="Views\Engine\" />
     <Folder Include="wwwroot\js\" />

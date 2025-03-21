@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AutoNest.Web.7dctf4chm5.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7dctf4chm5"},{"Name":"integrity","Value":"sha256-JR2PqvbAHQC3KJVkGCDIDuK1FWZ0UNGKasGrOffmM30="},{"Name":"label","Value":"_content/AutoNest.Web/AutoNest.Web.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JR2PqvbAHQC3KJVkGCDIDuK1FWZ0UNGKasGrOffmM30=\u0022"},{"Name":"Last-Modified","Value":"Thu, 20 Feb 2025 13:58:03 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JR2PqvbAHQC3KJVkGCDIDuK1FWZ0UNGKasGrOffmM30=\u0022"},{"Name":"Last-Modified","Value":"Fri, 21 Mar 2025 14:01:37 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AutoNest.Web/AutoNest.Web.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AutoNest.Web.7dctf4chm5.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JR2PqvbAHQC3KJVkGCDIDuK1FWZ0UNGKasGrOffmM30="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JR2PqvbAHQC3KJVkGCDIDuK1FWZ0UNGKasGrOffmM30=\u0022"},{"Name":"Last-Modified","Value":"Thu, 20 Feb 2025 13:58:03 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JR2PqvbAHQC3KJVkGCDIDuK1FWZ0UNGKasGrOffmM30=\u0022"},{"Name":"Last-Modified","Value":"Fri, 21 Mar 2025 14:01:37 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AutoNest.Web/css/site.9zp2n8kj8d.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>

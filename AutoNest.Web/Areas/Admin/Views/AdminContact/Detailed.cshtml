@@ -1,0 +1,15 @@
+﻿@using AutoNest.Models.Home
+@model ContactFormModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h2>Feedback details</h2>
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">@Model.Name</h4>
+        <p class="card-text">@Model.Email</p>
+        <p class="card-text">@Model.Message</p>
+        <div class="mt-4">
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>

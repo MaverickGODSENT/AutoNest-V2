@@ -2,6 +2,7 @@ using AutoNest.Models.Home;
 using AutoNest.Services.Cars;
 using AutoNest.Services.Carts;
 using AutoNest.Services.Categories;
+using AutoNest.Services.Contacts;
 using AutoNest.Web.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -14,13 +15,15 @@ namespace AutoNest.Web.Controllers
         private readonly ICarService _carService;
         private readonly ICategoryService _categoryService;
         private readonly ICartService _cartService;
+        private readonly IContactService _contactService;
         private readonly UserManager<IdentityUser> _userManager;
 
-        public HomeController(ICarService carService, ICategoryService categoryService,ICartService cartService,UserManager<IdentityUser> userManager)
+        public HomeController(ICarService carService, ICategoryService categoryService, ICartService cartService, IContactService contactService, UserManager<IdentityUser> userManager)
         {
             _carService = carService;
             _categoryService = categoryService;
             _cartService = cartService;
+            _contactService = contactService;
             _userManager = userManager;
         }
 
@@ -36,7 +39,23 @@ namespace AutoNest.Web.Controllers
 
             return View(homeViewModel);
         }
+        [HttpGet]
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Contact(ContactFormModel contactFormModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(contactFormModel);
+            }
 
+            await _contactService.Add(contactFormModel);
+
+            return RedirectToAction("Index");
+        }
         public IActionResult Search(HomeViewModel homeViewModel)
         {
             var carId = homeViewModel.SelectedCarId;

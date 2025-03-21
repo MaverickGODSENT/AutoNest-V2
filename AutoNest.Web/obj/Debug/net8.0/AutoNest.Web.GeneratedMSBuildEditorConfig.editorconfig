@@ -56,6 +56,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5DYXRlZ29yeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminContact/Detailed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db250YWN0XERldGFpbGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminContact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db250YWN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Areas/Admin/Views/AdminEngine/CreateEngine.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5FbmdpbmVcQ3JlYXRlRW5naW5lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -278,6 +286,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Views/Cart/ViewCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxWaWV3Q2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ProgrammingStuff/AutoNest-V2/AutoNest.Web/Views/Home/Index.cshtml]

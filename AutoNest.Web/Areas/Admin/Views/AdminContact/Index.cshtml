@@ -1,0 +1,37 @@
+﻿@using AutoNest.Models.Home
+@model IEnumerable<ContactFormModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h2></h2>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Email</th>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var contact in Model)
+        {
+            <tr>
+                <td>@contact.Email</td>
+                <td>@contact.Name</td>
+                <td>
+                    <a asp-action="Details" asp-controller="AdminContact" asp-area="Admin" asp-route-id="@contact.Id" class="btn btn-info btn-sm">
+                        <i class="bi bi-eye"></i> View
+                    </a>
+                    <a asp-action="Delete" asp-controller="AdminContact" asp-area="Admin" asp-route-id="@contact.Id" class="btn btn-danger btn-sm">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

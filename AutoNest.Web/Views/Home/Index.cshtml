@@ -432,15 +432,15 @@
             <div class="col-md-4">
                 <div class="categories-card">
                     <div class="card-header">
-                        <i class="fas fa-tags me-2"></i> Parts Categories
+                        <i class="fas fa-tags me-2"></i>Available Categories
                     </div>
                     <ul class="list-group list-group-flush">
                         @foreach (var category in Model.Categories)
                         {
                             <li class="list-group-item">
-                                <a asp-action="CategorySearch" asp-controller="Home" asp-route-id="@category.Id">
+                                <p>
                                     <i class="fas fa-angle-right"></i> @category.Name
-                                </a>
+                                </p>
                             </li>
                         }
                     </ul>

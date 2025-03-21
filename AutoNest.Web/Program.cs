@@ -13,6 +13,7 @@ using AutoNest.Web.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using AutoNest.Data;
+using AutoNest.Services.Contacts;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -36,6 +37,7 @@ builder.Services.AddScoped<IDeletableEntityRepository<Cart>, DeletableEntityRepo
 builder.Services.AddScoped<IDeletableEntityRepository<CartItem>, DeletableEntityRepository<CartItem>>();
 builder.Services.AddScoped<IDeletableEntityRepository<Order>, DeletableEntityRepository<Order>>();
 builder.Services.AddScoped<IDeletableEntityRepository<Car>, DeletableEntityRepository<Car>>();
+builder.Services.AddScoped<IDeletableEntityRepository<Contact>, DeletableEntityRepository<Contact>>();
 
 // Identity config
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
@@ -54,6 +56,7 @@ builder.Services.AddTransient<IOrderService, OrderService>();
 builder.Services.AddTransient<IStripeService, StripeService>();
 builder.Services.AddTransient<IAdminService, AdminService>();
 builder.Services.AddTransient<ICarService, CarService>();
+builder.Services.AddTransient<IContactService, ContactService>();
 
 var app = builder.Build();
 
