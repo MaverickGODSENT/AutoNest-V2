@@ -33,8 +33,15 @@ namespace AutoNest.Services.Carts
             await _cartRepository.AddAsync(cart);
             await _cartRepository.SaveChangesAsync();
         }
-
-
+        public async Task ClearCartItems(string cartId)
+        {
+            var cartItems = _cartItemRepository.All().Where(x => x.CartId == cartId).ToList();
+            foreach (var item in cartItems)
+            {
+                _cartItemRepository.Delete(item);
+            }
+            await _cartItemRepository.SaveChangesAsync();
+        }
         public async Task AddToCartAsync(string userId, string partId, int quantity)
         {
             var currentCart = _cartRepository.All().FirstOrDefault(x => x.UserId == userId);

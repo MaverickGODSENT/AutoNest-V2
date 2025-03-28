@@ -29,13 +29,16 @@ namespace AutoNest.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var userId = _userManager.GetUserId(User);
+            if(User.Identity.IsAuthenticated)
+            {
+                var userId = _userManager.GetUserId(User);
+                await _cartService.InitCartForUser(userId);
+            }
             var cars = _carService.GetAll();
             var categories = _categoryService.GetAll();
             HomeViewModel homeViewModel = new HomeViewModel();
             homeViewModel.Cars = cars.ToList();
             homeViewModel.Categories = categories.ToList();
-            await _cartService.InitCartForUser(userId);
 
             return View(homeViewModel);
         }
@@ -47,11 +50,6 @@ namespace AutoNest.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Contact(ContactFormModel contactFormModel)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(contactFormModel);
-            }
-
             await _contactService.Add(contactFormModel);
 
             return RedirectToAction("Index");

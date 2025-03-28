@@ -1,13 +1,15 @@
-﻿using AutoNest.Models.Home;
-using AutoNest.Services.Contacts;
+﻿using AutoNest.Services.Contacts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AutoNest.Web.Areas.Admin.Controllers
 {
-    public class AdminContact:Controller
+    [Area("Admin")]
+    [Authorize(Roles = "Admin")]
+    public class AdminContactController : Controller
     {
         private readonly IContactService _contactService;
-        public AdminContact(IContactService contactService)
+        public AdminContactController(IContactService contactService)
         {
             _contactService = contactService;
         }

@@ -45,7 +45,7 @@ public class PaymentController : Controller
         return Redirect(sessionUrl);
     }
 
-    public async Task<IActionResult> PaymentSuccess(string session_id, string orderId)
+    public async Task<IActionResult> PaymentSuccess(string session_id)
     {
         if (string.IsNullOrEmpty(session_id))
         {
@@ -53,12 +53,12 @@ public class PaymentController : Controller
         }
 
         var isPaymentSuccessful = await _stripeService.VerifyPaymentAsync(session_id);
+        var userId = User.Identity.IsAuthenticated ? _userManager.GetUserId(User) : "Guest";
+        var orderCheck = await _orderService.GetOrderForUserAsync(userId);
+        var orderId = orderCheck?.Id;
 
         if (isPaymentSuccessful)
         {
-            var userId = User.Identity.IsAuthenticated ? _userManager.GetUserId(User) : "Guest";
-
-            var orderCheck = _orderService.GetOrderById(orderId);
             if (orderCheck == null)
             {
                 return NotFound("Order not found.");
@@ -104,7 +104,7 @@ public class PaymentController : Controller
             }).ToList()
         };
         
-
+        await _cartService.ClearCartItems(order.CartId);
         return View(orderViewModel);
     }
 }

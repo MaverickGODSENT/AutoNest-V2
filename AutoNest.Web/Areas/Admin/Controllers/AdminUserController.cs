@@ -21,9 +21,14 @@ namespace AutoNest.Web.Areas.Admin.Controllers
 
             return View(users);
         }
+        public async Task<IActionResult> DetailsAsync(string userId)
+        {
+            var user = await _adminService.GetUserById(userId);
+            return View(user);
+        }
 
         [HttpGet]
-        public async Task<IActionResult> EditUser(string userId)
+        public async Task<IActionResult> Edit(string userId)
         {
             var user = await _adminService.GetUserById(userId);
 
@@ -38,7 +43,7 @@ namespace AutoNest.Web.Areas.Admin.Controllers
             return View(viewModel);
         }
         [HttpPost]
-        public async Task<IActionResult> EditUser(EditUserViewModel model)
+        public async Task<IActionResult> Edit(EditUserViewModel model)
         {
             var user = await _adminService.GetUserById(model.Id);
             user.Email = model.Email;
@@ -48,7 +53,7 @@ namespace AutoNest.Web.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
-        public async Task<IActionResult> DeleteUser(string userId)
+        public async Task<IActionResult> Delet(string userId)
         {
             await _adminService.DeleteUser(userId);
             return RedirectToAction("Index");

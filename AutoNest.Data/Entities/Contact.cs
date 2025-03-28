@@ -5,6 +5,11 @@ namespace AutoNest.Data.Entities
 {
     public class Contact:BaseDeletableModel<string>
     {
+        public Contact()
+        {
+            this.Id = Guid.NewGuid().ToString();
+        }
+
         [Required]
         public string Name { get; set; }
         [Required]

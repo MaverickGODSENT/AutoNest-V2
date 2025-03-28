@@ -9,6 +9,7 @@ namespace AutoNest.Services.Orders
         public Task AddOrderAsync(OrderInputModel inputModel, string userId);
         public Task DeleteOrderAsync(string orderId);
         public Order GetOrderById(string id);
+        public Task<Order> GetOrderForUserAsync(string userId);
         public Task UpdateOrderAsync(OrderInputModel order);
     }
 }

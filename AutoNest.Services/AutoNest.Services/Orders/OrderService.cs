@@ -62,7 +62,10 @@ namespace AutoNest.Services.Orders
         {
             return _orderRepository.GetById(id);
         }
-
+        public async Task<Order> GetOrderForUserAsync(string userId)
+        {
+            return _orderRepository.All().FirstOrDefault(x => x.UserId == userId);
+        }
         public async Task UpdateOrderAsync(OrderInputModel order)
         {
             Order order1 = new Order

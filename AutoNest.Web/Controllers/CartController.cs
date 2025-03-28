@@ -18,9 +18,13 @@ namespace AutoNest.Web.Controllers
 
         public async Task<IActionResult> AddToCart(string partId, int quantity)
         {
-            var userId = _userManager.GetUserId(User);
-            await _cartService.AddToCartAsync(userId, partId, quantity);
-            return RedirectToAction("Index", "Home");
+            if (User.Identity.IsAuthenticated)
+            {
+                var userId = _userManager.GetUserId(User);
+                await _cartService.AddToCartAsync(userId, partId, quantity);
+                return RedirectToAction("Index", "Home");
+            }
+            return RedirectToAction("Login","Identity");
         }
 
         [Authorize]
