@@ -1,9 +1,11 @@
+using AutoNest.Data;
 using AutoNest.Data.Common.Repositories;
 using AutoNest.Data.Entities;
 using AutoNest.Data.Repositories;
 using AutoNest.Services.Cars;
 using AutoNest.Services.Carts;
 using AutoNest.Services.Categories;
+using AutoNest.Services.Contacts;
 using AutoNest.Services.Engines;
 using AutoNest.Services.Orders;
 using AutoNest.Services.Parts;
@@ -12,8 +14,6 @@ using AutoNest.Web.Areas.Admin.Services;
 using AutoNest.Web.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using AutoNest.Data;
-using AutoNest.Services.Contacts;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -97,6 +97,17 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<ApplicationDbContext>();
+
+    await context.Database.MigrateAsync();
+
+    await DbSeeder.SeedAsync(context, services);
+}
+
 
 app.Run();
 

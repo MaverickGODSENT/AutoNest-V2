@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -6,6 +6,21 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-AutoNest.Web-014f67a4-2b0f-4141-b11f-a781467497b4</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Category\**" />
+    <Compile Remove="Views\Engine\**" />
+    <Compile Remove="wwwroot\js\**" />
+    <Content Remove="Views\Category\**" />
+    <Content Remove="Views\Engine\**" />
+    <Content Remove="wwwroot\js\**" />
+    <EmbeddedResource Remove="Views\Category\**" />
+    <EmbeddedResource Remove="Views\Engine\**" />
+    <EmbeddedResource Remove="wwwroot\js\**" />
+    <None Remove="Views\Category\**" />
+    <None Remove="Views\Engine\**" />
+    <None Remove="wwwroot\js\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.12" />
@@ -25,9 +40,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\Identity\Data\" />
-    <Folder Include="Views\Category\" />
-    <Folder Include="Views\Engine\" />
-    <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
 </Project>

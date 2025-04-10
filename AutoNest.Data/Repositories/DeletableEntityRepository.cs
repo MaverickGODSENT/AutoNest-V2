@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AutoNest.Data.Repositories
 {
-    public class DeletableEntityRepository<TEntity>:Repository<TEntity>, IDeletableEntityRepository<TEntity>
+    public class DeletableEntityRepository<TEntity> : Repository<TEntity>, IDeletableEntityRepository<TEntity>
         where TEntity : class, IDeletableEntity
     {
         public DeletableEntityRepository(ApplicationDbContext context)

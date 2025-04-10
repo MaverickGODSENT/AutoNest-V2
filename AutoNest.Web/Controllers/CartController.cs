@@ -6,25 +6,21 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AutoNest.Web.Controllers
 {
-    public class CartController:Controller
+    public class CartController : Controller
     {
         private readonly ICartService _cartService;
         private readonly UserManager<IdentityUser> _userManager;
-        public CartController(ICartService cartService,UserManager<IdentityUser> userManager)
+        public CartController(ICartService cartService, UserManager<IdentityUser> userManager)
         {
             _cartService = cartService;
             _userManager = userManager;
         }
-
+        [Authorize]
         public async Task<IActionResult> AddToCart(string partId, int quantity)
         {
-            if (User.Identity.IsAuthenticated)
-            {
-                var userId = _userManager.GetUserId(User);
-                await _cartService.AddToCartAsync(userId, partId, quantity);
-                return RedirectToAction("Index", "Home");
-            }
-            return RedirectToAction("Login","Identity");
+            var userId = _userManager.GetUserId(User);
+            await _cartService.AddToCartAsync(userId, partId, quantity);
+            return RedirectToAction("Index", "Home");
         }
 
         [Authorize]

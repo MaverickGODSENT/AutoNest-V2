@@ -10,13 +10,13 @@ namespace AutoNest.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = "Admin")]
-    public class AdminCarController: Controller
+    public class AdminCarController : Controller
     {
         private readonly ICarService _carSerivce;
         private readonly IPartService _partsService;
         private readonly IEngineService _engineService;
 
-        public AdminCarController(ICarService carSerivce,IPartService partsService,IEngineService engineService)
+        public AdminCarController(ICarService carSerivce, IPartService partsService, IEngineService engineService)
         {
             _carSerivce = carSerivce;
             _partsService = partsService;
@@ -58,7 +58,7 @@ namespace AutoNest.Web.Areas.Admin.Controllers
 
 
             return View();
-        } 
+        }
 
         public IActionResult Delete(string carId)
         {

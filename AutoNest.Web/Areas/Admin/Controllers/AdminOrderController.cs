@@ -9,11 +9,11 @@ namespace AutoNest.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = "Admin")]
-    public class AdminOrderController:Controller
+    public class AdminOrderController : Controller
     {
         private readonly IOrderService _orderService;
         private readonly ICartService _cartService;
-        public AdminOrderController(IOrderService orderService,ICartService cartService)
+        public AdminOrderController(IOrderService orderService, ICartService cartService)
         {
             _orderService = orderService;
             _cartService = cartService;
@@ -21,7 +21,7 @@ namespace AutoNest.Web.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            var orders = _orderService.GetAllOrders().Select(o=> new OrderViewModel
+            var orders = _orderService.GetAllOrders().Select(o => new OrderViewModel
             {
                 OrderId = o.OrderId,
                 UserId = o.UserId,
@@ -42,7 +42,7 @@ namespace AutoNest.Web.Areas.Admin.Controllers
         {
             var order = _orderService.GetOrderById(orderId);
             var cartItems = await _cartService.GetCartItemsForCartAsync(order.CartId);
-            
+
             OrderViewModel orderViewModel = new OrderViewModel
             {
                 OrderId = order.Id,

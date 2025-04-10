@@ -26,17 +26,17 @@ namespace AutoNest.Services.Cars
                 ModelYear = car.ModelYear,
             };
 
-           
-            foreach(var item in car.CompatibleEngineIds)
+
+            foreach (var item in car.CompatibleEngineIds)
             {
                 var engine = _engineRepository.GetById(item);
-                if(engine != null)
+                if (engine != null)
                 {
                     newCar.CompatibleEngines.Add(engine);
                 }
             }
 
-            foreach(var item in car.CompatiblePartIds)
+            foreach (var item in car.CompatiblePartIds)
             {
                 var part = _partRepository.GetById(item);
                 if (part != null)
@@ -44,7 +44,7 @@ namespace AutoNest.Services.Cars
                     newCar.CompatibleParts.Add(part);
                 }
             }
-            
+
             await _carRepository.AddAsync(newCar);
             await _carRepository.SaveChangesAsync();
         }
@@ -69,12 +69,12 @@ namespace AutoNest.Services.Cars
                 Brand = c.Brand,
                 Model = c.Model,
                 ModelYear = c.ModelYear,
-                CompatibleEngineNames = c.CompatibleEngines.Select(e => e.EngineDisplacement.ToString()+' '+e.EngineHorsePower.ToString()),
+                CompatibleEngineNames = c.CompatibleEngines.Select(e => e.EngineDisplacement.ToString() + ' ' + e.EngineHorsePower.ToString()),
                 CompatibleEngineIds = c.CompatibleEngines.Select(e => e.Id),
                 CompatibleParts = c.CompatibleParts.Select(p => p.Id),
             });
         }
-        
+
         public Car GetCarById(string id)
         {
             return _carRepository.GetById(id);

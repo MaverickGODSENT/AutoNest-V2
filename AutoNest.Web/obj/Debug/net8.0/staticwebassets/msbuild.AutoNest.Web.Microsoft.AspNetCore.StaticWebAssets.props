@@ -90,6 +90,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\29c8fea4-7588-4c14-8da9-7f3d5ae2b7e1.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\30939a7e-f803-4d1b-a391-af508fc050ad.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoNest.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AutoNest.Web</BasePath>
+      <RelativePath>images/parts/30939a7e-f803-4d1b-a391-af508fc050ad.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u8jjhmlga8</Fingerprint>
+      <Integrity>LgHGvOjurUMqdXsAaf2ZOjN33BeB4cloYYDOfk8uemw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\30939a7e-f803-4d1b-a391-af508fc050ad.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\parts\bardahl-logo.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>AutoNest.Web</SourceId>
@@ -228,8 +246,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3m0i97hbun</Fingerprint>
-      <Integrity>ZTeb/MxNtbGPK/C/XOrHeRMnOyxJMG3YIjIw9azrmSI=</Integrity>
+      <Fingerprint>ahhcv9951q</Fingerprint>
+      <Integrity>fvbaOSGuIplw6g1r/dVHEQSMxV13ZWyX9pVpFNB4Bgs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.css'))</OriginalItemSpec>
@@ -678,8 +696,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>kh3qxdrvgl</Fingerprint>
-      <Integrity>2OZwoEnfNlbViDRwwL1D9eYVQZsXlP9RGRndadUPWRM=</Integrity>
+      <Fingerprint>hvmgn4mcsu</Fingerprint>
+      <Integrity>zT4+WuC6qLNx+J7W09c1nG4t9AgDAD5sbOewmLllN94=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))</OriginalItemSpec>

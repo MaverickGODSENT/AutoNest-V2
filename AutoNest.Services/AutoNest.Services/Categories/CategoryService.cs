@@ -21,14 +21,14 @@ namespace AutoNest.Services.Categories
                 Name = category.Name,
                 Description = category.Description
             };
-                await _categoryRepository.AddAsync(category1);
-                await _categoryRepository.SaveChangesAsync();
+            await _categoryRepository.AddAsync(category1);
+            await _categoryRepository.SaveChangesAsync();
         }
 
         public async Task<bool> DeleteCategoryAsync(string id)
         {
             var list = _categoryRepository.All().ToList();
-            foreach(var category in list)
+            foreach (var category in list)
             {
                 if (category.Id == id)
                 {

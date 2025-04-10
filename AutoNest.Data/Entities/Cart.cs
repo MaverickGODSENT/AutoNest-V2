@@ -9,7 +9,7 @@ namespace AutoNest.Data.Entities
     {
         public Cart()
         {
-            this.Id= Guid.NewGuid().ToString();
+            this.Id = Guid.NewGuid().ToString();
             this.Parts = new HashSet<CartItem>();
         }
         [Required]

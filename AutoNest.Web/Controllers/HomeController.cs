@@ -3,6 +3,7 @@ using AutoNest.Services.Cars;
 using AutoNest.Services.Carts;
 using AutoNest.Services.Categories;
 using AutoNest.Services.Contacts;
+using AutoNest.Services.Parts;
 using AutoNest.Web.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -16,20 +17,22 @@ namespace AutoNest.Web.Controllers
         private readonly ICategoryService _categoryService;
         private readonly ICartService _cartService;
         private readonly IContactService _contactService;
+        private readonly IPartService _partService;
         private readonly UserManager<IdentityUser> _userManager;
 
-        public HomeController(ICarService carService, ICategoryService categoryService, ICartService cartService, IContactService contactService, UserManager<IdentityUser> userManager)
+        public HomeController(ICarService carService, ICategoryService categoryService, ICartService cartService, IContactService contactService, IPartService partService, UserManager<IdentityUser> userManager)
         {
             _carService = carService;
             _categoryService = categoryService;
             _cartService = cartService;
             _contactService = contactService;
+            _partService = partService;
             _userManager = userManager;
         }
 
         public async Task<IActionResult> Index()
         {
-            if(User.Identity.IsAuthenticated)
+            if (User.Identity.IsAuthenticated)
             {
                 var userId = _userManager.GetUserId(User);
                 await _cartService.InitCartForUser(userId);
@@ -67,6 +70,21 @@ namespace AutoNest.Web.Controllers
             return View(categories);
         }
 
+        [HttpPost]
+        public IActionResult SearchBarSearch(string BrandModel)
+        {
+            var brand = BrandModel.Split(' ')[0];
+            var model = BrandModel.Split(' ')[1];
+            var part = _partService.GetAll().Where(p => p.Brand == brand && p.Model == model).ToList();
+            if (part.Count() > 0)
+            {
+                return View("../Part/SearchResult", part);
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
+        }
 
         public IActionResult Privacy()
         {

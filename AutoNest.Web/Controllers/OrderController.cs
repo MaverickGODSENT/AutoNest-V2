@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AutoNest.Web.Controllers
 {
-    public class OrderController:Controller
+    public class OrderController : Controller
     {
         private readonly IOrderService _orderService;
         private readonly ICartService _cartService;
@@ -28,7 +28,7 @@ namespace AutoNest.Web.Controllers
             var cart = await _cartService.RetrieveUserCartAsync(_userManager.GetUserId(User));
             var cartItemms = await _cartService.GetCartItemsForCartAsync(cart.Id);
 
-            inputModel.ShippingCost = 5*cartItemms.Count;
+            inputModel.ShippingCost = 5 * cartItemms.Count;
             inputModel.SubTotal = cartItemms.Sum(x => x.Price * x.Quantity);
             inputModel.TotalAmount = inputModel.ShippingCost + inputModel.SubTotal;
 
@@ -42,9 +42,9 @@ namespace AutoNest.Web.Controllers
             inputModel.CartId = cart.Id;
             inputModel.CartItems = await _cartService.GetCartItemsForCartAsync(cart.Id);
 
-            await _orderService.AddOrderAsync(inputModel,userId); 
+            await _orderService.AddOrderAsync(inputModel, userId);
 
-            return RedirectToAction("Index", "Payment",inputModel);
+            return RedirectToAction("Index", "Payment", inputModel);
         }
 
     }

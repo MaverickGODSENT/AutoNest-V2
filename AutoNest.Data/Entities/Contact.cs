@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AutoNest.Data.Entities
 {
-    public class Contact:BaseDeletableModel<string>
+    public class Contact : BaseDeletableModel<string>
     {
         public Contact()
         {

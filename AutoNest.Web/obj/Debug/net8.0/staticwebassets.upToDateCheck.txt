@@ -2,6 +2,7 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\parts\08e8c053-1e1f-4b0d-a553-b6a0dd07c90b.jpeg
 wwwroot\images\parts\29c8fea4-7588-4c14-8da9-7f3d5ae2b7e1.jpg
+wwwroot\images\parts\30939a7e-f803-4d1b-a391-af508fc050ad.jpg
 wwwroot\images\parts\bardahl-logo.jpg
 wwwroot\images\parts\bosch-logo.jpg
 wwwroot\images\parts\brembo-logo.jpg

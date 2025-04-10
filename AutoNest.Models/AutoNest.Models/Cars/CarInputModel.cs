@@ -23,7 +23,7 @@ namespace AutoNest.Models.Cars
         public List<string>? CompatibleEngineIds { get; set; } = new List<string>();
         public List<string>? CompatiblePartIds { get; set; } = new List<string>();
 
-        public List<EngineViewModel> AllEngines { get; set;} = new List<EngineViewModel>();
+        public List<EngineViewModel> AllEngines { get; set; } = new List<EngineViewModel>();
         public List<PartViewModel> AllParts { get; set; } = new List<PartViewModel>();
     }
 }

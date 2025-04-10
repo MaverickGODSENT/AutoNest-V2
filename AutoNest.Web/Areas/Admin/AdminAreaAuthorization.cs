@@ -2,7 +2,7 @@
 
 namespace AutoNest.Web.Areas.Admin
 {
-    public class AdminAreaAuthorization:Controller
+    public class AdminAreaAuthorization : Controller
     {
         public IActionResult Index()
         {

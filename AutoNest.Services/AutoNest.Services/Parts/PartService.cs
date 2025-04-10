@@ -118,7 +118,7 @@ namespace AutoNest.Services.Parts
                 CategoryName = cateogires.Where(c => c.Id == p.CategoryId).FirstOrDefault().Name,
                 CategoryId = p.CategoryId,
                 CarId = carId,
-                RemoteImageUrl = images.Where(i=>i.PartId==p.Id).FirstOrDefault().RemoteImageUrl,
+                RemoteImageUrl = images.Where(i => i.PartId == p.Id).FirstOrDefault().RemoteImageUrl,
             });
         }
 

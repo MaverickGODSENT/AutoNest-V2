@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -263,23 +264,20 @@
 
         /* Responsive adjustments */
         @@media (max-width: 768px) {
-            .navbar
+            .navbar {
+                padding: 0.5rem 0;
+            }
 
-        {
-            padding: 0.5rem 0;
-        }
+            .main-container {
+                padding: 1.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
 
-        .main-container {
-            padding: 1.5rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .footer-section {
-            flex: 0 0 100%;
-            margin-bottom: 2rem;
-        }
-
+            .footer-section {
+                flex: 0 0 100%;
+                margin-bottom: 2rem;
+            }
         }
 
         /* User account dropdown */
@@ -394,11 +392,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="search-bar ms-auto d-none d-lg-block">
-                        <i class="fas fa-search search-icon"></i>
-                        <input type="text" class="search-input" placeholder="Search for parts...">
-                    </div>
-
+                    <form asp-controller="Home" asp-action="SearchBarSearch" method="post">
+                        <div class="search-bar ms-auto d-none d-lg-block">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" class="search-input" name="BrandModel" placeholder="Search for parts...">
+                        </div>
+                    </form>
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link @(Context.Request.Path == "/" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Index">Home</a>

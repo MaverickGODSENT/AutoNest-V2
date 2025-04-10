@@ -10,7 +10,7 @@ namespace AutoNest.Web.Data
             : base(options)
         {
         }
-        public DbSet<Car> Cars { get;set; }
+        public DbSet<Car> Cars { get; set; }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
         public DbSet<Category> Categories { get; set; }

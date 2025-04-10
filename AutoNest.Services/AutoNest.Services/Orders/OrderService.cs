@@ -13,7 +13,7 @@ namespace AutoNest.Services.Orders
             _orderRepository = orderRepository;
         }
 
-        public async Task AddOrderAsync(OrderInputModel inputModel,string userId)
+        public async Task AddOrderAsync(OrderInputModel inputModel, string userId)
         {
             Order newOrder = new Order
             {
@@ -35,7 +35,7 @@ namespace AutoNest.Services.Orders
         }
         public async Task DeleteOrderAsync(string orderId)
         {
-            var order =  _orderRepository.GetById(orderId);
+            var order = _orderRepository.GetById(orderId);
             _orderRepository.Delete(order);
             await _orderRepository.SaveChangesAsync();
         }
@@ -58,7 +58,7 @@ namespace AutoNest.Services.Orders
             }).ToList();
         }
 
-        public Order GetOrderById(string id) 
+        public Order GetOrderById(string id)
         {
             return _orderRepository.GetById(id);
         }

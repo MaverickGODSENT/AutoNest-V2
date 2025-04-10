@@ -1,5 +1,7 @@
 ﻿using AutoNest.Data.Common.Repositories;
 using AutoNest.Data.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace AutoNest.Services.Carts
 {
@@ -9,29 +11,48 @@ namespace AutoNest.Services.Carts
         private readonly IDeletableEntityRepository<Part> _partRepository;
         private readonly IDeletableEntityRepository<CartItem> _cartItemRepository;
         private readonly IRepository<Image> _imageRepository;
+        private readonly UserManager<IdentityUser> _userManager;
 
         public CartService(IDeletableEntityRepository<Cart> cartRepository,
-            IDeletableEntityRepository<Part> partRepository, 
+            IDeletableEntityRepository<Part> partRepository,
             IDeletableEntityRepository<CartItem> cartItemRepository,
-            IRepository<Image> imageRepository)
+            IRepository<Image> imageRepository,
+            UserManager<IdentityUser> userManager)
         {
             _cartRepository = cartRepository;
             _partRepository = partRepository;
             _cartItemRepository = cartItemRepository;
             _imageRepository = imageRepository;
+            _userManager = userManager;
         }
 
         public async Task InitCartForUser(string userId)
         {
-            var check = _cartRepository.All();
-            if (check.Any(x => x.UserId == userId)) return;
-            var cart = new Cart
+            if (string.IsNullOrEmpty(userId))
             {
-                UserId = userId,
-                TotalCost = 0,
-            };
-            await _cartRepository.AddAsync(cart);
-            await _cartRepository.SaveChangesAsync();
+                throw new ArgumentException("UserId cannot be null or empty.");
+            }
+
+            var userExists = await _userManager.Users.AnyAsync(u => u.Id == userId);
+            if (!userExists)
+            {
+                throw new InvalidOperationException($"User with ID {userId} does not exist.");
+            }
+
+            var hasCart = await _cartRepository.All()
+                                               .AnyAsync(x => x.UserId == userId);
+
+            if (!hasCart)
+            {
+                var cart = new Cart
+                {
+                    UserId = userId,
+                    TotalCost = 0,
+                };
+
+                await _cartRepository.AddAsync(cart);
+                await _cartRepository.SaveChangesAsync();
+            }
         }
         public async Task ClearCartItems(string cartId)
         {
@@ -89,7 +110,7 @@ namespace AutoNest.Services.Carts
         public async Task<Cart> RetrieveUserCartAsync(string userId)
         {
             var cart = _cartRepository.All().FirstOrDefault(x => x.UserId == userId);
-            if(cart == null)
+            if (cart == null)
             {
                 cart = new Cart
                 {
@@ -117,9 +138,9 @@ namespace AutoNest.Services.Carts
         {
             var cart = _cartRepository.All().FirstOrDefault(x => x.UserId == userId);
             if (cart == null) return;
-            var parts = _cartItemRepository.All().Where(x => x.CartId==cart.Id).ToList();
+            var parts = _cartItemRepository.All().Where(x => x.CartId == cart.Id).ToList();
 
-            var cartItem = parts.FirstOrDefault(p=>p.PartId == partId);
+            var cartItem = parts.FirstOrDefault(p => p.PartId == partId);
             if (cartItem != null)
             {
                 _cartItemRepository.Delete(cartItem);

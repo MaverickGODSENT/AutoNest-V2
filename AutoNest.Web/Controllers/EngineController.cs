@@ -1,7 +1,4 @@
-﻿using AutoNest.Models.Categories;
-using AutoNest.Models.Engines;
-using AutoNest.Services.Engines;
-using Microsoft.AspNetCore.Authorization;
+﻿using AutoNest.Services.Engines;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AutoNest.Web.Controllers

@@ -7,7 +7,7 @@ namespace AutoNest.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = "Admin")]
-    public class AdminUserController:Controller
+    public class AdminUserController : Controller
     {
         private readonly IAdminService _adminService;
         public AdminUserController(IAdminService adminService)
@@ -39,7 +39,7 @@ namespace AutoNest.Web.Areas.Admin.Controllers
                 UserName = user.UserName,
                 PhoneNumber = user.PhoneNumber
             };
-            
+
             return View(viewModel);
         }
         [HttpPost]

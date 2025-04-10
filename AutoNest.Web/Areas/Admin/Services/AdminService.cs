@@ -2,12 +2,12 @@
 
 namespace AutoNest.Web.Areas.Admin.Services
 {
-    public class AdminService:IAdminService
+    public class AdminService : IAdminService
     {
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<IdentityUser> _userManager;
 
-        public AdminService(RoleManager<IdentityRole> roleManager,UserManager<IdentityUser> userManager)
+        public AdminService(RoleManager<IdentityRole> roleManager, UserManager<IdentityUser> userManager)
         {
             _roleManager = roleManager;
             _userManager = userManager;
@@ -44,7 +44,7 @@ namespace AutoNest.Web.Areas.Admin.Services
         public async Task DeleteUser(string userId)
         {
             var user = await _userManager.FindByIdAsync(userId);
-            if(user != null)
+            if (user != null)
             {
                 await _userManager.DeleteAsync(user);
             }

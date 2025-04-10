@@ -7,7 +7,7 @@ namespace AutoNest.Data.Repositories
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         protected ApplicationDbContext _context;
-        protected DbSet<TEntity> _dbSet;    
+        protected DbSet<TEntity> _dbSet;
 
         public Repository(ApplicationDbContext context)
         {
@@ -46,7 +46,7 @@ namespace AutoNest.Data.Repositories
         public void Update(TEntity entity)
         {
             var entry = _context.Entry(entity);
-            if(entry.State == EntityState.Detached)
+            if (entry.State == EntityState.Detached)
             {
                 _dbSet.Attach(entity);
             }

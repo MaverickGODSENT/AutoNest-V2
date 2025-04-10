@@ -1,11 +1,14 @@
-﻿using AutoNest.Models.Carts;
+﻿using AutoNest.Data.Entities;
+using AutoNest.Models.Carts;
 using AutoNest.Models.Orders;
 using AutoNest.Services.Carts;
 using AutoNest.Services.Orders;
 using AutoNest.Services.Stripe;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
+[Authorize]
 public class PaymentController : Controller
 {
     private readonly IStripeService _stripeService;
@@ -20,8 +23,28 @@ public class PaymentController : Controller
         _cartService = cartService;
         _userManager = userManager;
     }
-    public IActionResult PaymentCancel()
+    public async Task<IActionResult> PaymentCancel()
     {
+        var userId = _userManager.GetUserId(User);
+        var order = await _orderService.GetOrderForUserAsync(userId);
+        order.OrderStatus = OrderStatus.Cancelled;
+        OrderInputModel result = new OrderInputModel
+        {
+            OrderId = order.Id,
+            UserId = order.UserId,
+            CartId = order.CartId,
+            SubTotal = order.SubTotal,
+            TotalAmount = order.TotalAmount,
+            PaymentMethod = PaymentMethod.CreditCard,
+            ShippingCost = order.ShippingCost,
+            ShippingAddress = order.ShippingAddress,
+            ShippingCity = order.ShippingCity,
+            ShippingState = order.ShippingState,
+            ShippingZipCode = order.ShippingZipCode,
+            OrderStatus = order.OrderStatus,
+            CartItems = await _cartService.GetCartItemsForCartAsync(order.CartId)
+        };
+        await _orderService.UpdateOrderAsync(result);
         return View();
     }
 
@@ -103,7 +126,7 @@ public class PaymentController : Controller
                 ImageUrl = c.ImageUrl,
             }).ToList()
         };
-        
+
         await _cartService.ClearCartItems(order.CartId);
         return View(orderViewModel);
     }

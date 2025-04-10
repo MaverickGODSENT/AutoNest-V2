@@ -7,7 +7,7 @@ namespace AutoNest.Web.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = "Admin")]
-    public class DashboardController:Controller
+    public class DashboardController : Controller
     {
         private readonly IOrderService _orderService;
         public DashboardController(IOrderService orderService)
