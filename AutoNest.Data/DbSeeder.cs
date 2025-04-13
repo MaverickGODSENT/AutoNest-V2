@@ -11,7 +11,7 @@ namespace AutoNest.Data
             await context.Database.MigrateAsync();
 
             // Check if the database is created
-            if (context.Categories.Any())
+            if (!context.Categories.Any())
             {
                 Category category1 = new Category
                 {
@@ -29,6 +29,7 @@ namespace AutoNest.Data
                     Description = "Air filters, Cold Air Intakes"
                 };
                 await context.Categories.AddRangeAsync(category1, category2, category3);
+                await context.SaveChangesAsync();
 
                 Engine engine1 = new Engine
                 {
@@ -47,16 +48,44 @@ namespace AutoNest.Data
                     Drivetrain = "RWD",
                 };
                 await context.Engines.AddRangeAsync(engine1, engine2);
+                await context.SaveChangesAsync();
 
                 Image image1 = new Image
                 {
                     RemoteImageUrl = "https://cdn11.bigcommerce.com/s-37zpa/images/stencil/2560w/products/88/292/bc-racing-coilover-suspension-type-br-2__28117.1529601285.jpg?c=2",
                     Extension = "jpg",
-                    PartId = "1",
                 };
+                Image image2 = new Image
+                {
+                    RemoteImageUrl = "https://www.totalzparts.com/wp-content/uploads/2019/06/TotalZParts_HKS-Hipermax-IV-Coilover-Kit_Nissan-GTR-Sport-Suspension.jpg",
+                    Extension = "jpg",
+                };
+                Image image3 = new Image
+                {
+                    RemoteImageUrl = "https://www.buybrakes.com/images/product/brembo-gt-r-brake-kits-5.jpg",
+                    Extension = "jpg",
+                };
+                Image image4 = new Image
+                {
+                    RemoteImageUrl = "https://apracing.com/cdn/pages/14/14/Brake%20kit.jpg",
+                    Extension = "jpg",
+                };
+                Image image5 = new Image
+                {
+                    RemoteImageUrl = "https://i5.walmartimages.com/asr/77544b31-c8e6-4151-8428-407d858afc77.bcadb4fff0b6fc9d8ff2a094ac7b1d08.jpeg",
+                    Extension = "jpeg",
+                };
+                Image image6 = new Image
+                {
+                    RemoteImageUrl = "https://images.carid.com/aem-intakes/items/21-827c-4.jpg",
+                    Extension = "jpg",
+                };
+                await context.Images.AddRangeAsync(image1, image2, image3, image4, image5, image6);
+                await context.SaveChangesAsync();
+
+
                 Part part1 = new Part
                 {
-                    Id = "1",
                     Brand = "BC Racing",
                     Model = "BR Series",
                     Description = "Coilovers for 2JZ-GTE",
@@ -68,15 +97,8 @@ namespace AutoNest.Data
                     ImageId = image1.Id,
                 };
 
-                Image image2 = new Image
-                {
-                    RemoteImageUrl = "https://www.totalzparts.com/wp-content/uploads/2019/06/TotalZParts_HKS-Hipermax-IV-Coilover-Kit_Nissan-GTR-Sport-Suspension.jpg",
-                    Extension = "jpg",
-                    PartId = "2",
-                };
                 Part part2 = new Part
                 {
-                    Id = "2",
                     Brand = "HKS",
                     Model = "Hipermax IV GT",
                     Description = "Coilovers for SR20DET",
@@ -88,15 +110,8 @@ namespace AutoNest.Data
                     ImageId = image2.Id,
                 };
 
-                Image image3 = new Image
-                {
-                    RemoteImageUrl = "https://www.buybrakes.com/images/product/brembo-gt-r-brake-kits-5.jpg",
-                    Extension = "jpg",
-                    PartId = "3",
-                };
                 Part part3 = new Part
                 {
-                    Id = "3",
                     Brand = "Brembo",
                     Model = "GT-R Brake Kit",
                     Description = "High-performance brake kit for 2JZ-GTE",
@@ -107,15 +122,8 @@ namespace AutoNest.Data
                     CategoryId = category2.Id,
                     ImageId = image3.Id,
                 };
-                Image image4 = new Image
-                {
-                    RemoteImageUrl = "https://apracing.com/cdn/pages/14/14/Brake%20kit.jpg",
-                    Extension = "jpg",
-                    PartId = "4",
-                };
                 Part part4 = new Part
                 {
-                    Id = "4",
                     Brand = "AP Racing",
                     Model = "Brake Kit",
                     Description = "High-performance brake kit for SR20DET",
@@ -127,15 +135,8 @@ namespace AutoNest.Data
                     ImageId = image4.Id,
                 };
 
-                Image image5 = new Image
-                {
-                    RemoteImageUrl = "https://i5.walmartimages.com/asr/77544b31-c8e6-4151-8428-407d858afc77.bcadb4fff0b6fc9d8ff2a094ac7b1d08.jpeg",
-                    Extension = "jpeg",
-                    PartId = "5",
-                };
                 Part part5 = new Part
                 {
-                    Id = "5",
                     Brand = "K&N",
                     Model = "Cold Air Intake",
                     Description = "High-performance cold air intake for 2JZ-GTE",
@@ -147,15 +148,8 @@ namespace AutoNest.Data
                     ImageId = image5.Id,
                 };
 
-                Image image6 = new Image
-                {
-                    RemoteImageUrl = "https://images.carid.com/aem-intakes/items/21-827c-4.jpg",
-                    Extension = "jpg",
-                    PartId = "6",
-                };
                 Part part6 = new Part
                 {
-                    Id = "6",
                     Brand = "AEM",
                     Model = "Cold Air Intake",
                     Description = "High-performance cold air intake for SR20DET",
@@ -166,6 +160,8 @@ namespace AutoNest.Data
                     CategoryId = category3.Id,
                     ImageId = image6.Id,
                 };
+                await context.Parts.AddRangeAsync(part1, part2, part3, part4, part5, part6);
+                await context.SaveChangesAsync();
 
                 Car car1 = new Car
                 {
@@ -191,10 +187,8 @@ namespace AutoNest.Data
                 part5.CompatibleCars = new List<Car> { car1 };
                 part6.CompatibleCars = new List<Car> { car2 };
 
-                await context.Images.AddRangeAsync(image1, image2, image3, image4, image5, image6);
-                await context.Parts.AddRangeAsync(part1, part2, part3, part4, part5, part6);
-                await context.Cars.AddRangeAsync(car1, car2);
 
+                await context.Cars.AddRangeAsync(car1, car2);
                 await context.SaveChangesAsync();
             }
         }
