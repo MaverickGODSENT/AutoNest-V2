@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7St1pjkKDt2QtkxgrMCq57XzIG1werzcYAkKblWP31g=",
+  "Hash": "ucUSdTPtCQObwYg1DBOswW4pm3RalFO1uYmwUh62SW4=",
   "Source": "AutoNest.Web",
   "BasePath": "_content/AutoNest.Web",
   "Mode": "Default",
@@ -1361,6 +1361,48 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\7dbc52aa-73bf-4c29-b5e6-b37700cc2f37.jpg",
+      "SourceId": "AutoNest.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\",
+      "BasePath": "_content/AutoNest.Web",
+      "RelativePath": "images/parts/7dbc52aa-73bf-4c29-b5e6-b37700cc2f37#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u8jjhmlga8",
+      "Integrity": "LgHGvOjurUMqdXsAaf2ZOjN33BeB4cloYYDOfk8uemw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\parts\\7dbc52aa-73bf-4c29-b5e6-b37700cc2f37.jpg"
+    },
+    {
+      "Identity": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\80b5fd4c-509c-4947-87ce-3493e2a1184c.jpg",
+      "SourceId": "AutoNest.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\",
+      "BasePath": "_content/AutoNest.Web",
+      "RelativePath": "images/parts/80b5fd4c-509c-4947-87ce-3493e2a1184c#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u8jjhmlga8",
+      "Integrity": "LgHGvOjurUMqdXsAaf2ZOjN33BeB4cloYYDOfk8uemw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\parts\\80b5fd4c-509c-4947-87ce-3493e2a1184c.jpg"
+    },
+    {
       "Identity": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\bardahl-logo.jpg",
       "SourceId": "AutoNest.Web",
       "SourceType": "Discovered",
@@ -1422,6 +1464,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\parts\\brembo-logo.jpg"
+    },
+    {
+      "Identity": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\c665547a-5b34-4acd-8ff2-461e78ec9fed.jpg",
+      "SourceId": "AutoNest.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\",
+      "BasePath": "_content/AutoNest.Web",
+      "RelativePath": "images/parts/c665547a-5b34-4acd-8ff2-461e78ec9fed#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7z1b7ecopt",
+      "Integrity": "PQLI91tZdl/eNKuqgvXrQLhs4V6jB9Yvjq4J21fV/GY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\parts\\c665547a-5b34-4acd-8ff2-461e78ec9fed.jpg"
     },
     {
       "Identity": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\garett-logo.jpg",
@@ -5108,6 +5171,170 @@
       ]
     },
     {
+      "Route": "images/parts/7dbc52aa-73bf-4c29-b5e6-b37700cc2f37.jpg",
+      "AssetFile": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\7dbc52aa-73bf-4c29-b5e6-b37700cc2f37.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LgHGvOjurUMqdXsAaf2ZOjN33BeB4cloYYDOfk8uemw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 15:28:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LgHGvOjurUMqdXsAaf2ZOjN33BeB4cloYYDOfk8uemw="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/7dbc52aa-73bf-4c29-b5e6-b37700cc2f37.u8jjhmlga8.jpg",
+      "AssetFile": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\7dbc52aa-73bf-4c29-b5e6-b37700cc2f37.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LgHGvOjurUMqdXsAaf2ZOjN33BeB4cloYYDOfk8uemw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 15:28:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u8jjhmlga8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/parts/7dbc52aa-73bf-4c29-b5e6-b37700cc2f37.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LgHGvOjurUMqdXsAaf2ZOjN33BeB4cloYYDOfk8uemw="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/80b5fd4c-509c-4947-87ce-3493e2a1184c.jpg",
+      "AssetFile": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\80b5fd4c-509c-4947-87ce-3493e2a1184c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LgHGvOjurUMqdXsAaf2ZOjN33BeB4cloYYDOfk8uemw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:15:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LgHGvOjurUMqdXsAaf2ZOjN33BeB4cloYYDOfk8uemw="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/80b5fd4c-509c-4947-87ce-3493e2a1184c.u8jjhmlga8.jpg",
+      "AssetFile": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\80b5fd4c-509c-4947-87ce-3493e2a1184c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LgHGvOjurUMqdXsAaf2ZOjN33BeB4cloYYDOfk8uemw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:15:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u8jjhmlga8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/parts/80b5fd4c-509c-4947-87ce-3493e2a1184c.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LgHGvOjurUMqdXsAaf2ZOjN33BeB4cloYYDOfk8uemw="
+        }
+      ]
+    },
+    {
       "Route": "images/parts/bardahl-logo.jpg",
       "AssetFile": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\bardahl-logo.jpg",
       "Selectors": [],
@@ -5350,6 +5577,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-9HBGgYpEghcPhAJxIdQGeI1y+3/xxSYBIkEmkNzori8="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/c665547a-5b34-4acd-8ff2-461e78ec9fed.7z1b7ecopt.jpg",
+      "AssetFile": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\c665547a-5b34-4acd-8ff2-461e78ec9fed.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "380732"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PQLI91tZdl/eNKuqgvXrQLhs4V6jB9Yvjq4J21fV/GY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:16:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7z1b7ecopt"
+        },
+        {
+          "Name": "label",
+          "Value": "images/parts/c665547a-5b34-4acd-8ff2-461e78ec9fed.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PQLI91tZdl/eNKuqgvXrQLhs4V6jB9Yvjq4J21fV/GY="
+        }
+      ]
+    },
+    {
+      "Route": "images/parts/c665547a-5b34-4acd-8ff2-461e78ec9fed.jpg",
+      "AssetFile": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\c665547a-5b34-4acd-8ff2-461e78ec9fed.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "380732"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PQLI91tZdl/eNKuqgvXrQLhs4V6jB9Yvjq4J21fV/GY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 19:16:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PQLI91tZdl/eNKuqgvXrQLhs4V6jB9Yvjq4J21fV/GY="
         }
       ]
     },

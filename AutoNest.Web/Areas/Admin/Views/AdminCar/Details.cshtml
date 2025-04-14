@@ -1,5 +1,5 @@
 ﻿@using AutoNest.Models.Cars
-@model CarViewModel
+@model CarInputModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "Car Details";
@@ -12,10 +12,10 @@
         <h4 class="card-title">@Model.Brand @Model.Model (@Model.ModelYear)</h4>
 
         <h5 class="mt-3">Compatible Engines</h5>
-        @if (Model.CompatibleEngineNames.Any())
+        @if (Model.CompatibleEngineIds.Any())
         {
             <ul class="list-group">
-                @foreach (var engine in Model.CompatibleEngineNames)
+                @foreach (var engine in Model.CompatibleEngineIds)
                 {
                     <li class="list-group-item">@engine</li>
                 }
@@ -27,10 +27,10 @@
         }
 
         <h5 class="mt-3">Compatible Parts</h5>
-        @if (Model.CompatibleParts.Any())
+        @if (Model.CompatiblePartIds.Any())
         {
             <ul class="list-group">
-                @foreach (var part in Model.CompatibleParts)
+                @foreach (var part in Model.CompatiblePartIds)
                 {
                     <li class="list-group-item">@part</li>
                 }

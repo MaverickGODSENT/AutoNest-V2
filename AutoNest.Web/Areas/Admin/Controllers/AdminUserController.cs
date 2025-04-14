@@ -21,16 +21,24 @@ namespace AutoNest.Web.Areas.Admin.Controllers
 
             return View(users);
         }
-        public async Task<IActionResult> DetailsAsync(string userId)
+        public async Task<IActionResult> DetailsAsync(string id)
         {
-            var user = await _adminService.GetUserById(userId);
-            return View(user);
+            var user = await _adminService.GetUserById(id);
+            DetailedUserViewModel detailedUser = new DetailedUserViewModel
+            {
+                Id = user.Id,
+                Email = user.Email,
+                UserName = user.UserName,
+                PhoneNumber = user.PhoneNumber,
+                Roles = new List<Microsoft.AspNetCore.Identity.IdentityRole>(),
+            };
+            return View(detailedUser);
         }
 
         [HttpGet]
-        public async Task<IActionResult> Edit(string userId)
+        public async Task<IActionResult> Edit(string id)
         {
-            var user = await _adminService.GetUserById(userId);
+            var user = await _adminService.GetUserById(id);
 
             EditUserViewModel viewModel = new EditUserViewModel
             {
@@ -53,7 +61,7 @@ namespace AutoNest.Web.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
-        public async Task<IActionResult> Delet(string userId)
+        public async Task<IActionResult> Delete(string userId)
         {
             await _adminService.DeleteUser(userId);
             return RedirectToAction("Index");

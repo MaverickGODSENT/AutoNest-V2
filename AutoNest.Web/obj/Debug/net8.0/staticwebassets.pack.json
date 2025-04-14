@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\7dbc52aa-73bf-4c29-b5e6-b37700cc2f37.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\7dbc52aa-73bf-4c29-b5e6-b37700cc2f37.jpg"
+    },
+    {
+      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\80b5fd4c-509c-4947-87ce-3493e2a1184c.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\80b5fd4c-509c-4947-87ce-3493e2a1184c.jpg"
+    },
+    {
       "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\bardahl-logo.jpg",
       "PackagePath": "staticwebassets\\images\\parts\\bardahl-logo.jpg"
     },
@@ -23,6 +31,10 @@
     {
       "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\brembo-logo.jpg",
       "PackagePath": "staticwebassets\\images\\parts\\brembo-logo.jpg"
+    },
+    {
+      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\c665547a-5b34-4acd-8ff2-461e78ec9fed.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\c665547a-5b34-4acd-8ff2-461e78ec9fed.jpg"
     },
     {
       "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\garett-logo.jpg",

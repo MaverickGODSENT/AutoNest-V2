@@ -99,7 +99,7 @@ namespace AutoNest.Services.Carts
                     Model = part.Model,
                     Price = part.Price,
                     Quantity = quantity,
-                    ImageUrl = image?.RemoteImageUrl,
+                    ImageUrl = image?.RemoteImageUrl ?? string.Empty,
                 };
                 currentCart.Parts.Add(cartItem);
                 _cartRepository.Update(currentCart);

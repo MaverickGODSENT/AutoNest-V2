@@ -8,7 +8,7 @@ namespace AutoNest.Services.Cars
         IEnumerable<CarViewModel> GetAll();
         Car GetCarById(string id);
         Task AddCarAsync(CarInputModel car);
-        Task UpdateCarAsync(CarViewModel car);
+        Task UpdateCarAsync(CarInputModel car);
         Task<bool> DeleteCar(string id);
     }
 }

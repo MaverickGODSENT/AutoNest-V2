@@ -1,0 +1,43 @@
+﻿@using AutoNest.Models.Parts
+@model List<PartViewModel>
+<div class="row" id="productsContainer">
+    @foreach (var part in Model)
+    {
+        <div class="col-lg-4 col-md-6 part-card-wrapper">
+            <div class="part-card">
+                <div class="part-img-container">
+                    <img src="@part.RemoteImageUrl" class="part-img" alt="@part.Description">
+                    <div class="brand-badge">@part.Brand</div>
+                    <div class="category-badge">@part.CategoryName</div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@part.Model</h5>
+                    <p class="card-text">@part.Description</p>
+                    <div class="price-container">
+                        <span class="price">@part.Price.ToString("C")</span>
+                        @if (part.InStock)
+                        {
+                            <span class="stock-status"><i class="fas fa-check-circle"></i> In Stock</span>
+                        }
+                        else
+                        {
+                            <span class="stock-status out-of-stock"><i class="fas fa-times-circle"></i> Out of Stock</span>
+                        }
+                    </div>
+                    <div class="card-actions">
+                        <a asp-action="Details" asp-controller="Part" asp-route-id="@part.Id" class="details-btn">
+                            <i class="fas fa-info-circle"></i> Details
+                        </a>
+                        <form asp-action="AddToCart" asp-controller="Cart" method="post" class="cart-form">
+                            <input type="hidden" value="@part.Id" name="partId" />
+                            <input type="number" value="1" min="1" max="10" name="quantity" class="quantity-input" />
+                            <button type="submit" class="cart-btn">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

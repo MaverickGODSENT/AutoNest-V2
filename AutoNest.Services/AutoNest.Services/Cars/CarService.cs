@@ -81,7 +81,7 @@ namespace AutoNest.Services.Cars
         }
 
 
-        public async Task UpdateCarAsync(CarViewModel car)
+        public async Task UpdateCarAsync(CarInputModel car)
         {
             _carRepository.Update(new Car
             {
@@ -90,6 +90,7 @@ namespace AutoNest.Services.Cars
                 Model = car.Model,
                 ModelYear = car.ModelYear,
                 CompatibleEngines = car.CompatibleEngineIds.Select(e => _engineRepository.GetById(e)).ToList(),
+                CompatibleParts = car.CompatiblePartIds.Select(p => _partRepository.GetById(p)).ToList(),
             });
 
             await _carRepository.SaveChangesAsync();

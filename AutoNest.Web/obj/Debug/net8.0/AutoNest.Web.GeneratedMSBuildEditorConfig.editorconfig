@@ -316,6 +316,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydFxTZWFyY2hSZXN1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/repos/AutoNest/AutoNest.Web/Views/Part/_PartsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydFxfUGFydHNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/repos/AutoNest/AutoNest.Web/Views/Payment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
