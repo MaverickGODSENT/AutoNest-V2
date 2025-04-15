@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoNest.Data.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78d2eec86807cf0da417da2acb49f82004d3c276")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44e2bff5dd0e7c598b5925396019bee3cd37b68b")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoNest.Data.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoNest.Data.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
