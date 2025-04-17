@@ -109,7 +109,7 @@ namespace AutoNest.UnitTests.ServiceTests
         public async Task UpdateCarAsync_ShouldUpdateCar()
         {
             // Arrange
-            var carViewModel = new CarViewModel
+            var carViewModel = new CarInputModel
             {
                 Id = "1",
                 Brand = "UpdatedBrand",

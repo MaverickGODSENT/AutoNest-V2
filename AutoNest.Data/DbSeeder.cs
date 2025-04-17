@@ -52,32 +52,32 @@ namespace AutoNest.Data
 
                 Image image1 = new Image
                 {
-                    RemoteImageUrl = "https://cdn11.bigcommerce.com/s-37zpa/images/stencil/2560w/products/88/292/bc-racing-coilover-suspension-type-br-2__28117.1529601285.jpg?c=2",
+                    RemoteImageUrl = "/images/parts/bcr-suspension.jpg",
                     Extension = "jpg",
                 };
                 Image image2 = new Image
                 {
-                    RemoteImageUrl = "https://www.totalzparts.com/wp-content/uploads/2019/06/TotalZParts_HKS-Hipermax-IV-Coilover-Kit_Nissan-GTR-Sport-Suspension.jpg",
+                    RemoteImageUrl = "/images/parts/hks-suspension.jpg",
                     Extension = "jpg",
                 };
                 Image image3 = new Image
                 {
-                    RemoteImageUrl = "https://www.buybrakes.com/images/product/brembo-gt-r-brake-kits-5.jpg",
+                    RemoteImageUrl = "/images/parts/brembo-brakekit.jpg",
                     Extension = "jpg",
                 };
                 Image image4 = new Image
                 {
-                    RemoteImageUrl = "https://apracing.com/cdn/pages/14/14/Brake%20kit.jpg",
+                    RemoteImageUrl = "/images/parts/apr-brakekit.jpg",
                     Extension = "jpg",
                 };
                 Image image5 = new Image
                 {
-                    RemoteImageUrl = "https://i5.walmartimages.com/asr/77544b31-c8e6-4151-8428-407d858afc77.bcadb4fff0b6fc9d8ff2a094ac7b1d08.jpeg",
+                    RemoteImageUrl = "/images/partskn-airfilter.jpeg",
                     Extension = "jpeg",
                 };
                 Image image6 = new Image
                 {
-                    RemoteImageUrl = "https://images.carid.com/aem-intakes/items/21-827c-4.jpg",
+                    RemoteImageUrl = "/images/parts/aem-airfilter.jpg",
                     Extension = "jpg",
                 };
                 await context.Images.AddRangeAsync(image1, image2, image3, image4, image5, image6);
@@ -163,6 +163,16 @@ namespace AutoNest.Data
                 await context.Parts.AddRangeAsync(part1, part2, part3, part4, part5, part6);
                 await context.SaveChangesAsync();
 
+                image1.PartId = part1.Id;
+                image2.PartId = part2.Id;
+                image3.PartId = part3.Id;
+                image4.PartId = part4.Id;
+                image5.PartId = part5.Id;
+                image6.PartId = part6.Id;
+
+                context.Images.UpdateRange(image1, image2, image3, image4, image5, image6);
+                await context.SaveChangesAsync();
+
                 Car car1 = new Car
                 {
                     Brand = "Toyota",
@@ -186,7 +196,8 @@ namespace AutoNest.Data
                 part4.CompatibleCars = new List<Car> { car2 };
                 part5.CompatibleCars = new List<Car> { car1 };
                 part6.CompatibleCars = new List<Car> { car2 };
-
+                context.Parts.UpdateRange(part1, part2, part3, part4, part5, part6);
+                await context.SaveChangesAsync();
 
                 await context.Cars.AddRangeAsync(car1, car2);
                 await context.SaveChangesAsync();

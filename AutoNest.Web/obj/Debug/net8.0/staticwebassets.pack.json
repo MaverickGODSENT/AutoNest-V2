@@ -1,255 +1,267 @@
 {
   "Files": [
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AutoNest.Web.bundle.scp.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AutoNest.Web.bundle.scp.css",
       "PackagePath": "staticwebassets\\AutoNest.Web.7dctf4chm5.bundle.scp.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\css\\site.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\favicon.ico",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\7dbc52aa-73bf-4c29-b5e6-b37700cc2f37.jpg",
-      "PackagePath": "staticwebassets\\images\\parts\\7dbc52aa-73bf-4c29-b5e6-b37700cc2f37.jpg"
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\aem-airfilter.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\aem-airfilter.jpg"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\80b5fd4c-509c-4947-87ce-3493e2a1184c.jpg",
-      "PackagePath": "staticwebassets\\images\\parts\\80b5fd4c-509c-4947-87ce-3493e2a1184c.jpg"
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\apr-brakekit.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\apr-brakekit.jpg"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\bardahl-logo.jpg",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\bardahl-logo.jpg",
       "PackagePath": "staticwebassets\\images\\parts\\bardahl-logo.jpg"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\bosch-logo.jpg",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\bcr-suspension.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\bcr-suspension.jpg"
+    },
+    {
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\bosch-logo.jpg",
       "PackagePath": "staticwebassets\\images\\parts\\bosch-logo.jpg"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\brembo-logo.jpg",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\brembo-brakekit.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\brembo-brakekit.jpg"
+    },
+    {
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\brembo-logo.jpg",
       "PackagePath": "staticwebassets\\images\\parts\\brembo-logo.jpg"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\c665547a-5b34-4acd-8ff2-461e78ec9fed.jpg",
-      "PackagePath": "staticwebassets\\images\\parts\\c665547a-5b34-4acd-8ff2-461e78ec9fed.jpg"
-    },
-    {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\garett-logo.jpg",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\garett-logo.jpg",
       "PackagePath": "staticwebassets\\images\\parts\\garett-logo.jpg"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\ngk-logo.jpg",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\hks-suspension.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\hks-suspension.jpg"
+    },
+    {
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\kn-airfilter.jpeg",
+      "PackagePath": "staticwebassets\\images\\parts\\kn-airfilter.jpeg"
+    },
+    {
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\ngk-logo.jpg",
       "PackagePath": "staticwebassets\\images\\parts\\ngk-logo.jpg"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\images\\parts\\pennzoil-logo.jpg",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\pennzoil-logo.jpg",
       "PackagePath": "staticwebassets\\images\\parts\\pennzoil-logo.jpg"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\repos\\AutoNest\\AutoNest.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

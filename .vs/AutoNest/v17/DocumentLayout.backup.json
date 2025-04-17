@@ -3,12 +3,80 @@
   "WorkspaceRootPath": "C:\\Programming\\AutoNest-V2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|c:\\programming\\autonest-v2\\autonest.data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|solutionrelative:autonest.data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|c:\\programming\\autonest-v2\\autonest.services\\autonest.services\\parts\\partservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|solutionrelative:autonest.services\\autonest.services\\parts\\partservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|c:\\programming\\autonest-v2\\autonest.services\\autonest.services\\parts\\ipartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|solutionrelative:autonest.services\\autonest.services\\parts\\ipartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\controllers\\partcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\controllers\\partcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\cartservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\cartservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\stripeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\stripeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\partservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\partservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\orderservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\orderservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\engineservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\engineservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\contactservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\contactservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\categoryservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\categoryservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\carservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\carservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{337F1881-8482-43DA-99C8-992CA4D69CD8}|AutoNest.Models\\AutoNest.Models\\AutoNest.Models.csproj|c:\\programming\\autonest-v2\\autonest.models\\autonest.models\\cars\\carinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{337F1881-8482-43DA-99C8-992CA4D69CD8}|AutoNest.Models\\AutoNest.Models\\AutoNest.Models.csproj|solutionrelative:autonest.models\\autonest.models\\cars\\carinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|c:\\programming\\autonest-v2\\autonest.data\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|solutionrelative:autonest.data\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|c:\\programming\\autonest-v2\\autonest.data\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|solutionrelative:autonest.data\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|c:\\programming\\autonest-v2\\autonest.data\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|solutionrelative:autonest.data\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\views\\part\\searchresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -47,10 +115,6 @@
       "RelativeMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|solutionrelative:autonest.data\\entities\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|c:\\programming\\autonest-v2\\autonest.data\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|solutionrelative:autonest.data\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -65,14 +129,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\controllers\\enginecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -171,10 +227,6 @@
       "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\areas\\identity\\pages\\account\\manage\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|c:\\programming\\autonest-v2\\autonest.data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|solutionrelative:autonest.data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5BB0F89F-70FB-45F1-B5CD-3727772E5A66}|AutoNest.Data.Common\\AutoNest.Data.Common.csproj|c:\\programming\\autonest-v2\\autonest.data.common\\autonest.data.common.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5BB0F89F-70FB-45F1-B5CD-3727772E5A66}|AutoNest.Data.Common\\AutoNest.Data.Common.csproj|solutionrelative:autonest.data.common\\autonest.data.common.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -197,18 +249,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|c:\\programming\\autonest-v2\\autonest.data\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|solutionrelative:autonest.data\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|c:\\programming\\autonest-v2\\autonest.data\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|solutionrelative:autonest.data\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|c:\\programming\\autonest-v2\\autonest.data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -255,10 +295,6 @@
       "RelativeMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|solutionrelative:autonest.services\\autonest.services\\carts\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|c:\\programming\\autonest-v2\\autonest.services\\autonest.services\\parts\\ipartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|solutionrelative:autonest.services\\autonest.services\\parts\\ipartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|c:\\programming\\autonest-v2\\autonest.services\\autonest.services\\contacts\\icontactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|solutionrelative:autonest.services\\autonest.services\\contacts\\icontactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -279,10 +315,6 @@
       "RelativeMoniker": "D:0:0:{337F1881-8482-43DA-99C8-992CA4D69CD8}|AutoNest.Models\\AutoNest.Models\\AutoNest.Models.csproj|solutionrelative:autonest.models\\autonest.models\\categories\\categoryaddviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\stripeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\stripeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|c:\\programming\\autonest-v2\\autonest.services\\autonest.services\\stripe\\stripeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|solutionrelative:autonest.services\\autonest.services\\stripe\\stripeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -291,36 +323,8 @@
       "RelativeMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|solutionrelative:autonest.services\\autonest.services\\stripe\\istripeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\partservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\partservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\orderservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\orderservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{337F1881-8482-43DA-99C8-992CA4D69CD8}|AutoNest.Models\\AutoNest.Models\\AutoNest.Models.csproj|c:\\programming\\autonest-v2\\autonest.models\\autonest.models\\parts\\partsaddviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{337F1881-8482-43DA-99C8-992CA4D69CD8}|AutoNest.Models\\AutoNest.Models\\AutoNest.Models.csproj|solutionrelative:autonest.models\\autonest.models\\parts\\partsaddviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\carservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\carservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\cartservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\cartservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\categoryservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\categoryservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\contactservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\contactservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|c:\\programming\\autonest-v2\\autonest.unittests\\servicetests\\engineservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE558D94-D20D-45BB-A37F-B931B877FA81}|AutoNest.UnitTests\\AutoNest.UnitTests.csproj|solutionrelative:autonest.unittests\\servicetests\\engineservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5BB0F89F-70FB-45F1-B5CD-3727772E5A66}|AutoNest.Data.Common\\AutoNest.Data.Common.csproj|c:\\programming\\autonest-v2\\autonest.data.common\\repositories\\ideletableentityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -349,10 +353,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{337F1881-8482-43DA-99C8-992CA4D69CD8}|AutoNest.Models\\AutoNest.Models\\AutoNest.Models.csproj|c:\\programming\\autonest-v2\\autonest.models\\autonest.models\\categories\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{337F1881-8482-43DA-99C8-992CA4D69CD8}|AutoNest.Models\\AutoNest.Models\\AutoNest.Models.csproj|solutionrelative:autonest.models\\autonest.models\\categories\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{337F1881-8482-43DA-99C8-992CA4D69CD8}|AutoNest.Models\\AutoNest.Models\\AutoNest.Models.csproj|c:\\programming\\autonest-v2\\autonest.models\\autonest.models\\cars\\carinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{337F1881-8482-43DA-99C8-992CA4D69CD8}|AutoNest.Models\\AutoNest.Models\\AutoNest.Models.csproj|solutionrelative:autonest.models\\autonest.models\\cars\\carinputmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\autonest.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -713,11 +713,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 377,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 65,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Orders\\OrderService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Orders\\OrderService.cs",
@@ -762,118 +762,258 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Engine.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Engine.cs",
-              "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Engine.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Engine.cs",
-              "RelativeToolTip": "AutoNest.Data\\Entities\\Engine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T11:00:05.527Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Image.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Image.cs",
-              "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Image.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Image.cs",
-              "RelativeToolTip": "AutoNest.Data\\Entities\\Image.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "AutoNest.Web\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T11:02:06.921Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Order.cs",
-              "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Order.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Order.cs",
-              "RelativeToolTip": "AutoNest.Data\\Entities\\Order.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAA4wE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T08:56:41.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Part.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Part.cs",
-              "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Part.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Part.cs",
-              "RelativeToolTip": "AutoNest.Data\\Entities\\Part.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T11:03:10.312Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SearchResult.cshtml",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Part\\SearchResult.cshtml",
-              "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Part\\SearchResult.cshtml",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Part\\SearchResult.cshtml",
-              "RelativeToolTip": "AutoNest.Web\\Views\\Part\\SearchResult.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4CAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-10T07:03:34.947Z",
+              "WhenOpened": "2025-01-26T13:34:36.788Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Car.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Car.cs",
-              "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Car.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Car.cs",
-              "RelativeToolTip": "AutoNest.Data\\Entities\\Car.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T11:00:02.683Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "PartController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\PartController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\PartController.cs",
               "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\PartController.cs",
               "RelativeToolTip": "AutoNest.Web\\Controllers\\PartController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwBwAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-29T10:11:37.453Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CartItem.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\CartItem.cs",
-              "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\CartItem.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\CartItem.cs",
-              "RelativeToolTip": "AutoNest.Data\\Entities\\CartItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T08:53:44.857Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PartService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Parts\\PartService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Parts\\PartService.cs",
               "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Parts\\PartService.cs",
               "RelativeToolTip": "AutoNest.Services\\AutoNest.Services\\Parts\\PartService.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAkwGcAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAowHoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-29T10:48:53.554Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPartService.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Parts\\IPartService.cs",
+              "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Parts\\IPartService.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Parts\\IPartService.cs",
+              "RelativeToolTip": "AutoNest.Services\\AutoNest.Services\\Parts\\IPartService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T06:53:20.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "StripeServiceTests.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\StripeServiceTests.cs",
+              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\StripeServiceTests.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\StripeServiceTests.cs",
+              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\StripeServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T10:50:45.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "AutoNest.Data\\DbSeeder.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\DbSeeder.cs",
+              "RelativeToolTip": "AutoNest.Data\\DbSeeder.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAQwM8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T10:18:44.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CartServiceTests.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CartServiceTests.cs",
+              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\CartServiceTests.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CartServiceTests.cs",
+              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\CartServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T09:22:53.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PartServiceTests.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\PartServiceTests.cs",
+              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\PartServiceTests.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\PartServiceTests.cs",
+              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\PartServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T10:48:42.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderServiceTests.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\OrderServiceTests.cs",
+              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\OrderServiceTests.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\OrderServiceTests.cs",
+              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\OrderServiceTests.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T10:51:43.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\CartController.cs",
+              "RelativeToolTip": "AutoNest.Web\\Controllers\\CartController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAqwFgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T08:52:20.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EngineServiceTests.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\EngineServiceTests.cs",
+              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\EngineServiceTests.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\EngineServiceTests.cs",
+              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\EngineServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T10:10:37.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ContactServiceTests.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\ContactServiceTests.cs",
+              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\ContactServiceTests.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\ContactServiceTests.cs",
+              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\ContactServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T10:37:12.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CategoryServiceTests.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CategoryServiceTests.cs",
+              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\CategoryServiceTests.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CategoryServiceTests.cs",
+              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\CategoryServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T09:24:24.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CarServiceTests.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CarServiceTests.cs",
+              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\CarServiceTests.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CarServiceTests.cs",
+              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\CarServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T07:46:21.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CarInputModel.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Cars\\CarInputModel.cs",
+              "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Cars\\CarInputModel.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Cars\\CarInputModel.cs",
+              "RelativeToolTip": "AutoNest.Models\\AutoNest.Models\\Cars\\CarInputModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T08:03:14.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Car.cs",
+              "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Car.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Car.cs",
+              "RelativeToolTip": "AutoNest.Data\\Entities\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T11:00:02.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\appsettings.json",
+              "RelativeDocumentMoniker": "AutoNest.Data\\appsettings.json",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\appsettings.json",
+              "RelativeToolTip": "AutoNest.Data\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAClAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-25T12:57:38.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "AutoNest.Data\\appsettings.Development.json",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\appsettings.Development.json",
+              "RelativeToolTip": "AutoNest.Data\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-30T11:07:53.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "AutoNest.Web\\appsettings.json",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\appsettings.json",
+              "RelativeToolTip": "AutoNest.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-25T08:48:36.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "Contact.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Contact.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Contact.cs",
@@ -885,7 +1025,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 26,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\CartItem.cs",
+              "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\CartItem.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\CartItem.cs",
+              "RelativeToolTip": "AutoNest.Data\\Entities\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:53:44.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SearchResult.cshtml",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Part\\SearchResult.cshtml",
+              "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Part\\SearchResult.cshtml",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Part\\SearchResult.cshtml",
+              "RelativeToolTip": "AutoNest.Web\\Views\\Part\\SearchResult.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4CAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T07:03:34.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Part.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Part.cs",
+              "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Part.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Part.cs",
+              "RelativeToolTip": "AutoNest.Data\\Entities\\Part.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T11:03:10.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Order.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Order.cs",
+              "RelativeToolTip": "AutoNest.Data\\Entities\\Order.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA4wE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T08:56:41.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Image.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Image.cs",
+              "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Image.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Image.cs",
+              "RelativeToolTip": "AutoNest.Data\\Entities\\Image.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T11:02:06.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Engine.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Engine.cs",
+              "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Engine.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Engine.cs",
+              "RelativeToolTip": "AutoNest.Data\\Entities\\Engine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T11:00:05.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Category.cs",
@@ -897,7 +1109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 27,
               "Title": "Cart.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Cart.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Cart.cs",
@@ -909,7 +1121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 28,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Program.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Program.cs",
@@ -921,7 +1133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 29,
               "Title": "AdminPartController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Controllers\\AdminPartController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Controllers\\AdminPartController.cs",
@@ -933,7 +1145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 30,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Part\\Details.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Part\\Details.cshtml",
@@ -945,7 +1157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 31,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\PaymentController.cs",
@@ -957,31 +1169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\CartController.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\CartController.cs",
-              "RelativeToolTip": "AutoNest.Web\\Controllers\\CartController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAqwFgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T08:52:20.955Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "AutoNest.Web\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T13:34:36.788Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 32,
               "Title": "EngineController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\EngineController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\EngineController.cs",
@@ -993,7 +1181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 33,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\HomeController.cs",
@@ -1005,7 +1193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 34,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminPart\\Index.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminPart\\Index.cshtml",
@@ -1017,7 +1205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 35,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Repositories\\Repository.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Repositories\\Repository.cs",
@@ -1029,7 +1217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 36,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data.Common\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "AutoNest.Data.Common\\Repositories\\IRepository.cs",
@@ -1041,7 +1229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 37,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "AutoNest.Web\\Properties\\launchSettings.json",
@@ -1053,7 +1241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 38,
               "Title": "serviceDependencies.json",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Properties\\serviceDependencies.json",
               "RelativeDocumentMoniker": "AutoNest.Web\\Properties\\serviceDependencies.json",
@@ -1065,7 +1253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 39,
               "Title": "AdminCarController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Controllers\\AdminCarController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Controllers\\AdminCarController.cs",
@@ -1073,11 +1261,12 @@
               "RelativeToolTip": "AutoNest.Web\\Areas\\Admin\\Controllers\\AdminCarController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAEwD4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T07:59:44.981Z"
+              "WhenOpened": "2025-02-20T07:59:44.981Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 40,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminCar\\Details.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminCar\\Details.cshtml",
@@ -1089,7 +1278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 41,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminCar\\Edit.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminCar\\Edit.cshtml",
@@ -1101,7 +1290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 43,
               "Title": "ICarService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Cars\\ICarService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Cars\\ICarService.cs",
@@ -1113,7 +1302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 45,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminUser\\Details.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminUser\\Details.cshtml",
@@ -1125,7 +1314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 46,
               "Title": "_AdminLayout.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
@@ -1137,7 +1326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 47,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminUser\\Edit.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminUser\\Edit.cshtml",
@@ -1149,7 +1338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 48,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminUser\\Index.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminUser\\Index.cshtml",
@@ -1161,7 +1350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 42,
               "Title": "CartService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Carts\\CartService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Carts\\CartService.cs",
@@ -1173,7 +1362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 44,
               "Title": "CarService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Cars\\CarService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Cars\\CarService.cs",
@@ -1181,11 +1370,12 @@
               "RelativeToolTip": "AutoNest.Services\\AutoNest.Services\\Cars\\CarService.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAqwF0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T08:00:45.79Z"
+              "WhenOpened": "2025-02-20T08:00:45.79Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 49,
               "Title": "AdminUserController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Controllers\\AdminUserController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Controllers\\AdminUserController.cs",
@@ -1193,11 +1383,12 @@
               "RelativeToolTip": "AutoNest.Web\\Areas\\Admin\\Controllers\\AdminUserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T14:35:59.714Z"
+              "WhenOpened": "2025-02-19T14:35:59.714Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 50,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Controllers\\DashboardController.cs",
@@ -1209,7 +1400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 51,
               "Title": "Order.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Order\\Order.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Order\\Order.cshtml",
@@ -1221,7 +1412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 52,
               "Title": "PaymentCancel.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Payment\\PaymentCancel.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Payment\\PaymentCancel.cshtml",
@@ -1233,7 +1424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 53,
               "Title": "PaymentSuccess.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Payment\\PaymentSuccess.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Payment\\PaymentSuccess.cshtml",
@@ -1245,7 +1436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 54,
               "Title": "_ManageNav.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
@@ -1257,7 +1448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 55,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
@@ -1269,19 +1460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "DbSeeder.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\DbSeeder.cs",
-              "RelativeDocumentMoniker": "AutoNest.Data\\DbSeeder.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\DbSeeder.cs",
-              "RelativeToolTip": "AutoNest.Data\\DbSeeder.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwDwAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T10:18:44.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 57,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\OrderController.cs",
@@ -1293,7 +1472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 56,
               "Title": "AutoNest.Data.Common.csproj",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data.Common\\AutoNest.Data.Common.csproj",
               "RelativeDocumentMoniker": "AutoNest.Data.Common\\AutoNest.Data.Common.csproj",
@@ -1305,7 +1484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 58,
               "Title": "CarViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Cars\\CarViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Cars\\CarViewModel.cs",
@@ -1317,7 +1496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 59,
               "Title": "AutoNest.UnitTests.csproj",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\AutoNest.UnitTests.csproj",
               "RelativeDocumentMoniker": "AutoNest.UnitTests\\AutoNest.UnitTests.csproj",
@@ -1329,7 +1508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 60,
               "Title": "AdminService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Services\\AdminService.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Services\\AdminService.cs",
@@ -1337,11 +1516,12 @@
               "RelativeToolTip": "AutoNest.Web\\Areas\\Admin\\Services\\AdminService.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAA5wCMAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T11:03:54.788Z"
+              "WhenOpened": "2025-02-13T11:03:54.788Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 61,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -1353,43 +1533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\appsettings.json",
-              "RelativeDocumentMoniker": "AutoNest.Web\\appsettings.json",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\appsettings.json",
-              "RelativeToolTip": "AutoNest.Web\\appsettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-25T08:48:36.97Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\appsettings.json",
-              "RelativeDocumentMoniker": "AutoNest.Data\\appsettings.json",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\appsettings.json",
-              "RelativeToolTip": "AutoNest.Data\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-25T12:57:38.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "AutoNest.Data\\appsettings.Development.json",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\appsettings.Development.json",
-              "RelativeToolTip": "AutoNest.Data\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-30T11:07:53.526Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 62,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\ApplicationDbContext.cs",
@@ -1401,7 +1545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 68,
               "Title": "CartControllerTests.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ControllerTests\\CartControllerTests.cs",
               "RelativeDocumentMoniker": "AutoNest.UnitTests\\ControllerTests\\CartControllerTests.cs",
@@ -1413,7 +1557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 70,
               "Title": "OrderViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Orders\\OrderViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Orders\\OrderViewModel.cs",
@@ -1425,7 +1569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 71,
               "Title": "OrderInputModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Orders\\OrderInputModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Orders\\OrderInputModel.cs",
@@ -1437,7 +1581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 64,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Orders\\IOrderService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Orders\\IOrderService.cs",
@@ -1449,7 +1593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 67,
               "Title": "CartModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Carts\\CartModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Carts\\CartModel.cs",
@@ -1461,7 +1605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 63,
               "Title": "AutoNest.Data.csproj",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\AutoNest.Data.csproj",
               "RelativeDocumentMoniker": "AutoNest.Data\\AutoNest.Data.csproj",
@@ -1473,7 +1617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 66,
               "Title": "CartItemModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Carts\\CartItemModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Carts\\CartItemModel.cs",
@@ -1485,7 +1629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 69,
               "Title": "HomeControllerTests.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ControllerTests\\HomeControllerTests.cs",
               "RelativeDocumentMoniker": "AutoNest.UnitTests\\ControllerTests\\HomeControllerTests.cs",
@@ -1497,7 +1641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 72,
               "Title": "ICartService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Carts\\ICartService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Carts\\ICartService.cs",
@@ -1509,7 +1653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 73,
               "Title": "IContactService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Contacts\\IContactService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Contacts\\IContactService.cs",
@@ -1521,7 +1665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 74,
               "Title": "ContactService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Contacts\\ContactService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Contacts\\ContactService.cs",
@@ -1533,7 +1677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 75,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Categories\\ICategoryService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Categories\\ICategoryService.cs",
@@ -1545,7 +1689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 76,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Categories\\CategoryService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Categories\\CategoryService.cs",
@@ -1557,19 +1701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "IPartService.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Parts\\IPartService.cs",
-              "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Parts\\IPartService.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Parts\\IPartService.cs",
-              "RelativeToolTip": "AutoNest.Services\\AutoNest.Services\\Parts\\IPartService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T06:53:20.378Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 77,
               "Title": "CategoryAddViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Categories\\CategoryAddViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Categories\\CategoryAddViewModel.cs",
@@ -1581,19 +1713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "StripeServiceTests.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\StripeServiceTests.cs",
-              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\StripeServiceTests.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\StripeServiceTests.cs",
-              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\StripeServiceTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T10:50:45.61Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 79,
               "Title": "IStripeService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Stripe\\IStripeService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Stripe\\IStripeService.cs",
@@ -1605,79 +1725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
-              "Title": "PartServiceTests.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\PartServiceTests.cs",
-              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\PartServiceTests.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\PartServiceTests.cs",
-              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\PartServiceTests.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAmwLMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T10:48:42.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 73,
-              "Title": "OrderServiceTests.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\OrderServiceTests.cs",
-              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\OrderServiceTests.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\OrderServiceTests.cs",
-              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\OrderServiceTests.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T10:51:43.727Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 75,
-              "Title": "CarServiceTests.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CarServiceTests.cs",
-              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\CarServiceTests.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CarServiceTests.cs",
-              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\CarServiceTests.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAwwKcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T07:46:21.562Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 76,
-              "Title": "CartServiceTests.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CartServiceTests.cs",
-              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\CartServiceTests.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CartServiceTests.cs",
-              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\CartServiceTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T09:22:53.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 77,
-              "Title": "CategoryServiceTests.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CategoryServiceTests.cs",
-              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\CategoryServiceTests.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CategoryServiceTests.cs",
-              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\CategoryServiceTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T09:24:24.171Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 79,
-              "Title": "EngineServiceTests.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\EngineServiceTests.cs",
-              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\EngineServiceTests.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\EngineServiceTests.cs",
-              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\EngineServiceTests.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAwwB8AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T10:10:37.775Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 78,
               "Title": "StripeService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Stripe\\StripeService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Stripe\\StripeService.cs",
@@ -1689,7 +1737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 81,
               "Title": "IDeletableEntityRepository.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data.Common\\Repositories\\IDeletableEntityRepository.cs",
               "RelativeDocumentMoniker": "AutoNest.Data.Common\\Repositories\\IDeletableEntityRepository.cs",
@@ -1701,7 +1749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 80,
               "Title": "PartsAddViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Parts\\PartsAddViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Parts\\PartsAddViewModel.cs",
@@ -1713,19 +1761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
-              "Title": "ContactServiceTests.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\ContactServiceTests.cs",
-              "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\ContactServiceTests.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\ContactServiceTests.cs",
-              "RelativeToolTip": "AutoNest.UnitTests\\ServiceTests\\ContactServiceTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T10:37:12.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 82,
               "Title": "ContactFormModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Home\\ContactFormModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Home\\ContactFormModel.cs",
@@ -1737,7 +1773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 83,
               "Title": "IEngineService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Engines\\IEngineService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Engines\\IEngineService.cs",
@@ -1749,7 +1785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 87,
               "Title": "CategoryViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Categories\\CategoryViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Categories\\CategoryViewModel.cs",
@@ -1761,7 +1797,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 86,
               "Title": "EngineAddViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Engines\\EngineAddViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Engines\\EngineAddViewModel.cs",
@@ -1773,7 +1809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 85,
               "Title": "EngineViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Engines\\EngineViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Engines\\EngineViewModel.cs",
@@ -1785,7 +1821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 84,
               "Title": "EngineService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Engines\\EngineService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Engines\\EngineService.cs",
@@ -1794,18 +1830,6 @@
               "ViewState": "AgIAABoAAAAAAAAAAAAAwE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-26T16:03:37.807Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 87,
-              "Title": "CarInputModel.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Cars\\CarInputModel.cs",
-              "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Cars\\CarInputModel.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Cars\\CarInputModel.cs",
-              "RelativeToolTip": "AutoNest.Models\\AutoNest.Models\\Cars\\CarInputModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T08:03:14.412Z"
             },
             {
               "$type": "Document",
@@ -1841,7 +1865,8 @@
               "RelativeToolTip": "AutoNest.Web\\Areas\\Admin\\Controllers\\AdminOrderController.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAcwGEAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T11:11:56.723Z"
+              "WhenOpened": "2025-02-20T11:11:56.723Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -2859,10 +2884,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-01-26T13:39:40.427Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

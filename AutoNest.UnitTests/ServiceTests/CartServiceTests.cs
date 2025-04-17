@@ -1,10 +1,39 @@
 ﻿using AutoNest.Data.Common.Repositories;
 using AutoNest.Data.Entities;
 using AutoNest.Services.Carts;
+using Microsoft.AspNetCore.Identity;
 using Moq;
 
 namespace AutoNest.UnitTests.ServiceTests
 {
+    public static class SettingUpUserManager
+    {
+        public static Mock<UserManager<TUser>> MockUserManager<TUser>(List<TUser> users = null)
+            where TUser : class
+        {
+            var store = new Mock<IUserStore<TUser>>();
+            var mockUserManager = new Mock<UserManager<TUser>>(
+                store.Object,
+                null, // IOptions<IdentityOptions>
+                null, // IPasswordHasher<TUser>
+                new IUserValidator<TUser>[0],
+                new IPasswordValidator<TUser>[0],
+                null, // ILookupNormalizer
+                null, // IdentityErrorDescriber
+                null, // IServiceProvider
+                null  // ILogger<UserManager<TUser>>
+            );
+
+            if (users != null)
+            {
+                // Instead of assigning to the read-only Users property, we mock the Users property to return the desired IQueryable.
+                mockUserManager.Setup(um => um.Users).Returns(users.AsQueryable());
+            }
+
+            return mockUserManager;
+        }
+    }
+
     [TestFixture]
     public class CartServiceTests
     {
@@ -13,6 +42,7 @@ namespace AutoNest.UnitTests.ServiceTests
         private Mock<IDeletableEntityRepository<Part>> _partRepositoryMock;
         private Mock<IRepository<Image>> _imageRepositoryMock;
         private ICartService _cartService;
+        private UserManager<IdentityUser> _userManager;
 
         [SetUp]
         public void SetUp()
@@ -21,8 +51,9 @@ namespace AutoNest.UnitTests.ServiceTests
             _cartItemRepositoryMock = new Mock<IDeletableEntityRepository<CartItem>>();
             _partRepositoryMock = new Mock<IDeletableEntityRepository<Part>>();
             _imageRepositoryMock = new Mock<IRepository<Image>>();
+            _userManager = SettingUpUserManager.MockUserManager<IdentityUser>().Object;
 
-            _cartService = new CartService(_cartRepositoryMock.Object, _partRepositoryMock.Object, _cartItemRepositoryMock.Object, _imageRepositoryMock.Object);
+            _cartService = new CartService(_cartRepositoryMock.Object, _partRepositoryMock.Object, _cartItemRepositoryMock.Object, _imageRepositoryMock.Object,_userManager);
         }
 
         [Test]
