@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\0685b5c1-0930-457d-be81-c05d1fc57677.png",
+      "PackagePath": "staticwebassets\\images\\parts\\0685b5c1-0930-457d-be81-c05d1fc57677.png"
+    },
+    {
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\a2273706-d6fc-402c-ad48-549fec59c1fd.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\a2273706-d6fc-402c-ad48-549fec59c1fd.jpg"
+    },
+    {
       "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\aem-airfilter.jpg",
       "PackagePath": "staticwebassets\\images\\parts\\aem-airfilter.jpg"
     },
@@ -25,8 +33,16 @@
       "PackagePath": "staticwebassets\\images\\parts\\bardahl-logo.jpg"
     },
     {
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\bb629bae-a932-4e20-ac0a-43aec5606d6e.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\bb629bae-a932-4e20-ac0a-43aec5606d6e.jpg"
+    },
+    {
       "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\bcr-suspension.jpg",
       "PackagePath": "staticwebassets\\images\\parts\\bcr-suspension.jpg"
+    },
+    {
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\bf641722-e93e-4213-a334-396754a2adb1.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\bf641722-e93e-4213-a334-396754a2adb1.jpg"
     },
     {
       "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\bosch-logo.jpg",
@@ -39,6 +55,10 @@
     {
       "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\brembo-logo.jpg",
       "PackagePath": "staticwebassets\\images\\parts\\brembo-logo.jpg"
+    },
+    {
+      "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\d0c56021-3529-477e-97b3-26ea0b6446ef.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\d0c56021-3529-477e-97b3-26ea0b6446ef.jpg"
     },
     {
       "Id": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\images\\parts\\garett-logo.jpg",

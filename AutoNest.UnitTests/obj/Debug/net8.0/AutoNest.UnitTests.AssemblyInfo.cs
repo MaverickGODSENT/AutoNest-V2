@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoNest.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8628d1c86fc8cbeb77fd4b3fb3e82f792c06055a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+952e166a78f79e71a255032ac47654af814b6d3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoNest.UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoNest.UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
