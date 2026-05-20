@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Programming\\AutoNest-V2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|c:\\programming\\autonest-v2\\autonest.services\\autonest.services\\stripe\\stripeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|solutionrelative:autonest.services\\autonest.services\\stripe\\stripeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|c:\\programming\\autonest-v2\\autonest.data\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5D1521E4-0F67-4BB4-B9AB-D5A27D057B79}|AutoNest.Data\\AutoNest.Data.csproj|solutionrelative:autonest.data\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -729,7 +729,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 377,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Document",
@@ -782,13 +782,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StripeService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Stripe\\StripeService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Stripe\\StripeService.cs",
               "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Stripe\\StripeService.cs",
               "RelativeToolTip": "AutoNest.Services\\AutoNest.Services\\Stripe\\StripeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-30T11:48:20.298Z",
               "EditorCaption": ""
@@ -863,25 +863,24 @@
               "RelativeToolTip": "AutoNest.Web\\Program.cs",
               "ViewState": "AgIAAE4AAAAAAAAAAAAwwFUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T08:48:37.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T08:48:37.597Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\appsettings.json",
               "RelativeDocumentMoniker": "AutoNest.Web\\appsettings.json",
               "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\appsettings.json",
               "RelativeToolTip": "AutoNest.Web\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-01-25T08:48:36.97Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\appsettings.json",
               "RelativeDocumentMoniker": "AutoNest.Data\\appsettings.json",
@@ -889,12 +888,11 @@
               "RelativeToolTip": "AutoNest.Data\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-25T12:57:38.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T12:57:38.573Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\appsettings.Development.json",
               "RelativeDocumentMoniker": "AutoNest.Data\\appsettings.Development.json",
@@ -902,8 +900,7 @@
               "RelativeToolTip": "AutoNest.Data\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-30T11:07:53.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T11:07:53.526Z"
             },
             {
               "$type": "Document",

@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	<ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
     <UserSecretsId>aspnet-AutoNest.Web-014f67a4-2b0f-4141-b11f-a781467497b4</UserSecretsId>
   </PropertyGroup>
 

@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Programming\\AutoNest-V2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|c:\\programming\\autonest-v2\\autonest.services\\autonest.services\\orders\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|solutionrelative:autonest.services\\autonest.services\\orders\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programming\\AutoNest-V2\\.github\\workflows\\AutoNestWeb20260518164411.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.github\\workflows\\AutoNestWeb20260518164411.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\autonest.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\autonest.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -53,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5BB0F89F-70FB-45F1-B5CD-3727772E5A66}|AutoNest.Data.Common\\AutoNest.Data.Common.csproj|c:\\programming\\autonest-v2\\autonest.data.common\\models\\ideletableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BB0F89F-70FB-45F1-B5CD-3727772E5A66}|AutoNest.Data.Common\\AutoNest.Data.Common.csproj|solutionrelative:autonest.data.common\\models\\ideletableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|c:\\programming\\autonest-v2\\autonest.services\\autonest.services\\orders\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69BE561B-B955-47B0-B240-0D60C8ACE810}|AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj|solutionrelative:autonest.services\\autonest.services\\orders\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5BB0F89F-70FB-45F1-B5CD-3727772E5A66}|AutoNest.Data.Common\\AutoNest.Data.Common.csproj|c:\\programming\\autonest-v2\\autonest.data.common\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -377,10 +385,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{337F1881-8482-43DA-99C8-992CA4D69CD8}|AutoNest.Models\\AutoNest.Models\\AutoNest.Models.csproj|c:\\programming\\autonest-v2\\autonest.models\\autonest.models\\categories\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{337F1881-8482-43DA-99C8-992CA4D69CD8}|AutoNest.Models\\AutoNest.Models\\AutoNest.Models.csproj|solutionrelative:autonest.models\\autonest.models\\categories\\categoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\autonest.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|solutionrelative:autonest.web\\autonest.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1A9BB516-E291-46C1-814F-A87D77AE1506}|AutoNest.Web\\AutoNest.Web.csproj|c:\\programming\\autonest-v2\\autonest.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -729,20 +733,34 @@
       "DocumentGroups": [
         {
           "DockedHeight": 377,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Orders\\OrderService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Orders\\OrderService.cs",
               "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Orders\\OrderService.cs",
               "RelativeToolTip": "AutoNest.Services\\AutoNest.Services\\Orders\\OrderService.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAmwFoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAnwEIAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-06T09:22:13.763Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AutoNestWeb20260518164411.yml",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\.github\\workflows\\AutoNestWeb20260518164411.yml",
+              "RelativeDocumentMoniker": ".github\\workflows\\AutoNestWeb20260518164411.yml",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\.github\\workflows\\AutoNestWeb20260518164411.yml",
+              "RelativeToolTip": ".github\\workflows\\AutoNestWeb20260518164411.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-05-19T22:05:19.241Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -782,20 +800,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StripeService.cs",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Stripe\\StripeService.cs",
-              "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Stripe\\StripeService.cs",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Stripe\\StripeService.cs",
-              "RelativeToolTip": "AutoNest.Services\\AutoNest.Services\\Stripe\\StripeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T11:48:20.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data.Common\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "AutoNest.Data.Common\\Repositories\\IRepository.cs",
@@ -807,7 +812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Car.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Car.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Car.cs",
@@ -819,7 +824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "BaseDeletableModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data.Common\\Models\\BaseDeletableModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Data.Common\\Models\\BaseDeletableModel.cs",
@@ -831,7 +836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Repositories\\Repository.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Repositories\\Repository.cs",
@@ -843,7 +848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "CarService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Cars\\CarService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Cars\\CarService.cs",
@@ -855,7 +860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Program.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Program.cs",
@@ -867,7 +872,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\appsettings.json",
               "RelativeDocumentMoniker": "AutoNest.Web\\appsettings.json",
@@ -881,6 +886,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AutoNest.Web.csproj",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\AutoNest.Web.csproj",
+              "RelativeDocumentMoniker": "AutoNest.Web\\AutoNest.Web.csproj",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\AutoNest.Web.csproj",
+              "RelativeToolTip": "AutoNest.Web\\AutoNest.Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-03T07:16:22.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StripeService.cs",
+              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Stripe\\StripeService.cs",
+              "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Stripe\\StripeService.cs",
+              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Stripe\\StripeService.cs",
+              "RelativeToolTip": "AutoNest.Services\\AutoNest.Services\\Stripe\\StripeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T11:48:20.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\appsettings.json",
               "RelativeDocumentMoniker": "AutoNest.Data\\appsettings.json",
@@ -888,11 +918,12 @@
               "RelativeToolTip": "AutoNest.Data\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-25T12:57:38.573Z"
+              "WhenOpened": "2025-01-25T12:57:38.573Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\appsettings.Development.json",
               "RelativeDocumentMoniker": "AutoNest.Data\\appsettings.Development.json",
@@ -900,11 +931,12 @@
               "RelativeToolTip": "AutoNest.Data\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-30T11:07:53.526Z"
+              "WhenOpened": "2025-01-30T11:07:53.526Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "IStripeService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Stripe\\IStripeService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Stripe\\IStripeService.cs",
@@ -916,7 +948,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\ApplicationDbContext.cs",
@@ -928,7 +960,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Order.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Order.cs",
@@ -940,7 +972,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Part.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Part.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Part.cs",
@@ -952,7 +984,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "IAuditInfo.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data.Common\\Models\\IAuditInfo.cs",
               "RelativeDocumentMoniker": "AutoNest.Data.Common\\Models\\IAuditInfo.cs",
@@ -964,7 +996,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "IDeletableEntityRepository.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data.Common\\Repositories\\IDeletableEntityRepository.cs",
               "RelativeDocumentMoniker": "AutoNest.Data.Common\\Repositories\\IDeletableEntityRepository.cs",
@@ -976,7 +1008,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "BaseModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data.Common\\Models\\BaseModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Data.Common\\Models\\BaseModel.cs",
@@ -988,7 +1020,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "IDeletableEntity.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data.Common\\Models\\IDeletableEntity.cs",
               "RelativeDocumentMoniker": "AutoNest.Data.Common\\Models\\IDeletableEntity.cs",
@@ -1000,7 +1032,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "AutoNest.Services.csproj",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj",
@@ -1008,11 +1040,12 @@
               "RelativeToolTip": "AutoNest.Services\\AutoNest.Services\\AutoNest.Services.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-26T13:39:40.427Z"
+              "WhenOpened": "2025-01-26T13:39:40.427Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "DeletableEntityRepository.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Repositories\\DeletableEntityRepository.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Repositories\\DeletableEntityRepository.cs",
@@ -1024,7 +1057,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "AdminCarController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Controllers\\AdminCarController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Controllers\\AdminCarController.cs",
@@ -1036,7 +1069,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "IPartService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Parts\\IPartService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Parts\\IPartService.cs",
@@ -1048,7 +1081,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "CartServiceTests.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CartServiceTests.cs",
               "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\CartServiceTests.cs",
@@ -1060,7 +1093,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "DbSeeder.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\DbSeeder.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\DbSeeder.cs",
@@ -1072,7 +1105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "StripeServiceTests.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\StripeServiceTests.cs",
               "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\StripeServiceTests.cs",
@@ -1084,7 +1117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "AutoNest.Data.csproj",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\AutoNest.Data.csproj",
               "RelativeDocumentMoniker": "AutoNest.Data\\AutoNest.Data.csproj",
@@ -1092,11 +1125,12 @@
               "RelativeToolTip": "AutoNest.Data\\AutoNest.Data.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-25T10:14:43.329Z"
+              "WhenOpened": "2025-01-25T10:14:43.329Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "OrderInputModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Orders\\OrderInputModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Orders\\OrderInputModel.cs",
@@ -1108,7 +1142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "PartService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Parts\\PartService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Parts\\PartService.cs",
@@ -1120,7 +1154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "PartController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\PartController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\PartController.cs",
@@ -1132,7 +1166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\CategoryController.cs",
@@ -1144,7 +1178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "PartServiceTests.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\PartServiceTests.cs",
               "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\PartServiceTests.cs",
@@ -1156,7 +1190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "OrderServiceTests.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\OrderServiceTests.cs",
               "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\OrderServiceTests.cs",
@@ -1168,7 +1202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\CartController.cs",
@@ -1180,7 +1214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "EngineServiceTests.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\EngineServiceTests.cs",
               "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\EngineServiceTests.cs",
@@ -1192,7 +1226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "ContactServiceTests.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\ContactServiceTests.cs",
               "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\ContactServiceTests.cs",
@@ -1204,7 +1238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "CategoryServiceTests.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CategoryServiceTests.cs",
               "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\CategoryServiceTests.cs",
@@ -1216,7 +1250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "CarServiceTests.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ServiceTests\\CarServiceTests.cs",
               "RelativeDocumentMoniker": "AutoNest.UnitTests\\ServiceTests\\CarServiceTests.cs",
@@ -1228,7 +1262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "CarInputModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Cars\\CarInputModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Cars\\CarInputModel.cs",
@@ -1240,7 +1274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "Contact.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Contact.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Contact.cs",
@@ -1252,7 +1286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "CartItem.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\CartItem.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\CartItem.cs",
@@ -1264,7 +1298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "SearchResult.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Part\\SearchResult.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Part\\SearchResult.cshtml",
@@ -1276,7 +1310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "Image.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Image.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Image.cs",
@@ -1288,7 +1322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "Engine.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Engine.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Engine.cs",
@@ -1300,7 +1334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Category.cs",
@@ -1312,7 +1346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "Cart.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Entities\\Cart.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Entities\\Cart.cs",
@@ -1324,7 +1358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "AdminPartController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Controllers\\AdminPartController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Controllers\\AdminPartController.cs",
@@ -1336,7 +1370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Part\\Details.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Part\\Details.cshtml",
@@ -1348,7 +1382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\PaymentController.cs",
@@ -1360,7 +1394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "EngineController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\EngineController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\EngineController.cs",
@@ -1372,7 +1406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\HomeController.cs",
@@ -1384,7 +1418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminPart\\Index.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminPart\\Index.cshtml",
@@ -1396,7 +1430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "AutoNest.Web\\Properties\\launchSettings.json",
@@ -1408,7 +1442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "serviceDependencies.json",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Properties\\serviceDependencies.json",
               "RelativeDocumentMoniker": "AutoNest.Web\\Properties\\serviceDependencies.json",
@@ -1420,7 +1454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminCar\\Details.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminCar\\Details.cshtml",
@@ -1432,7 +1466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminCar\\Edit.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminCar\\Edit.cshtml",
@@ -1444,7 +1478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "ICarService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Cars\\ICarService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Cars\\ICarService.cs",
@@ -1456,7 +1490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminUser\\Details.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminUser\\Details.cshtml",
@@ -1468,7 +1502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "_AdminLayout.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
@@ -1480,7 +1514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminUser\\Edit.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminUser\\Edit.cshtml",
@@ -1492,7 +1526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminUser\\Index.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminUser\\Index.cshtml",
@@ -1504,7 +1538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "CartService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Carts\\CartService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Carts\\CartService.cs",
@@ -1516,7 +1550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "AdminUserController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Controllers\\AdminUserController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Controllers\\AdminUserController.cs",
@@ -1528,7 +1562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Controllers\\DashboardController.cs",
@@ -1540,7 +1574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 66,
               "Title": "Order.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Order\\Order.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Order\\Order.cshtml",
@@ -1552,7 +1586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 67,
               "Title": "PaymentCancel.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Payment\\PaymentCancel.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Payment\\PaymentCancel.cshtml",
@@ -1564,7 +1598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 68,
               "Title": "PaymentSuccess.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Payment\\PaymentSuccess.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Payment\\PaymentSuccess.cshtml",
@@ -1576,7 +1610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 69,
               "Title": "_ManageNav.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
@@ -1588,7 +1622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 70,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
@@ -1600,7 +1634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 72,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Controllers\\OrderController.cs",
@@ -1612,7 +1646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 71,
               "Title": "AutoNest.Data.Common.csproj",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data.Common\\AutoNest.Data.Common.csproj",
               "RelativeDocumentMoniker": "AutoNest.Data.Common\\AutoNest.Data.Common.csproj",
@@ -1620,11 +1654,12 @@
               "RelativeToolTip": "AutoNest.Data.Common\\AutoNest.Data.Common.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-13T13:24:06.017Z"
+              "WhenOpened": "2025-04-13T13:24:06.017Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 73,
               "Title": "CarViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Cars\\CarViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Cars\\CarViewModel.cs",
@@ -1636,7 +1671,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 74,
               "Title": "AutoNest.UnitTests.csproj",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\AutoNest.UnitTests.csproj",
               "RelativeDocumentMoniker": "AutoNest.UnitTests\\AutoNest.UnitTests.csproj",
@@ -1644,11 +1679,12 @@
               "RelativeToolTip": "AutoNest.UnitTests\\AutoNest.UnitTests.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-03T09:22:46.921Z"
+              "WhenOpened": "2025-04-03T09:22:46.921Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 75,
               "Title": "AdminService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Services\\AdminService.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Services\\AdminService.cs",
@@ -1660,7 +1696,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 76,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -1672,7 +1708,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 80,
               "Title": "CartControllerTests.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ControllerTests\\CartControllerTests.cs",
               "RelativeDocumentMoniker": "AutoNest.UnitTests\\ControllerTests\\CartControllerTests.cs",
@@ -1684,7 +1720,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 82,
               "Title": "OrderViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Orders\\OrderViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Orders\\OrderViewModel.cs",
@@ -1696,7 +1732,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 77,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Orders\\IOrderService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Orders\\IOrderService.cs",
@@ -1708,7 +1744,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 79,
               "Title": "CartModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Carts\\CartModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Carts\\CartModel.cs",
@@ -1720,7 +1756,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 78,
               "Title": "CartItemModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Carts\\CartItemModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Carts\\CartItemModel.cs",
@@ -1732,7 +1768,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 81,
               "Title": "HomeControllerTests.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.UnitTests\\ControllerTests\\HomeControllerTests.cs",
               "RelativeDocumentMoniker": "AutoNest.UnitTests\\ControllerTests\\HomeControllerTests.cs",
@@ -1744,7 +1780,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 83,
               "Title": "ICartService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Carts\\ICartService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Carts\\ICartService.cs",
@@ -1756,7 +1792,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 84,
               "Title": "IContactService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Contacts\\IContactService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Contacts\\IContactService.cs",
@@ -1768,7 +1804,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 85,
               "Title": "ContactService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Contacts\\ContactService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Contacts\\ContactService.cs",
@@ -1780,7 +1816,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 86,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Categories\\ICategoryService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Categories\\ICategoryService.cs",
@@ -1792,7 +1828,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 87,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Categories\\CategoryService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Categories\\CategoryService.cs",
@@ -1804,7 +1840,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 88,
               "Title": "CategoryAddViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Categories\\CategoryAddViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Categories\\CategoryAddViewModel.cs",
@@ -1816,7 +1852,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 89,
               "Title": "PartsAddViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Parts\\PartsAddViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Parts\\PartsAddViewModel.cs",
@@ -1828,7 +1864,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 90,
               "Title": "ContactFormModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Home\\ContactFormModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Home\\ContactFormModel.cs",
@@ -1840,7 +1876,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 91,
               "Title": "IEngineService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Engines\\IEngineService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Engines\\IEngineService.cs",
@@ -1852,7 +1888,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 95,
               "Title": "CategoryViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Categories\\CategoryViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Categories\\CategoryViewModel.cs",
@@ -1864,7 +1900,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 94,
               "Title": "EngineAddViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Engines\\EngineAddViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Engines\\EngineAddViewModel.cs",
@@ -1876,7 +1912,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 93,
               "Title": "EngineViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Engines\\EngineViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Engines\\EngineViewModel.cs",
@@ -1888,7 +1924,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 92,
               "Title": "EngineService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Services\\AutoNest.Services\\Engines\\EngineService.cs",
               "RelativeDocumentMoniker": "AutoNest.Services\\AutoNest.Services\\Engines\\EngineService.cs",
@@ -1900,19 +1936,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
-              "Title": "AutoNest.Web.csproj",
-              "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\AutoNest.Web.csproj",
-              "RelativeDocumentMoniker": "AutoNest.Web\\AutoNest.Web.csproj",
-              "ToolTip": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\AutoNest.Web.csproj",
-              "RelativeToolTip": "AutoNest.Web\\AutoNest.Web.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-03T07:16:22.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 96,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Shared\\_Layout.cshtml",
@@ -1924,7 +1948,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 97,
               "Title": "AdminOrderController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Controllers\\AdminOrderController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Controllers\\AdminOrderController.cs",
@@ -1936,7 +1960,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 98,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
@@ -1948,7 +1972,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 99,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminCar\\Create.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminCar\\Create.cshtml",
@@ -1960,7 +1984,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 100,
               "Title": "AdminContactController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Controllers\\AdminContactController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Controllers\\AdminContactController.cs",
@@ -1972,7 +1996,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 101,
               "Title": "Detailed.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminContact\\Detailed.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminContact\\Detailed.cshtml",
@@ -1984,7 +2008,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 102,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminContact\\Index.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminContact\\Index.cshtml",
@@ -1996,7 +2020,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 103,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Home\\Contact.cshtml",
@@ -2008,7 +2032,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 104,
               "Title": "AdminEngineController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Controllers\\AdminEngineController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Controllers\\AdminEngineController.cs",
@@ -2020,7 +2044,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 179,
+              "DocumentIndex": 180,
               "Title": "20250321140144_FeedbackEntity.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Migrations\\20250321140144_FeedbackEntity.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Migrations\\20250321140144_FeedbackEntity.cs",
@@ -2032,7 +2056,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 105,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Home\\Index.cshtml",
@@ -2044,7 +2068,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 106,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminEngine\\Index.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminEngine\\Index.cshtml",
@@ -2056,7 +2080,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 107,
               "Title": "EditEngine.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminEngine\\EditEngine.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminEngine\\EditEngine.cshtml",
@@ -2068,7 +2092,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 108,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminOrder\\Edit.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminOrder\\Edit.cshtml",
@@ -2080,7 +2104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 109,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminOrder\\Index.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminOrder\\Index.cshtml",
@@ -2092,7 +2116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 110,
               "Title": "AutoNest.Models.csproj",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\AutoNest.Models.csproj",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\AutoNest.Models.csproj",
@@ -2100,11 +2124,12 @@
               "RelativeToolTip": "AutoNest.Models\\AutoNest.Models\\AutoNest.Models.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-26T13:41:24.314Z"
+              "WhenOpened": "2025-01-26T13:41:24.314Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 111,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminOrder\\Details.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminOrder\\Details.cshtml",
@@ -2116,7 +2141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 113,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "AutoNest.Web\\ScaffoldingReadMe.txt",
@@ -2128,7 +2153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 112,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Payment\\Index.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Payment\\Index.cshtml",
@@ -2140,7 +2165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 114,
               "Title": "ResetPasswordConfirmation.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
@@ -2152,7 +2177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 115,
               "Title": "ResetPassword.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
@@ -2164,7 +2189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 116,
               "Title": "ResendEmailConfirmation.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml",
@@ -2176,7 +2201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 117,
               "Title": "RegisterConfirmation.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
@@ -2188,7 +2213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 118,
               "Title": "Logout.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
@@ -2200,7 +2225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 119,
               "Title": "LoginWithRecoveryCode.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
@@ -2212,7 +2237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 120,
               "Title": "LoginWith2fa.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
@@ -2224,7 +2249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 122,
               "Title": "Lockout.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
@@ -2236,7 +2261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 123,
               "Title": "ForgotPasswordConfirmation.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
@@ -2248,7 +2273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 124,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
@@ -2260,7 +2285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 126,
               "Title": "ConfirmEmailChange.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
@@ -2272,7 +2297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 127,
               "Title": "ConfirmEmail.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
@@ -2284,7 +2309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 128,
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
@@ -2296,7 +2321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 129,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
@@ -2308,7 +2333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 121,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
@@ -2320,7 +2345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 125,
               "Title": "ExternalLogin.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
@@ -2332,7 +2357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 131,
               "Title": "TwoFactorAuthentication.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml",
@@ -2344,7 +2369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 132,
               "Title": "ShowRecoveryCodes.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\ShowRecoveryCodes.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\ShowRecoveryCodes.cshtml",
@@ -2356,7 +2381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 133,
               "Title": "SetPassword.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml",
@@ -2368,7 +2393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 135,
               "Title": "ResetAuthenticator.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml",
@@ -2380,7 +2405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 136,
               "Title": "PersonalData.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
@@ -2392,7 +2417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 137,
               "Title": "ManageNavPages.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
@@ -2404,7 +2429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 138,
               "Title": "GenerateRecoveryCodes.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
@@ -2416,7 +2441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 130,
               "Title": "_StatusMessage.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
@@ -2428,7 +2453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 139,
               "Title": "ExternalLogins.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
@@ -2440,7 +2465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 140,
               "Title": "EnableAuthenticator.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
@@ -2452,7 +2477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 141,
               "Title": "Email.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml",
@@ -2464,7 +2489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 134,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
@@ -2476,7 +2501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 142,
               "Title": "DownloadPersonalData.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
@@ -2488,7 +2513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 143,
               "Title": "Disable2fa.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml",
@@ -2500,7 +2525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 144,
               "Title": "DeletePersonalData.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
@@ -2512,7 +2537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 145,
               "Title": "ChangePassword.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
@@ -2524,7 +2549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 146,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
@@ -2536,7 +2561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 147,
               "Title": "_StatusMessage.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
@@ -2548,7 +2573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 150,
               "Title": "ViewCart.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Cart\\ViewCart.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Cart\\ViewCart.cshtml",
@@ -2560,7 +2585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 149,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Shared\\_LoginPartial.cshtml",
@@ -2572,7 +2597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 148,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
@@ -2584,7 +2609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 151,
               "Title": "Search.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Home\\Search.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Home\\Search.cshtml",
@@ -2596,7 +2621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 153,
               "Title": "_PartsPartial.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Shared\\_PartsPartial.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Shared\\_PartsPartial.cshtml",
@@ -2608,7 +2633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 152,
               "Title": "_PartsListPartial.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Shared\\_PartsListPartial.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Shared\\_PartsListPartial.cshtml",
@@ -2620,7 +2645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
+              "DocumentIndex": 154,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -2632,7 +2657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 155,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Shared\\Error.cshtml",
@@ -2644,7 +2669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 156,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\_ViewImports.cshtml",
@@ -2656,7 +2681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 157,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\_ViewStart.cshtml",
@@ -2668,7 +2693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
+              "DocumentIndex": 158,
               "Title": "HomeViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Models\\AutoNest.Models\\Home\\HomeViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Models\\AutoNest.Models\\Home\\HomeViewModel.cs",
@@ -2680,7 +2705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 159,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Views\\Home\\Privacy.cshtml",
@@ -2692,7 +2717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 159,
+              "DocumentIndex": 160,
               "Title": "EditUserViewModel.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Models\\EditUserViewModel.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Models\\EditUserViewModel.cs",
@@ -2704,7 +2729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 160,
+              "DocumentIndex": 161,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminCar\\Index.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminCar\\Index.cshtml",
@@ -2716,7 +2741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 162,
+              "DocumentIndex": 163,
               "Title": "CreateEngine.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminEngine\\CreateEngine.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminEngine\\CreateEngine.cshtml",
@@ -2728,7 +2753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 161,
+              "DocumentIndex": 162,
               "Title": "CreatePart.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminPart\\CreatePart.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminPart\\CreatePart.cshtml",
@@ -2740,7 +2765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 178,
+              "DocumentIndex": 179,
               "Title": "20250226083344_UpdateForCar.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Migrations\\20250226083344_UpdateForCar.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Migrations\\20250226083344_UpdateForCar.cs",
@@ -2752,7 +2777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 163,
+              "DocumentIndex": 164,
               "Title": "AdminCategoryController.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Controllers\\AdminCategoryController.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Controllers\\AdminCategoryController.cs",
@@ -2764,7 +2789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 164,
+              "DocumentIndex": 165,
               "Title": "IAdminService.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Services\\IAdminService.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Services\\IAdminService.cs",
@@ -2776,7 +2801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 165,
+              "DocumentIndex": 166,
               "Title": "CreateCategory.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminCategory\\CreateCategory.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminCategory\\CreateCategory.cshtml",
@@ -2788,7 +2813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 166,
+              "DocumentIndex": 167,
               "Title": "EditCategory.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminCategory\\EditCategory.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminCategory\\EditCategory.cshtml",
@@ -2800,7 +2825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 177,
+              "DocumentIndex": 178,
               "Title": "20250219101753_removedPaymentEnt.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Migrations\\20250219101753_removedPaymentEnt.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Migrations\\20250219101753_removedPaymentEnt.cs",
@@ -2812,7 +2837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 167,
+              "DocumentIndex": 168,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminCategory\\Index.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminCategory\\Index.cshtml",
@@ -2824,7 +2849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 168,
+              "DocumentIndex": 169,
               "Title": "EditPart.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\AdminPart\\EditPart.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\AdminPart\\EditPart.cshtml",
@@ -2836,7 +2861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 169,
+              "DocumentIndex": 170,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\Views\\_ViewStart.cshtml",
@@ -2848,7 +2873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 170,
+              "DocumentIndex": 171,
               "Title": "AdminAreaAuthorization.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\Areas\\Admin\\AdminAreaAuthorization.cs",
               "RelativeDocumentMoniker": "AutoNest.Web\\Areas\\Admin\\AdminAreaAuthorization.cs",
@@ -2860,7 +2885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 176,
+              "DocumentIndex": 177,
               "Title": "20250212090232_ImageToCartItem.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Migrations\\20250212090232_ImageToCartItem.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Migrations\\20250212090232_ImageToCartItem.cs",
@@ -2872,7 +2897,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 175,
+              "DocumentIndex": 176,
               "Title": "20250207105624_ImageEdit.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Migrations\\20250207105624_ImageEdit.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Migrations\\20250207105624_ImageEdit.cs",
@@ -2884,7 +2909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 171,
+              "DocumentIndex": 172,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "AutoNest.Web\\wwwroot\\css\\site.css",
@@ -2896,7 +2921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 172,
+              "DocumentIndex": 173,
               "Title": "20250131105029_Init.cs",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Data\\Migrations\\20250131105029_Init.cs",
               "RelativeDocumentMoniker": "AutoNest.Data\\Migrations\\20250131105029_Init.cs",
@@ -2908,7 +2933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 173,
+              "DocumentIndex": 174,
               "Title": "20250131104953_FixedMigration.cs",
               "DocumentMoniker": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Data\\Migrations\\20250131104953_FixedMigration.cs",
               "ToolTip": "D:\\ProgrammingStuff\\AutoNest-V2\\AutoNest.Data\\Migrations\\20250131104953_FixedMigration.cs",
@@ -2917,7 +2942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 174,
+              "DocumentIndex": 175,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Programming\\AutoNest-V2\\AutoNest.Web\\appsettings.Development.json",
               "RelativeDocumentMoniker": "AutoNest.Web\\appsettings.Development.json",
